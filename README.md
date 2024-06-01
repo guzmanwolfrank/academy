@@ -1,2 +1,0 @@
-# mentor
-course site

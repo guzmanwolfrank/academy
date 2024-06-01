@@ -1,6 +1,6 @@
-Thanks for downloading this theme!
+Thanks for downloading this template!
 
-Theme Name: Mentor
-Theme URL: https://bootstrapmade.com/mentor-free-education-bootstrap-theme/
+Template Name: Mentor
+Template URL: https://bootstrapmade.com/mentor-free-education-bootstrap-theme/
 Author: BootstrapMade.com
-Author URL: https://bootstrapmade.com
+License: https://bootstrapmade.com/license/
