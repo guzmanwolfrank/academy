@@ -742,6 +742,9 @@ section,
   overflow: clip;
 }
 
+
+
+
 @media (max-width: 1199px) {
 
   section,
@@ -1612,7 +1615,11 @@ section,
 .events .card:hover .card-body .card-title a {
   color: var(--accent-color);
 }
-
+.signupform {
+  float:right;
+  padding: 20px;
+  position: static;
+}
 /*--------------------------------------------------------------
 # Pricing Section
 --------------------------------------------------------------*/
