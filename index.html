@@ -45,21 +45,47 @@
 
  
       <nav id="navmenu" class="navmenu">
-        <ul>
-          <li><a href="index.html" class="">Home<br></a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="courses.html">Courses</a></li>
-          <li><a href="trainers.html">Trainers</a></li>
-          <li><a href="events.html">Events</a></li>
-          <li><a href="pricing.html" class="active">Pricing</a></li>
-                     
-          </li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-      </nav>
 
-      <a class="btn-getstarted" href="courses.html">Get Started</a>
+      </nav>
+      <div class="tradingview-widget-container">
+        <div class="tradingview-widget-container__widget"></div>
+      
+        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+        {
+        "symbols": [
+          {
+            "proName": "FX_IDC:EURUSD",
+            "title": "EUR to USD"
+          },
+          {
+            "proName": "BITSTAMP:BTCUSD",
+            "title": "Bitcoin"
+          },
+          {
+            "description": "NQ 100 Futures",
+            "proName": "CME_MINI:NQ1!"
+          },
+          {
+            "description": "ES Futures",
+            "proName": "CME_MINI:ES1!"
+          },
+          {
+            "description": "Crude Oil",
+            "proName": "NYMEX:CL1!"
+          },
+          {
+            "description": "Gold",
+            "proName": "MCX:GOLD1!"
+          }
+        ],
+        "showSymbolLogo": true,
+        "isTransparent": false,
+        "displayMode": "regular",
+        "colorTheme": "dark",
+        "locale": "en"
+      }
+        </script>
+      </div>
 
     </div>
   </header>
@@ -73,7 +99,7 @@
 
       <div class="container">
         <h2 data-aos="fade-up" data-aos-delay="100" class=""> Start your own business,<br>Learn to trade Futures</h2>
-        <p data-aos="fade-up" data-aos-delay="200">We are team of talented professional looking to get you funded and profitable.</p>
+        <p data-aos="fade-up" data-aos-delay="200">We are team of talented professionals looking to get you funded and profitable.</p>
         <div class="d-flex mt-4" data-aos="fade-up" data-aos-delay="300">
           <a href="courses.html" class="btn-get-started">Get Started</a>
         </div>
@@ -111,6 +137,29 @@
       </div>
 
     </section><!-- /About Section -->
+    <div class="container">
+<!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+    <div class="tradingview-widget-container__widget"></div>
+    <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text">Track all markets on TradingView</span></a></div>
+    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
+    {
+    "width": "100%",
+    "height": "610",
+    "symbol": "NASDAQ:AAPL",
+    "interval": "D",
+    "timezone": "Etc/UTC",
+    "theme": "dark",
+    "style": "1",
+    "locale": "en",
+    "allow_symbol_change": true,
+    "calendar": false,
+    "support_host": "https://www.tradingview.com"
+  }
+    </script>
+  </div>
+  <!-- TradingView Widget END -->
+    </div>
 
     
     <!-- Why Us Section -->
@@ -327,6 +376,10 @@
 
 </section><!-- /FAQ Section -->
 
+
+
+
+
     <!-- Courses Section -->
     <section id="courses" class="courses section">
 
@@ -428,6 +481,114 @@
       </div>
 
     </section><!-- /Courses Section -->
+
+<div class="container">
+
+
+<!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+    <div class="tradingview-widget-container__widget"></div>
+    <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text">Track all markets on TradingView</span></a></div>
+    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-timeline.js" async>
+    {
+    "feedMode": "market",
+    "market": "futures",
+    "isTransparent": false,
+    "displayMode": "adaptive",
+    "width": "100%",
+    "height": "550",
+    "colorTheme": "light",
+    "locale": "en"
+  }
+    </script>
+  </div>
+  <!-- TradingView Widget END -->
+  <div class="container"><h2> Economic Event Calendar</h2></div>
+  <!-- TradingView Widget BEGIN -->
+  <div class="tradingview-widget-container">
+      <div class="tradingview-widget-container__widget"></div>
+      <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text">Track all markets on TradingView</span></a></div>
+      <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-events.js" async>
+      {
+      "colorTheme": "light",
+      "isTransparent": false,
+      "width": "100%",
+      "height": "550",
+      "locale": "en",
+      "importanceFilter": "-1,0,1",
+      "countryFilter": "us"
+    }
+      </script>
+    </div>
+    <!-- TradingView Widget END -->
+<!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+    <div class="tradingview-widget-container__widget"></div>
+    <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text">Track all markets on TradingView</span></a></div>
+    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-market-overview.js" async>
+    {
+    "colorTheme": "light",
+    "dateRange": "12M",
+    "showChart": true,
+    "locale": "en",
+    "largeChartUrl": "",
+    "isTransparent": false,
+    "showSymbolLogo": true,
+    "showFloatingTooltip": false,
+    "width": "100%",
+    "height": "550",
+    "plotLineColorGrowing": "rgba(41, 98, 255, 1)",
+    "plotLineColorFalling": "rgba(41, 98, 255, 1)",
+    "gridLineColor": "rgba(42, 46, 57, 0)",
+    "scaleFontColor": "rgba(19, 23, 34, 1)",
+    "belowLineFillColorGrowing": "rgba(41, 98, 255, 0.12)",
+    "belowLineFillColorFalling": "rgba(41, 98, 255, 0.12)",
+    "belowLineFillColorGrowingBottom": "rgba(41, 98, 255, 0)",
+    "belowLineFillColorFallingBottom": "rgba(41, 98, 255, 0)",
+    "symbolActiveColor": "rgba(41, 98, 255, 0.12)",
+    "tabs": [
+      {
+        "title": "Futures",
+        "symbols": [
+          {
+            "s": "CME_MINI:ES1!",
+            "d": "S&P 500"
+          },
+          {
+            "s": "CME:6E1!",
+            "d": "Euro"
+          },
+          {
+            "s": "COMEX:GC1!",
+            "d": "Gold"
+          },
+          {
+            "s": "NYMEX:CL1!",
+            "d": "WTI Crude Oil"
+          },
+          {
+            "s": "NYMEX:NG1!",
+            "d": "Gas"
+          },
+          {
+            "s": "CBOT:ZC1!",
+            "d": "Corn"
+          },
+          {
+            "s": "CME_MINI:NQ1!",
+            "d": "NQ 100 Futures"
+          }
+        ],
+        "originalTitle": "Futures"
+      }
+    ]
+  }
+    </script>
+  </div>
+  <!-- TradingView Widget END -->
+
+
+</div>
 
     
     
