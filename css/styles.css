@@ -428,6 +428,7 @@ footer {
     .main-section .text-column {
         flex: none;
         width: 100%;
+        border-radius: 10px;
     }
     .main-section h2 {
         font-size: 28px;
