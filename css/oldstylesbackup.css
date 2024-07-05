@@ -273,6 +273,11 @@ nav h5 {
     margin: 0 10px;
     text-align: center;
     width: 30%;
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    margin: 5px;
   }
   
   .column img {
@@ -307,7 +312,19 @@ footer {
     color: #444444;
     font-size: 14px;
 }
-
+/* Desktop layout */
+@media screen and (min-width: 1024px) {
+    .column {
+      width: 30%;
+    }
+  }
+  
+  /* Tablet and mobile layout */
+  @media screen and (max-width: 1023px) {
+    .column {
+      width: 100%;
+    }
+  }
 /* Mobile Styles */
 @media (max-width: 428px) {
     .container {
