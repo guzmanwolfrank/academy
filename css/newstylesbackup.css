@@ -1,0 +1,349 @@
+body {
+    font-family: "Open sans", "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    color: #444444;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+header {
+    background: #fff;
+    padding: 10px;
+    padding-right: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    text-decoration: none;
+    color: inherit;
+}
+header h5 {
+    background: #fff;
+    padding: 10px,  0;
+    padding-right: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    text-decoration: none;
+    color: inherit;
+}
+.logo {
+    color: #fff;
+    font-size: 29px;
+    font-weight: 700;
+    text-decoration: none;
+    background-image: url('#');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #20242c;
+    z-index: -1000;
+    padding-left: 10px;
+    padding-right: 15px;
+}
+
+.top{
+    position: fixed;
+    width: 100%;
+}
+.navbar {
+    position: fixed;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo a {
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+    text-align: center;
+}
+
+.logo a:hover,
+.logo a:visited {
+    color: inherit;
+}
+
+.logo a br {
+    display: none;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    text-decoration: none;
+    color: inherit;
+}
+nav h5 {
+    margin: 0;
+    padding-right: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    text-decoration: none;
+    color: inherit;
+}
+
+.nav h5 a {
+    text-decoration: none;
+    font-weight: bold;
+    text-decoration: none;
+    color: inherit;
+}
+
+.nav h5 a:hover,
+.nav h5 a:visited {
+    color: inherit;
+}
+
+.tradingview-widget-container {
+    flex-grow: 1;
+}
+.hero {
+    background: url('img/#') top center;
+    background-size: cover;
+    padding: 80px 0;
+    text-align: center;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    background-color: #20242c;
+}
+.hero h2 {
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 56px;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.btn-get-started {
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 50px;
+    transition: 0.5s;
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.btn-get-started:hover{
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 50px;
+    transition: 0.5s;
+    color: #fff;
+    background: #30f030;
+    text-decoration: none;
+    border: 2px solid #fff;
+}
+.main-section {
+    padding: 60px 0;
+}
+.main-section .container {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.main-section .image-column {
+    flex: 1;
+}
+.main-section .image-container {
+    width: 100%;
+    padding-top: 75%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+}
+.main-section .image-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.main-section .text-column {
+    flex: 1;
+    background-color: #20242c;
+    border-radius: 10px;
+    padding: 20px;
+}
+.main-section h2 {
+    color: #fff;
+    font-size: 32px;
+    font-weight: lighter;
+    margin-bottom: 20px;
+    font: Arial;
+    padding: 10px;
+}
+.main-section p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #fff;
+    margin-bottom: 15px;
+    padding: 10px;
+}
+.section {
+    padding: 60px 0;
+}
+.section-title {
+    text-align: center;
+    padding-bottom: 30px;
+}
+.section-title h2 {
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    color: #000;
+}
+.text-block {
+    display: block;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.text-block h3 {
+    background-color: #20242c;
+    color: #fff;
+    padding: 15px;
+    margin: 0 0 15px 0;
+    box-sizing: border-box;
+    border-radius: 10px;
+    display: block;
+}
+
+.text-block p {
+    color: #000;
+    margin: 0;
+    padding: 0px;
+}
+.course-item {
+    border-radius: 5px;
+    border: 1px solid #eef0ef;
+    margin-bottom: 30px;
+}
+.course-content {
+    padding: 15px;
+}
+.course-content h3 {
+    font-weight: 700;
+    font-size: 20px;
+}
+.course-content h3 a {
+    color: #000;
+    transition: 0.3s;
+    text-decoration: none;
+}
+.container2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.column {
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    margin: 5px;
+}
+
+/* Desktop layout */
+@media screen and (min-width: 1024px) {
+    .column {
+        width: 30%;
+        flex: 0 0 30%;
+    }
+}
+
+/* Tablet and mobile layout */
+@media screen and (max-width: 1023px) {
+    .column {
+        width: 100%;
+        flex: 0 0 100%;
+    }
+}
+
+.column img {
+    width: 100%;
+    height: auto;
+}
+
+.column h1 {
+    color: white;
+    background-color: #4CAF50;
+    padding: 10px;
+    margin-top: 0;
+    font-size: 14px;
+    border-radius: 10px;
+}
+
+.column p {
+    text-align: justify;
+}
+
+.column h2 {
+    color: #4CAF50;
+}
+
+.trainer-profile img {
+    max-width: 50px;
+    border-radius: 50px;
+}
+footer {
+    background: #f9faf9;
+    padding: 50px 0;
+    color: #444444;
+    font-size: 14px;
+}
+
+/* Mobile Styles */
+@media (max-width: 428px) {
+    .container {
+        width: 90%;
+    }
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    nav h5 {
+        margin-bottom: 10px;
+    }
+    .tradingview-widget-container {
+        width: 100%;
+    }
+    .hero h2 {
+        font-size: 36px;
+        line-height: 1.2;
+    }
+    .main-section .container {
+        flex-direction: column;
+    }
+    .main-section .image-column,
+    .main-section .text-column {
+        flex: none;
+        width: 100%;
+    }
+    .main-section h2 {
+        font-size: 28px;
+    }
+    .section-title h2 {
+        font-size: 28px;
+    }
+}
