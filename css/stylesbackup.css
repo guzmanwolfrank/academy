@@ -336,8 +336,17 @@ nav h5 {
 
 /* Responsive design for mobile devices */
 @media (max-width: 768px) {
+    .text-block2 {
+        flex-basis: 100%;
+        border-radius: 10px;
+        box-sizing: border-box;
+        /*background-color: #20242c; */
+        background-color: #54bd24;
+        display: block;
+    }
     .text-block {
         flex-basis: 100%;
+        ;
     }
 }
 
