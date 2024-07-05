@@ -14,6 +14,27 @@ body {
     background-image: inherit;
     background-color: inherit;
 }
+.container h2{
+    color: white;
+    background-color: #20242c;
+    padding: 10px;
+    margin-top: 0;
+    font-size: 16px;
+    font-style: normal;
+    font-family: "Roboto";
+ 
+    align-self: flex-start;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding-top: 10px;
+    margin-top: 10px;
+   /* background-image: linear-gradient(to top,#2c6d0e5e , #53f708); */
+   display: inline-block;  /* Ensures the background color spans only the text */
+}
+/**/
 /**/
 
 .container2 {
@@ -441,6 +462,129 @@ nav h5 {
 /**/
 
 
+.store-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+         }
+
+.store-container h5 {
+            color: white;
+            background-color: #e92020;
+            padding: 10px;
+            margin-top: 0;
+            font-size: 14px;
+            font-style: normal;
+
+            font-family: Roboto;
+            border-radius: 10px;
+            align-self: flex-start;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-width: 100%;
+            box-sizing: border-box;
+            padding-top: 10px;
+            margin-top: 10px;
+           /* background-image: linear-gradient(to top,#2c6d0e5e , #53f708); */
+           box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+           display: inline-block;  /* Ensures the background color spans only the text */
+
+        }
+        
+.store-container h6 {
+    color: white;
+    background-color: #e92020;
+    padding: 10px;
+    margin-top: 0;
+    font-size: 14px;
+    font-style: normal;
+
+    font-family: Roboto;
+    border-radius: 10px;
+    align-self: flex-start;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding-top: 10px;
+    margin-top: 10px;
+   /* background-image: linear-gradient(to top,#2c6d0e5e , #53f708); */
+   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+   display: inline-block;  /* Ensures the background color spans only the text */
+
+        }
+
+.product-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+.product-item {
+            border: 1px solid #ddd;
+            padding: 15px;
+            text-align: center;
+            background-color: #fff;
+            transition: box-shadow 0.3s ease;
+        }
+
+.product-item:hover {
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+.product-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+
+.product-name {
+            font-size: 18px;
+            margin-bottom: 5px;
+
+        }
+.product-name a {
+            font-size: 18px;
+            margin-bottom: 5px;
+            text-decoration: none;
+            color: inherit;
+        }
+.product-name a:hover {
+            font-size: 18px;
+            margin-bottom: 5px;
+            color: #54bd24;
+        }
+.product-name a:visited {
+            font-size: 18px;
+            margin-bottom: 5px;
+            color: inherit;
+        }
+
+.product-price {
+            font-size: 16px;
+            color: #e44d26;
+            margin-bottom: 10px;
+        }
+
+.add-to-cart {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+.add-to-cart:hover {
+            background-color: #45a049;
+        }
+
+
+
+/**/
 footer {
     background: #f9faf9;
     padding: 50px 0;
@@ -450,7 +594,23 @@ footer {
 
 
 /**************************************MOBILE DEVICE CSS DESIGN ******************************/
+ /* Tablet styles (Samsung tablets) */
+ @media screen and (max-width: 1024px) {
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
 
+/* Mobile styles (iPhone Pro Max 12) */
+@media screen and (max-width: 428px) {
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .product-item {
+        max-width: 300px;
+        margin: 0 auto;
+    }
 
 /* Responsive design for mobile devices */
 @media (max-width: 768px) {
