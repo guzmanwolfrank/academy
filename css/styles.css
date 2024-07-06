@@ -37,9 +37,10 @@ header h5 {
     background-size: contain;
     background-repeat: no-repeat;
     background-color: #20242c;
-    z-index: -1000;
+    z-index: 9999;
     padding-left: 10px;
     padding-right: 15px;
+    
 }
 
 .top{
