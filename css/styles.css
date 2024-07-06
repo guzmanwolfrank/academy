@@ -118,6 +118,7 @@ header h5 {
     color: inherit;
     display: inline-block;
     text-align: center;
+    z-index: 9999;
 }
 
 .logo a:hover,
