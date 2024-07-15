@@ -169,12 +169,15 @@ nav h5 {
 }
 .main-section .container {
     display: flex;
-    align-items: center;
+    align-items: stretch; /* This ensures both columns stretch to the same height */
     gap: 30px;
 }
+
 .main-section .image-column {
     flex: 1;
+    display: flex; /* Added to allow child to stretch */
 }
+
 .main-section .image-container {
     width: 100%;
     padding-top: 75%;
@@ -182,6 +185,7 @@ nav h5 {
     overflow: hidden;
     border-radius: 20px;
 }
+
 .main-section .image-container img {
     position: absolute;
     top: 0;
@@ -190,12 +194,23 @@ nav h5 {
     height: 100%;
     object-fit: cover;
 }
+
 .main-section .text-column {
     flex: 1;
+    display: flex; /* Added to allow content to stretch */
+    flex-direction: column; /* Stack children vertically */
     background-color: #20242c;
     border-radius: 10px;
     padding: 20px;
 }
+
+.main-section .text-content {
+    flex-grow: 1; /* Allow text content to grow and fill the container */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+}
+
 .main-section h2 {
     color: #fff;
     font-size: 32px;
@@ -204,6 +219,7 @@ nav h5 {
     font: Arial;
     padding: 10px;
 }
+
 .main-section p {
     font-size: 16px;
     line-height: 1.6;
@@ -616,4 +632,34 @@ footer {
     }
 }
 
+/* Mobile Styles */
+@media screen and (max-width: 768px) {
+    .main-section .container {
+        flex-direction: column;
+        gap: 20px;
+    }
 
+    .main-section .image-column,
+    .main-section .text-column {
+        flex: none;
+        width: 100%;
+    }
+
+    .main-section .image-container {
+        padding-top: 56.25%; /* 16:9 aspect ratio for mobile */
+    }
+
+    .main-section h2 {
+        font-size: 24px;
+        padding: 5px;
+    }
+
+    .main-section p {
+        font-size: 14px;
+        padding: 5px;
+    }
+
+    .main-section .text-column {
+        padding: 15px;
+    }
+}
