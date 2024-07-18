@@ -599,6 +599,25 @@ footer {
     font-size: 14px;
 }
 
+.adcontainer {
+    background-color: #f0f0f0;  /* Light gray background for placeholder */
+    border: 1px solid #ddd;     /* Optional border for visibility */
+    text-align: center;        /* Center text within placeholder */
+    height: 40px;
+
+}
+  
+  .leaderboard {
+    height: 190px;  /* Leaderboard ad size (728x90) */
+    width: 150px;
+  }
+  
+  .rectangle {
+    height: 300px;  /* Rectangle ad size (300x250) */
+    width: 250px;
+  }
+  
+
 /* Mobile-friendly styles */
 @media screen and (max-width: 768px) {
     .product-grid {
