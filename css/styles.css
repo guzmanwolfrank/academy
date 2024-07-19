@@ -31,7 +31,7 @@ header h5 {
 .logo {
     color: #fff;
     font-size: 29px;
-    font-weight: 700;
+    font-weight: bold;
     text-decoration: none;
     background-image: url('#');
     background-size: contain;
@@ -42,12 +42,30 @@ header h5 {
     padding-right: 15px;
     
 }
+.logo a {
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+    text-align: center;
+    z-index: 9999;
+    font-size: 24px;
+}
+
+.logo a:hover,
+.logo a:visited {
+    color: inherit;
+}
+
+.logo a br {
+    display: none;
+}
 
 .top{
     position: fixed;
     width: 100%;
     z-index: 9999; /* Lower z-index than navbar */
-
 }
 /**/
 .topticker-widget {
@@ -61,33 +79,72 @@ header h5 {
     z-index: 1; /* Lower z-index than navbar */
 }
 
-
-
 .navbar {
     position: fixed;
     width: 100%;
     align-items: center;
     justify-content: space-between;
     z-index: 9999;
-}
-
-.logo a {
-    font-family: Arial, sans-serif;
-    font-weight: bold;
     text-decoration: none;
-    color: inherit;
-    display: inline-block;
-    text-align: center;
+    font-size: 25px;
+}
+
+.navbar a {
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    background-image: url('#');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #20242c;
     z-index: 9999;
+    padding-left: 10px;
+    padding-right: 15px;
 }
-
-.logo a:hover,
-.logo a:visited {
-    color: inherit;
+.navlinks {
+  
+        color: #fff;
+        font-size: 16px;
+        font-weight: 500;
+        text-decoration: none;
+        background-image: url('#');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-color: #20242c;
+        z-index: 9999;
+        padding-left: 10px;
+        padding-right: 15px;
+        
 }
-
-.logo a br {
-    display: none;
+.navlinks a:active {
+  
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    background-image: url('#');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #20242c;
+    z-index: 9999;
+    padding-left: 10px;
+    padding-right: 15px;
+    
+}
+.navlinks a:hover,a:visited  {
+  
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    background-image: url('#');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #20242c;
+    z-index: 9999;
+    padding-left: 10px;
+    padding-right: 15px;
+    
 }
 
 nav {
@@ -541,6 +598,25 @@ footer {
     color: #444444;
     font-size: 14px;
 }
+
+.adcontainer {
+    background-color: #f0f0f0;  /* Light gray background for placeholder */
+    border: 1px solid #ddd;     /* Optional border for visibility */
+    text-align: center;        /* Center text within placeholder */
+    height: 40px;
+
+}
+  
+  .leaderboard {
+    height: 190px;  /* Leaderboard ad size (728x90) */
+    width: 150px;
+  }
+  
+  .rectangle {
+    height: 300px;  /* Rectangle ad size (300x250) */
+    width: 250px;
+  }
+  
 
 /* Mobile-friendly styles */
 @media screen and (max-width: 768px) {

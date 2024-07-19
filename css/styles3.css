@@ -31,7 +31,7 @@ header h5 {
 .logo {
     color: #fff;
     font-size: 29px;
-    font-weight: 700;
+    font-weight: bold;
     text-decoration: none;
     background-image: url('#');
     background-size: contain;
@@ -42,12 +42,30 @@ header h5 {
     padding-right: 15px;
     
 }
+.logo a {
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+    text-align: center;
+    z-index: 9999;
+    font-size: 24px;
+}
+
+.logo a:hover,
+.logo a:visited {
+    color: inherit;
+}
+
+.logo a br {
+    display: none;
+}
 
 .top{
     position: fixed;
     width: 100%;
     z-index: 9999; /* Lower z-index than navbar */
-
 }
 /**/
 .topticker-widget {
@@ -61,33 +79,72 @@ header h5 {
     z-index: 1; /* Lower z-index than navbar */
 }
 
-
-
 .navbar {
     position: fixed;
     width: 100%;
     align-items: center;
     justify-content: space-between;
     z-index: 9999;
-}
-
-.logo a {
-    font-family: Arial, sans-serif;
-    font-weight: bold;
     text-decoration: none;
-    color: inherit;
-    display: inline-block;
-    text-align: center;
+    font-size: 25px;
+}
+
+.navbar a {
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    background-image: url('#');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #20242c;
     z-index: 9999;
+    padding-left: 10px;
+    padding-right: 15px;
 }
-
-.logo a:hover,
-.logo a:visited {
-    color: inherit;
+.navlinks {
+  
+        color: #fff;
+        font-size: 16px;
+        font-weight: 500;
+        text-decoration: none;
+        background-image: url('#');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-color: #20242c;
+        z-index: 9999;
+        padding-left: 10px;
+        padding-right: 15px;
+        
 }
-
-.logo a br {
-    display: none;
+.navlinks a:active {
+  
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    background-image: url('#');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #20242c;
+    z-index: 9999;
+    padding-left: 10px;
+    padding-right: 15px;
+    
+}
+.navlinks a:hover,a:visited  {
+  
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    background-image: url('#');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #20242c;
+    z-index: 9999;
+    padding-left: 10px;
+    padding-right: 15px;
+    
 }
 
 nav {
@@ -418,7 +475,7 @@ nav h5 {
     border-radius: 50px;
 }
 
-/**/
+/***************Store***********************/
 
 
 .store-container {
@@ -471,6 +528,7 @@ nav h5 {
     display: inline-block;
 }
 
+/*********** Product store css *************/
 .product-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -534,15 +592,161 @@ nav h5 {
 .add-to-cart:hover {
     background-color: #45a049;
 }
+/***** partner css      **/
+
+.partner-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+ }
+
+.partner-container h5 {
+    color: white;
+    background-color: #e92020;
+    padding: 10px;
+    margin-top: 0;
+    font-size: 14px;
+    font-style: normal;
+
+    font-family: Roboto;
+    border-radius: 10px;
+    align-self: flex-start;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding-top: 10px;
+    margin-top: 10px;
+
+   /* background-image: linear-gradient(to top,#2c6d0e5e , #53f708); */
+   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+   display: inline-block;  /* Ensures the background color spans only the text */
+
+}
+
+
+.partner-container h6 {
+    color: white;
+    background-color: #e92020;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 14px;
+    font-style: normal;
+    font-family: Roboto;
+    border-radius: 10px;
+    align-self: flex-start;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+    box-sizing: border-box;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    display: inline-block;
+}
+
+.partner-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.partner-item {
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: center;
+    background-color: #fff;
+    transition: box-shadow 0.3s ease;
+}
+
+.partner-item:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.partner-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.partner-name {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.partner-name a {
+    font-size: 18px;
+    margin-bottom: 5px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.partner-name a:hover {
+    color: #54bd24;
+}
+
+.partner-name a:visited {
+    color: inherit;
+}
+
+.partner-price {
+    font-size: 16px;
+    color: #e44d26;
+    margin-bottom: 10px;
+}
+
+
+
+
+/** google ads **/
+
+.adcontainer {
+    background-color: #f0f0f0;  /* Light gray background for placeholder */
+    border: 1px solid #ddd;     /* Optional border for visibility */
+    text-align: center;        /* Center text within placeholder */
+    padding: 10px;
+    margin: 10px;
+}
+  
+  .leaderboard {
+    height: 90px;  /* Leaderboard ad size (728x90) */
+    width: 720px;
+
+
+  }
+  
+  .rectangle {
+    height: 300px;  /* Rectangle ad size (300x250) */
+    width: 250px;
+  }
+    
+  .largemobile {
+    height: 100px;  /* Rectangle ad size (300x250) */
+    width: 300px;
+  }
+
+  
+
+/*footer*/
 
 footer {
     background: #f9faf9;
-    padding: 50px 0;
+    padding: 50px;
     color: #444444;
     font-size: 14px;
+
 }
 
-/* Mobile-friendly styles */
+footer p{
+    background: #f9faf9;
+    padding: 50px;
+    color: #444444;
+    font-size: 14px;
+
+}
+
+/************************************** Mobile-friendly styles************************* */
 @media screen and (max-width: 768px) {
     .product-grid {
         grid-template-columns: 1fr;
