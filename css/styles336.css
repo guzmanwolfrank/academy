@@ -72,7 +72,6 @@ header h5 {
     position: fixed;
     z-index: 9996; /* Lower z-index than navbar */
     width: 100%;
-   
 }
 /**/
 .calendly-widget {
@@ -92,7 +91,7 @@ header h5 {
 
 .navbar a {
     color: #fff;
-    font-weight: 400;
+    font-weight: 500;
     text-decoration: none;
     background-image: url('#');
     background-size: contain;
@@ -208,7 +207,6 @@ nav h5 {
     text-decoration: none;
     border: 2px solid #fff;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    width: 180px;
 }
 .btn-get-started:hover{
     font-size: 16px;
@@ -732,87 +730,20 @@ nav h5 {
 /*footer*/
 
 footer {
-    background: #4444;
-    padding: 20px;
+    background: #20242c;
+    padding: 50px;
     color: #fff;
     font-size: 14px;
-  }
-  
-  .footer-container {
-    display: block;
-    justify-content: space-between;
-    align-items: center;
-    width: 80%;
-    margin: 0 auto;
-  }
-  
-  .social-icons {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+
+}
+
+footer p{
+    background: #20242c;
+    padding: 50px;
     color: #fff;
-    text-decoration: none;
-    float: left;
-    justify-self: left;
-    /* Remove unnecessary styles */
-    width:100%; /* Remove fixed width */
+    font-size: 14px;
 
-  }
-  .social-icons a{
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  .social-icons li {
-    display: inline-block;
-    margin-right: 1rem;
-  }
-  
-  .social-icons li img {
-    width: 24px; /* Adjust width as needed */
-    height: 24px; /* Adjust height as needed */
-  }
-  
-  .contact {
-    font-size: 0.8rem; /* Adjust font size for mobile if needed */
-  }
-
-
-
-  .bottomfooter{
-
-    color: #444;
-    padding: 20px;
-    display: block;
-    padding-bottom: 80px;
-
-    
-  }
-
-  .bottomfooter p{
-    width:80% ;
-    color: #444;
-    padding: 20px;
-    display: block;
-    border: 1px solid #444;
-
-  }
-
-
-  .bottomfooter p, a{
-    width:80% ;
-    color: #444;
-    padding: 20px;
-    display: block;
-
-
-  }
-
-
-
+}
 
 /**************************************************************************** Mobile-friendly styles*******************************************************************/
 
@@ -953,21 +884,4 @@ footer {
     .main-section .text-column {
         padding: 15px;
     }
-    /* Media Queries for Mobile Adaptation (Optional) */
-
-@media screen and (max-width: 768px) {
-    .footer-container {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .social-icons {
-      text-align: center;
-      margin-bottom: 1rem;
-    }
-  
-    .contact {
-      text-align: center;
-    }
-  }
 }

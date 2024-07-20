@@ -754,8 +754,8 @@ footer {
     text-decoration: none;
     float: left;
     justify-self: left;
-    /* Remove unnecessary styles */
     width:100%; /* Remove fixed width */
+    
 
   }
   .social-icons a{
