@@ -797,9 +797,11 @@ footer p{
         background-repeat: no-repeat;
         background-color: #20242c;
         z-index: 9999;
-        padding-left: 10px;
+        padding-left: 500px;
         padding-right: 15px;
         width: 100%; 
+        justify-self: right;
+
     }
      
     .container {
