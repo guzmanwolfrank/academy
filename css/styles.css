@@ -752,9 +752,7 @@ footer p{
     color: #fff;
     text-decoration: none;
     float: left;
-    justify-self: left;
-    width:100%; /* Remove fixed width */
-    padding-bottom: 40px;
+    justify-self: left;  
 }
 
 .social-icons li {
@@ -767,11 +765,55 @@ footer p{
         height: 24px; /* Adjust height as needed */
 }
       
-.bottomfooter{
-    border: 1px solid #4444;
-    display: block;
-    padding-bottom: 40px;
+.social-icons a{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    color: #fff;
+    text-decoration: none;
+  }
 
+
+
+.bottomfooter{
+    display: block;
+    width: 40%;
+    float: left;
+
+}
+
+
+.disclaimer{
+    display: block;
+    float: right;
+    width: 55%;
+}
+
+.info {
+    display: block;
+    text-decoration: none;
+
+}
+.info a,p,a:hover,a:visited {
+    display: block;
+    text-decoration: none;
+    color: #000;
+
+}
+.contact {
+    text-align: left;
+    text-decoration: none;
+    color: #000;
+}
+.contact a,p {
+    text-align: left;
+    text-decoration: none;
+    color: inherit;
+}
+.contact a:active, a:hover,a:visited,p {
+    text-align: left;
+    text-decoration: inherit;
+    color: inherit;
 }
 
 
@@ -914,4 +956,18 @@ footer p{
     .main-section .text-column {
         padding: 15px;
     }
+    
+    .bottomfooter{
+    display: block;
+    width: 100%;
+    float: left;
+
+}
+
+
+    .disclaimer{
+    display: block;
+    float: right;
+    width: 100%;
+}
 }
