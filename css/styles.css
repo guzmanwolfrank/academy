@@ -730,7 +730,7 @@ nav h5 {
 /*footer*/
 
 footer {
-    background: #f9faf9;
+    background: #4444;
     padding: 50px;
     color: #444444;
     font-size: 14px;
@@ -738,12 +738,44 @@ footer {
 }
 
 footer p{
-    background: #f9faf9;
+
     padding: 50px;
     color: #444444;
     font-size: 14px;
 
 }
+
+.social-icons {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    color: #fff;
+    text-decoration: none;
+    float: left;
+    justify-self: left;
+    width:100%; /* Remove fixed width */
+    padding-bottom: 40px;
+}
+
+.social-icons li {
+    display: inline-block;
+    margin-right: 1rem;
+  }
+
+.social-icons img {
+        width: 24px; /* Adjust width as needed */
+        height: 24px; /* Adjust height as needed */
+}
+      
+.bottomfooter{
+    border: 1px solid #4444;
+    display: block;
+    padding-bottom: 40px;
+
+}
+
+
+
 
 /**************************************************************************** Mobile-friendly styles*******************************************************************/
 
