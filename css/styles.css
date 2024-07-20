@@ -791,6 +791,13 @@ footer p{
 
 .info {
     display: block;
+    text-decoration: none;
+
+}
+.info a,p,a:hover,a:visited {
+    display: block;
+    text-decoration: none;
+    color: #000;
 
 }
 .contact {
