@@ -759,6 +759,13 @@ footer p{
     display: inline-block;
     margin-right: 1rem;
   }
+  
+.social-icons li img {
+    display: inline-block;
+    margin-right: 1rem;
+    width: 24px; /* Adjust width as needed */
+    height: 24px; /* Adjust height as needed */
+  }
 
 .social-icons img {
         width: 24px; /* Adjust width as needed */
