@@ -222,12 +222,12 @@ nav h5 {
     border: 2px solid #fff;
 }
 .box {
-  width: 90%;
-  height: 300px;
+  width: 100%;
+  height: 100%;
   padding: 20px;
-  margin: 20px;
-  /*background-color: #20242c; border: 1px solid black;*/
-  color: #000;
+  background-color: #20242c; border: 1px solid black;
+  color: #fff;
+
 }
 
 .box h1{
@@ -241,7 +241,9 @@ nav h5 {
     width: 90%;
     padding: 20px;
     display: block;
-
+    font: "poppins";
+    font-size: 30px;
+    font-weight: 500;
 
 }
 
