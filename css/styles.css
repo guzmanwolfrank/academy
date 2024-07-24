@@ -227,18 +227,17 @@ nav h5 {
   padding: 20px;
   background-color: #20242c; border: 1px solid black;
   color: #fff;
-
+  /*background-image: url("/img/hero-bg.jpg");*/
+ 
 }
 
 .box h1{
     font-size: 56px;
     font-weight: 800;
-    font: helvetica;
     font-style: bold;
 
 }
 .box p {
-    width: 90%;
     padding: 20px;
     display: block;
     font: "poppins";
