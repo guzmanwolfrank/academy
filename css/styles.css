@@ -1,5 +1,5 @@
 body {
-    font-family: "Open sans", "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, sans-serif;
+    font-family: "Poppins","Open sans", "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, sans-serif;
     line-height: 1.6;
     color: #444444;
     margin: 0;          
@@ -10,6 +10,7 @@ body {
     margin: auto;
     overflow: hidden;
 }
+
 header {
     background: #fff;
     padding: 10px;
@@ -222,16 +223,18 @@ nav h5 {
 }
 .box {
   width: 90%;
-  height: 100px;
-  border: 1px solid black;
-  padding: 10px;
+  height: 300px;
+  padding: 20px;
   margin: 20px;
-  background-color: #20242c;
-  border-radius: 20px;
-  color: #fff;
+  /*background-color: #20242c; border: 1px solid black;*/
+  color: #000;
 }
 
 .box h1{
+    font-size: 56px;
+    font-weight: 800;
+    font: helvetica;
+    font-style: bold;
 
 }
 .box p {
@@ -855,7 +858,11 @@ footer p{
     color: inherit;
 }
 
-
+.poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
 
 
 /**************************************************************************** Mobile-friendly styles*******************************************************************/
