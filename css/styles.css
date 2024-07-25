@@ -4,6 +4,7 @@ body {
     color: #444444;
     margin: 0;          
     padding: 0;
+    width: 100%;
 }
 .container {
     width: 80%;
@@ -182,13 +183,13 @@ nav h5 {
     flex-grow: 1;
 }
 .hero {
-    background: url('img/#') top center;
-    background-size: cover;
-    padding: 80px 0;
+    background-size:100%;
+    padding: 80px;
     text-align: center;
     color: #fff;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     background-color: #20242c;
+    min-width: 100%;
 }
 .hero h2 {
     font-size: 64px;
@@ -197,6 +198,15 @@ nav h5 {
     margin-bottom: 30px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
+.hero p {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 56px;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-align: left;
+}
+
 .btn-get-started {
     font-size: 16px;
     letter-spacing: 1px;
@@ -224,9 +234,10 @@ nav h5 {
 .box {
   width: 100%;
   height: 100%;
-  padding: 20px;
-  background-color: #20242cf6; border: 1px solid black;
+  padding: 40px;
+  background-color: #20242c; border: 1px solid black;
   color: #fff;
+  background: #20242c;
  
 }
 
@@ -240,85 +251,11 @@ nav h5 {
     padding: 20px;
     display: block;
     font: "poppins";
-    font-size: 30px;
+    font-size: 26px;
     font-weight: 500;
 
 }
 
-
-.main-section {
-    padding: 60px 0;
-}
-.main-section .container {
-    display: flex;
-    align-items: stretch; /* This ensures both columns stretch to the same height */
-    gap: 30px;
-}
-
-.main-section .image-column {
-    flex: 1;
-    display: flex; /* Added to allow child to stretch */
-}
-
-.main-section .image-container {
-    width: 100%;
-    padding-top: 75%;
-    position: relative;
-    overflow: hidden;
-    border-radius: 20px;
-}
-
-.main-section .image-container img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.text-column {
-    flex: 1;
-    display: flex; /* Added to allow content to stretch */
-    flex-direction: column; /* Stack children vertically */
-    background-color: #20242c;
-    border-radius: 20px;
-    padding: 20px;
-    width:100%; 
-    overflow: hidden;
-}
-
-.main-section .text-column p {
-    background-color: #20242c;
-    width:100%;
-    padding-block: 20px;
-
-}
-
-.main-section .text-content {
-    flex-grow: 1; /* Allow text content to grow and fill the container */
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* Center content vertically */
-}
-
-.main-section h2 {
-    color: #fff;
-    font-size: 32px;
-    font-weight: lighter;
-    margin-bottom: 20px;
-    font: Arial;
-    padding: 10px;
-}
-
-.main-section p {
-    font-size: 16px;
-    line-height: 1.6;
-    color: #fff;
-    margin-bottom: 15px;
-    padding: 10px;
-    display: block;
-}
 .section {
     padding: 60px 0;
 }
@@ -343,13 +280,13 @@ nav h5 {
 }
 
 .text-block h3 {
-    background-color: #20242c;
-    color: #fff;
+    background-color: #fff;
+    color: #20242c;
     padding: 15px;
     margin: 0 0 15px 0;
     box-sizing: border-box;
-    border-radius: 20px;
     display: block;
+    font-size: 25px;
 }
 
 .text-block p {
@@ -358,6 +295,11 @@ nav h5 {
     padding: 0px;
 }
 /**/
+.imageblock img {
+    /*background-image: url("/img/events-item-1.jpg");*/
+    height: 100%;
+    width: 100%;
+}
 /**/
 .text-block2 {
     display: block;
