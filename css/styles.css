@@ -699,12 +699,13 @@ footer p{
     }
   
     .container, .container2 {
-      width: 95%;
+      width: 100%;
     }
   
     .hero {
       padding: 10px;
       padding-top: 40px;
+      width: 100%;
     }
   
     .hero h2 {
@@ -735,7 +736,7 @@ footer p{
     .box p {
       font-size: 14px;
       display: inline-block;
-      width: 90%;
+      width: 80%;
     }
   
     .text-block, .text-block2 {
@@ -872,4 +873,5 @@ footer p{
       font-size: 14px;
       margin: 5px 0;
     }
+   
   }
