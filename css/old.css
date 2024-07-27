@@ -1,15 +1,17 @@
 body {
-    font-family: "Open sans", "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, sans-serif;
+    font-family: "Poppins","Open sans", "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, sans-serif;
     line-height: 1.6;
     color: #444444;
     margin: 0;          
     padding: 0;
+    width: 100%;
 }
 .container {
     width: 80%;
     margin: auto;
     overflow: hidden;
 }
+
 header {
     background: #fff;
     padding: 10px;
@@ -181,13 +183,13 @@ nav h5 {
     flex-grow: 1;
 }
 .hero {
-    background: url('img/#') top center;
-    background-size: cover;
-    padding: 80px 0;
+    background-size:100%;
+    padding: 80px;
     text-align: center;
     color: #fff;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     background-color: #20242c;
+    min-width: 100%;
 }
 .hero h2 {
     font-size: 64px;
@@ -196,6 +198,15 @@ nav h5 {
     margin-bottom: 30px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
+.hero p {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 56px;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
 .btn-get-started {
     font-size: 16px;
     letter-spacing: 1px;
@@ -220,98 +231,40 @@ nav h5 {
     text-decoration: none;
     border: 2px solid #fff;
 }
-.main-section {
-    padding: 60px 0;
-}
-.main-section .container {
-    display: flex;
-    align-items: stretch; /* This ensures both columns stretch to the same height */
-    gap: 30px;
-}
-
-.main-section .image-column {
-    flex: 1;
-    display: flex; /* Added to allow child to stretch */
+.box {
+  width: 100%;
+  height: 100%;
+  padding: 40px;
+  color: #fff;
+  background: #20242c;
+  display: block;
 }
 
-.main-section .image-container {
-    width: 100%;
-    padding-top: 75%;
-    position: relative;
-    overflow: hidden;
-    border-radius: 20px;
-}
+.box h1{
+    font-size: 60px;
+    font-weight: 800;
+    font-style: bold;
+    text-align: center;
 
-.main-section .image-container img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
 }
-
-.main-section .text-column {
-    flex: 1;
-    display: flex; /* Added to allow content to stretch */
-    flex-direction: column; /* Stack children vertically */
-    background-color: #2852a7;
-    border-radius: 20px;
+.box p {
     padding: 20px;
-    width:100%;
-    overflow: hidden;
-}
-
-.main-section .text-column p {
-    flex: 1;
-    display: flex; /* Added to allow content to stretch */
-    flex-direction: column; /* Stack children vertically */
-    background-color: #20242c;
-    width:100%;
-    padding-block: 20px;
-
-}
-
-.main-section .text-content {
-    flex-grow: 1; /* Allow text content to grow and fill the container */
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* Center content vertically */
-}
-
-.main-section h2 {
-    color: #fff;
-    font-size: 32px;
-    font-weight: lighter;
-    margin-bottom: 20px;
-    font: Arial;
-    padding: 10px;
-}
-
-.main-section p {
-    font-size: 16px;
-    line-height: 1.6;
-    color: #fff;
-    margin-bottom: 15px;
-    padding: 10px;
     display: block;
+    font: "poppins";
+    font-size: 26px;
+    font-weight: 500;
+
 }
+
+.box a, a:hover,a:active, a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
 .section {
     padding: 60px 0;
 }
-.section-title {
-    text-align: center;
-    padding-bottom: 30px;
-}
-.section-title h2 {
-    font-size: 32px;
-    font-weight: bold;
-    text-transform: uppercase;
-    margin-bottom: 20px;
-    padding-bottom: 20px;
-    position: relative;
-    color: #000;
-}
+
 .text-block {
     display: block;
     width: 100%;
@@ -320,13 +273,13 @@ nav h5 {
 }
 
 .text-block h3 {
-    background-color: #20242c;
-    color: #fff;
+    background-color: #fff;
+    color: #20242c;
     padding: 15px;
     margin: 0 0 15px 0;
     box-sizing: border-box;
-    border-radius: 10px;
     display: block;
+    font-size: 25px;
 }
 
 .text-block p {
@@ -335,29 +288,39 @@ nav h5 {
     padding: 0px;
 }
 /**/
+.imageblock img {
+    /*background-image: url("/img/events-item-1.jpg");*/
+    height: 100%;
+    width: 100%;
+}
 /**/
 .text-block2 {
-    display: block;
-    width: 100%;
+    width: 45%;
     padding: 20px;
+    margin: 20px;
     box-sizing: border-box;
-    /*background-color: #20242c; */
-    background-color: #54bd24;
-    border-radius: 10px;
+    /*background-color: #20242c;#54bd24 */
+    background-color: #20242c;
+    border-radius: 20px;
     padding-bottom: 20px;
     margin-bottom: 40px;
     box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    float: left;
+    
 
 }
 .text-block2 ul {
     list-style-type: none;
     padding: 0;
+    display: inline-block;
 }
 
 .text-block2 li {
     margin: 10px 0;
     line-height: 1.6;
     color: #fff;
+
 }
 
 
@@ -365,9 +328,8 @@ nav h5 {
     background-color: inherit;
     color: #fff;
     padding: 15px;
-    margin: 0 0 15px 0;
     box-sizing: border-box;
-    border-radius: 10px;
+    border-radius: 20px;
     display: block;
 }
 
@@ -377,25 +339,21 @@ nav h5 {
     padding: 0px;
 }
 /**/
+.imageblock2 img {
+    height: 100%;
+    width: 45%;
+    margin: 20px;
+    float: right;
+    border-radius: 20px;
+    object-fit: cover;
 
+}
+
+.imageblock2, .text-block2{
+    flex: 1;
+}
 /**/
-.course-item {
-    border-radius: 5px;
-    border: 1px solid #eef0ef;
-    margin-bottom: 30px;
-}
-.course-content {
-    padding: 15px;
-}
-.course-content h3 {
-    font-weight: 700;
-    font-size: 20px;
-}
-.course-content h3 a {
-    color: #000;
-    transition: 0.3s;
-    text-decoration: none;
-}
+
 .container2 {
     display: flex;
     flex-wrap: wrap;
@@ -406,26 +364,19 @@ nav h5 {
 }
 
 .column {
-    text-align: center;
     padding: 20px;
     box-sizing: border-box;
     border: 1px solid #ccc;
-    margin: 5px;
 }
 /* Styles for the h1 */
 .column h1 {
     color: white;
     background-color: #54bd24;
-    padding: 10px;
-    margin-top: 0;
+    padding: 20px;
     font-size: 14px;
     font-style: normal;
     font-family: Roboto;
-    border-radius: 10px;
-    align-self: flex-start;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    transition: none;
     max-width: 100%;
     box-sizing: border-box;
     padding-top: 10px;
@@ -440,13 +391,11 @@ nav h5 {
 .column h1 a {
     color: inherit;
     text-decoration: none;
+    transition: none;
 }
-.column h1 a:hover{
-    text-decoration: none;
-}
+
 .column h1 a:visited{
     color: inherit;
-    opacity: .8;
 }
 .column p {
     text-align: justify;
@@ -465,27 +414,8 @@ nav h5 {
     height: auto;
 }
 
-.column h1 {
-    color: white;
-    background-color: #54bd24;
-    padding: 10px;
-    margin-top: 0;
-    font-size: 14px;
-    border-radius: 10px;
-}
 
-.column p {
-    text-align: justify;
-}
 
-.column h2 {
-    color: #54bd24;
-}
-
-.trainer-profile img {
-    max-width: 50px;
-    border-radius: 50px;
-}
 
 /***************Store***********************/
 
@@ -529,7 +459,7 @@ nav h5 {
     font-size: 14px;
     font-style: normal;
     font-family: Roboto;
-    border-radius: 10px;
+    border-radius: 20px;
     align-self: flex-start;
     white-space: nowrap;
     overflow: hidden;
@@ -604,112 +534,6 @@ nav h5 {
 .add-to-cart:hover {
     background-color: #45a049;
 }
-/***** partner css      **/
-
-.partner-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
- }
-
-.partner-container h5 {
-    color: white;
-    background-color: #e92020;
-    padding: 10px;
-    margin-top: 0;
-    font-size: 14px;
-    font-style: normal;
-
-    font-family: Roboto;
-    border-radius: 10px;
-    align-self: flex-start;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    max-width: 100%;
-    box-sizing: border-box;
-    padding-top: 10px;
-    margin-top: 10px;
-
-   /* background-image: linear-gradient(to top,#2c6d0e5e , #53f708); */
-   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-   display: inline-block;  /* Ensures the background color spans only the text */
-
-}
-
-
-.partner-container h6 {
-    color: white;
-    background-color: #e92020;
-    padding: 10px;
-    margin-top: 10px;
-    font-size: 14px;
-    font-style: normal;
-    font-family: Roboto;
-    border-radius: 10px;
-    align-self: flex-start;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    max-width: 100%;
-    box-sizing: border-box;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-    display: inline-block;
-}
-
-.partner-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-}
-
-.partner-item {
-    border: 1px solid #ddd;
-    padding: 15px;
-    text-align: center;
-    background-color: #fff;
-    transition: box-shadow 0.3s ease;
-}
-
-.partner-item:hover {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.partner-image {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    margin-bottom: 10px;
-}
-
-.partner-name {
-    font-size: 18px;
-    margin-bottom: 5px;
-}
-
-.partner-name a {
-    font-size: 18px;
-    margin-bottom: 5px;
-    text-decoration: none;
-    color: inherit;
-}
-
-.partner-name a:hover {
-    color: #54bd24;
-}
-
-.partner-name a:visited {
-    color: inherit;
-}
-
-.partner-price {
-    font-size: 16px;
-    color: #e44d26;
-    margin-bottom: 10px;
-}
-
-
-
 
 /** google ads **/
 
@@ -836,7 +660,11 @@ footer p{
     color: inherit;
 }
 
-
+.poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
 
 
 /**************************************************************************** Mobile-friendly styles*******************************************************************/
@@ -919,30 +747,7 @@ footer p{
         display: block;
         width: 100%;
     }
-    .main-section .image-column,
-    .main-section .text-column {
-        flex: none;
-        width: 100%;
-        padding: 10px;
-        display: block;
-    }
-    .main-section .text-column p{
-        flex: none;
-        width: 100%;
-        padding: 10px;
-        display: block;
-    }
-    .main-section h2 {
-        font-size: 28px;
-    }
-    .section-title h2 {
-        font-size: 28px;
-    }
-    .text-column {
-        display: block;
-        padding: 30px;
-    }
-
+     
 }
 
 /* Desktop layout */
@@ -968,29 +773,7 @@ footer p{
         gap: 20px;
     }
 
-    .main-section .image-column,
-    .main-section .text-column {
-        flex: none;
-        width: 100%;
-    }
 
-    .main-section .image-container {
-        padding-top: 56.25%; /* 16:9 aspect ratio for mobile */
-    }
-
-    .main-section h2 {
-        font-size: 24px;
-        padding: 5px;
-    }
-
-    .main-section p {
-        font-size: 14px;
-        padding: 5px;
-    }
-
-    .main-section .text-column {
-        padding: 15px;
-    }
     
     .bottomfooter{
     display: block;
@@ -998,7 +781,6 @@ footer p{
     float: left;
 
 }
-
 
     .disclaimer{
     display: block;
