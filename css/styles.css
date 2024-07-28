@@ -803,13 +803,20 @@ footer p{
       height: 20px;
     }
   
-    .navbar a, .logo a {
-      font-size: 12px;
+    .navbar a{
+      font-style: normal;    } 
+    
+    .logo a {
+      font-size: 16px;
     }
   
     .navlinks {
       font-size: 12px;
-      padding-right: 100px;
+      padding-right: 80px;
+      padding-bottom: 10px;
+      padding-top: 10px;
+      padding-left: 15px;
+      
     }
   
     .column {
