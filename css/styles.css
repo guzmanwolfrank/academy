@@ -118,6 +118,8 @@ header h5 {
         z-index: 9999;
         padding-left: 10px;
         padding-right: 15px;
+        padding-bottom: 11px;
+        padding-top: 10px;
 }
 .navlinks a:active {
   
@@ -383,7 +385,7 @@ nav h5 {
 /* Styles for the h1 */
 .column h1 {
     color: white;
-    background-color: #54bd24;
+    background-color: #31438b;
     padding: 20px;
     font-size: 14px;
     font-style: normal;
@@ -451,16 +453,14 @@ nav h5 {
     padding: 20px;
  }
 
-.store-container h5 {
-    color: white;
-    background-color: #e92020;
+.store-container h5 a {
+    color: #000;
+    background-color: #fff;
     padding: 10px;
     margin-top: 0;
     font-size: 14px;
     font-style: normal;
-
     font-family: Roboto;
-    border-radius: 10px;
     align-self: flex-start;
     white-space: nowrap;
     overflow: hidden;
@@ -469,16 +469,24 @@ nav h5 {
     box-sizing: border-box;
     padding-top: 10px;
     margin-top: 10px;
+    border: 1px solid #ddd;
+    display: inline-block;
+    text-decoration: none;
    /* background-image: linear-gradient(to top,#2c6d0e5e , #53f708); */
-   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+   /*box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
    display: inline-block;  /* Ensures the background color spans only the text */
+
+}
+.store-container a:hover {
+  background-color: #20242c;
+  color: #fff;
 
 }
 
 /* Existing styles */
 .store-container h6 {
-    color: white;
-    background-color: #e92020;
+    color: #000;
+    background-color: #fff;
     padding: 10px;
     margin-top: 10px;
     font-size: 14px;
@@ -534,7 +542,7 @@ nav h5 {
 }
 
 .product-name a:hover {
-    color: #54bd24;
+    color: #fff;
 }
 
 .product-name a:visited {
