@@ -1,3 +1,7 @@
+* {
+  max-width: 100%;
+  box-sizing: border-box;
+}
 body {
     font-family: "Poppins","Open sans", "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, sans-serif;
     line-height: 1.6;
