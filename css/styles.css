@@ -1,3 +1,7 @@
+* {
+  max-width: 100%;
+  box-sizing: border-box;
+}
 body {
     font-family: "Poppins","Open sans", "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, sans-serif;
     line-height: 1.6;
@@ -118,7 +122,7 @@ header h5 {
         z-index: 9999;
         padding-left: 10px;
         padding-right: 15px;
-        padding-bottom: 11px;
+        padding-bottom: 10px;
         padding-top: 10px;
 }
 .navlinks a:active {
