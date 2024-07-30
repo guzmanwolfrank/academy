@@ -256,7 +256,6 @@ nav h5 {
 
 }
 .box p {
-    display: block;
     font: "poppins";
     font-size: 18px;
     font-weight: 500;
@@ -389,7 +388,7 @@ nav h5 {
 /* Styles for the h1 */
 .column h1 {
     color: white;
-    background-color: #31438b;
+    background-color: #49c44d;
     padding: 20px;
     font-size: 14px;
     font-style: normal;
@@ -710,7 +709,7 @@ footer p{
       font-size: 14px;
     }
   
-    .container, .container2 {
+    .container, .container2, .column2 {
       width: 100%;
     }
   
@@ -747,8 +746,7 @@ footer p{
   
     .box p {
       font-size: 14px;
-      display: inline-block;
-      width: 80%;
+      width: 100%;
     }
   
     .text-block, .text-block2 {
@@ -820,14 +818,16 @@ footer p{
     
     .logo a {
       font-size: 16px;
+      padding-left: 5px;
+      padding-right: 10px;
     }
   
     .navlinks {
       font-size: 12px;
-      padding-right: 80px;
+      padding-right: 20px;
       padding-bottom: 10px;
       padding-top: 10px;
-      padding-left: 15px;
+      padding-left: 10px;
       
     }
   
