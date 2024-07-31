@@ -150,7 +150,7 @@ header h5 {
 /**/
 .calendly-widget {
     position: relative;
-    z-index: 1; /* Lower z-index than navbar */
+    z-index: 10; /* Lower z-index than navbar */
 }
 
 .navbar {
@@ -766,6 +766,42 @@ footer p{
     font-style: normal;
   }
 
+
+  .floating-badge {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    background-color: #1774d8;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+    z-index: 9999;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+.floating-badge:hover {
+    background-color: #20242c; /* Darker background on hover */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    transform: translateY(-2px);
+}
+
+.floating-badge a {
+    text-decoration: none;
+}
+
+.floating-badge a:visited {
+    text-decoration: none;
+}
+
+.floating-badge a:active {
+    text-decoration: none;
+    background-color: #0056b3;
+}
 
 /**************************************************************************** Mobile-friendly styles*******************************************************************/
 @media screen and (max-width: 428px) {
