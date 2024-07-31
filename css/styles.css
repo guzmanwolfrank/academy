@@ -792,15 +792,18 @@ footer p{
 
 .floating-badge a {
     text-decoration: none;
+    color: #fff;
 }
 
 .floating-badge a:visited {
     text-decoration: none;
+    color: #fff;
 }
 
 .floating-badge a:active {
     text-decoration: none;
     background-color: #0056b3;
+    color: #fff;
 }
 
 /**************************************************************************** Mobile-friendly styles*******************************************************************/
