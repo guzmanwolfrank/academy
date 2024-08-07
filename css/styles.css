@@ -813,6 +813,7 @@ footer p{
   gap: 20px;
   max-width: 1200px;
   margin: 0 auto;
+  padding: 20px;
 }
 .leftcol,.rightcol{
   flex: 1;
@@ -823,24 +824,44 @@ footer p{
   height: auto;
 }
 .leftcol h1{
-  font-size: 14px;
+  font-size: 24px;
 
 }
 .leftcol h2{
-  font-size: 14px;
+  font-size: 18px;
 
 }
 .leftcol p{
   font-size: 14px;
-
-}
+  padding-left: 20px;
+  }
+  .leftcol p ul{
+    font-size: 14px;
+    padding-left: 20px;
+    list-style-type: square;
+    }
+  .leftcol p li{
+    font-size: 14px;
+    padding-left: 20px;
+    margin-bottom: 10px; 
+  }
 .rightcol h1{
-  font-size:14px ;
+  font-size:24px ;
 }
 .rightcol p{
   font-size: 14px;
 }
+.square-bullet-list {
+  padding-left: 20px;
+}
 
+.square-bullet-list ul {
+  list-style-type: square;
+}
+
+.square-bullet-list li {
+  margin-bottom: 10px;
+}
 
 /**************************************************************************** Mobile-friendly styles*******************************************************************/
 @media screen and (max-width: 428px) {
