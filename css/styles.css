@@ -806,6 +806,42 @@ footer p{
     color: #fff;
 }
 
+/************FREE OFFER ******************************************/
+
+.freecontainer{
+  display: flex;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.leftcol,.rightcol{
+  flex: 1;
+
+}
+.rightcol img {
+  max-width: 100%;
+  height: auto;
+}
+.leftcol h1{
+  font-size: 14px;
+
+}
+.leftcol h2{
+  font-size: 14px;
+
+}
+.leftcol p{
+  font-size: 14px;
+
+}
+.rightcol h1{
+  font-size:14px ;
+}
+.rightcol p{
+  font-size: 14px;
+}
+
+
 /**************************************************************************** Mobile-friendly styles*******************************************************************/
 @media screen and (max-width: 428px) {
     body {
@@ -1012,5 +1048,34 @@ footer p{
       margin-bottom: 40px;
     
     }
-   
+
+  .freecontainer{
+    flex-direction: column;
+    width: 80%;
   }
+
+  .leftcol, .rightcol {
+    width: 100%;
+  }
+  .leftcol h1{
+    font-size: 14px;
+
+  }
+  .leftcol h2{
+    font-size: 14px;
+
+  }
+  .leftcol p{
+    font-size: 14px;
+
+  }
+  .rightcol h1{
+    font-size:14px ;
+  }
+  .rightcol p{
+    font-size: 14px;
+  }
+
+}
+   
+  
