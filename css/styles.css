@@ -761,7 +761,7 @@ footer p{
 .info a,p,a:hover,a:visited {
     display: block;
     text-decoration: none;
-    color: #000;
+    color: #fff;
 
 }
 .contact {
@@ -1086,7 +1086,6 @@ footer p{
       width: 100%;
       height: 100%;
       border-radius: 20px;
-      border: 1px solid #fff;
       text-align: center;
       background-color: #20242c;
       margin-bottom: 40px;
