@@ -3,7 +3,7 @@
   box-sizing: border-box;
 }
 body {
-    font-family: "Poppins","Open sans", "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     line-height: 1.6;
     color: #444444;
     margin: 0;          
@@ -18,7 +18,13 @@ body {
     background-color: #20242c;
 
 }
+.containerfooter {
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+  background-color: inherit;
 
+}
 .container2 {
   display: flex;
   flex-wrap: wrap;
@@ -38,7 +44,8 @@ body {
   width: 100%;
   margin: auto;
   overflow: hidden;
-  background-color: #20242c;
+  /*background-color: #20242c;*/
+
 }
 
 .freeclass{
@@ -162,10 +169,12 @@ header h5 {
     position: relative;
     z-index: 0; /* Lower z-index than navbar */
     background-color: #20242c;
+    color: #fff;
   }
   
   .calendly-inline-widget{
     background-color: #20242c;
+    color: #fff;
 
   }
 
@@ -360,26 +369,27 @@ nav h5 {
 .text-block {
     display: block;
     width: 100%;
-    padding: 20px;
+    padding: 10px;
     box-sizing: border-box;
-    background-color: #20242c;
+    /*background-color: #20242c;*/
 }
 
 .text-block h3, .text-block h4 {
-    background-color: #20242c;
-    color: #fff;
+    background-color: inherit;
+    color: #000;
     padding: 15px;
     margin: 0 0 15px 0;
     box-sizing: border-box;
     display: block;
-    font-size: 25px;
+    font-size: 15px;
 }
 
 .text-block p {
-    color: #fff;
+    color: inherit;
     margin: 0;
     padding: 0px;
-    background-color: #20242c;
+    background-color: inherit;
+    font-size: 14px;
 }
 /**/
 .imageblock img {
@@ -517,11 +527,12 @@ nav h5 {
 /**/
 
 .column2 {
-  float: left;
-  width: 45.00%;
-  padding: 20px;
+  float: center;
+  width: 25.00%;
+  padding: 10px;
   box-sizing: border-box;
-  background-color: #20242c;
+  background-color: #cdd3df;
+  margin: 10px;
 }
 /* Clear floats after the columns */
 .row::after {
@@ -530,129 +541,31 @@ nav h5 {
   clear: both;
 }
 
-
-/***************Store***********************/
-
-
-.store-container {
-    max-width:100%;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #20242c;
-
- }
-
-.store-container h5 a {
-    color: #fff;
-    padding: 10px;
-    margin-top: 0;
-    font-size: 14px;
-    font-style: normal;
-    font-family: Roboto;
-    align-self: flex-start;
-    white-space: nowrap;
-    overflow: hidden;
-    max-width: 100%;
-    box-sizing: border-box;
-    padding-top: 10px;
-    margin-top: 10px;
-    display: inline-block;
-    text-decoration: none;
-   /* background-image: linear-gradient(to top,#2c6d0e5e , #53f708); */
-   /*box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-   display: inline-block;  /* Ensures the background color spans only the text */
-
-}
-.store-container a:hover {
-  background-color: #20242c;
-  color: #fff;
+.containerc {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Create two equal columns */
+  /*grid-template-rows: 1fr 1fr; /* Create two equal rows */
+  padding: 10px;
+  margin: 10px;
+  grid-gap: 10px; /* Adjust the value as needed */
+  /*background-color: #cdd3df;*/
 
 }
 
-/* Existing styles */
-.store-container h6 {
-    color: #fff;
-    background-color: #20242c;
-    padding: 10px;
-    margin-top: 10px;
-    font-size: 14px;
-    font-style: normal;
-    font-family: Roboto;
-    border-radius: 20px;
-    align-self: flex-start;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    max-width: 100%;
-    box-sizing: border-box;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-    display: inline-block;
+.item{
+  /*border: 1px solid rgb(109, 110, 109); /* Optional: For visualization */
+  padding: 10px;
+  background-color: #e6eaf3;
+  display: inline-block;
+  height: auto;
+}
+.item h3 {
+  background-color: inherit;
+  color: #4085cf;
+  font-weight: 500;
 }
 
-/*********** Product store css *************/
-.product-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-}
 
-.product-item {
-    border: 1px solid #ddd;
-    padding: 15px;
-    text-align: center;
-    background-color: #fff;
-    transition: box-shadow 0.3s ease;
-}
-
-.product-item:hover {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.product-image {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    margin-bottom: 10px;
-}
-
-.product-name {
-    font-size: 18px;
-    margin-bottom: 5px;
-}
-
-.product-name a {
-    font-size: 18px;
-    margin-bottom: 5px;
-    text-decoration: none;
-    color: inherit;
-}
-
-.product-name a:hover {
-    color: #fff;
-}
-
-.product-name a:visited {
-    color: inherit;
-}
-
-.product-price {
-    font-size: 16px;
-    color: #e44d26;
-    margin-bottom: 10px;
-}
-
-.add-to-cart {
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.add-to-cart:hover {
-    background-color: #45a049;
-}
 
 /** google ads **/
 
@@ -686,7 +599,7 @@ nav h5 {
 /*footer*/
 
 footer {
-  background-color: #20242c;
+  background-color: #cdd3df;;
   padding: 50px;
     color: #fff;
     font-size: 14px;
@@ -696,7 +609,6 @@ footer {
 footer p{
 
     padding: 50px;
-    color: #444444;
     font-size: 14px;
     color: #fff;
 
@@ -779,12 +691,6 @@ footer p{
     text-decoration: inherit;
     color: inherit;
 }
-
-.poppins-bold {
-    font-family: "Poppins", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-  }
 
 
   .floating-badge {
