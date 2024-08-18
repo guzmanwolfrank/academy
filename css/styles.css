@@ -22,7 +22,7 @@ body {
   width: 100%;
   margin: auto;
   overflow: hidden;
-  background-color: inherit;
+  background-color: #000;
 
 }
 .container2 {
@@ -545,26 +545,26 @@ nav h5 {
   display: grid;
   grid-template-columns: 1fr 1fr; /* Create two equal columns */
   /*grid-template-rows: 1fr 1fr; /* Create two equal rows */
-  padding: 10px;
+  padding: 5px;
   margin: 10px;
   grid-gap: 10px; /* Adjust the value as needed */
   /*background-color: #cdd3df;*/
 
 }
 
-.item{
+.item,.item p{
   /*border: 1px solid rgb(109, 110, 109); /* Optional: For visualization */
   padding: 10px;
-  background-color: #e6eaf3;
+  background-color: #cdd3df;
   display: inline-block;
   height: auto;
+  width: 100%;
 }
 .item h3 {
   background-color: inherit;
   color: #4085cf;
   font-weight: 500;
 }
-
 
 
 /** google ads **/
@@ -599,7 +599,7 @@ nav h5 {
 /*footer*/
 
 footer {
-  background-color: #cdd3df;;
+  background-color: #000;;
   padding: 50px;
     color: #fff;
     font-size: 14px;
@@ -622,6 +622,7 @@ footer p{
     text-decoration: none;
     float: left;
     justify-self: left;  
+    background-color: inherit;
 }
 
 .social-icons li {
@@ -655,6 +656,7 @@ footer p{
     display: block;
     width: 40%;
     float: left;
+    background-color: #000;
 
 }
 
@@ -668,6 +670,7 @@ footer p{
 .info {
     display: block;
     text-decoration: none;
+    background-color: #000;
 
 }
 .info a,p,a:hover,a:visited {
@@ -685,6 +688,7 @@ footer p{
     text-align: left;
     text-decoration: none;
     color: inherit;
+    background-color: #000;
 }
 .contact a:active, a:hover,a:visited,p {
     text-align: left;
@@ -853,31 +857,7 @@ footer p{
       width: 100%;
       margin: 10px 0;
     }
-  
-    .product-grid {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  
-    .product-item {
-      padding: 10px;
-    }
-  
-    .product-image {
-      height: 150px;
-    }
-  
-    .product-name {
-      font-size: 16px;
-    }
-  
-    .product-price {
-      font-size: 14px;
-    }
-  
-    .add-to-cart {
-      padding: 8px 12px;
-      font-size: 14px;
-    }
+ 
   
     .adcontainer {
       margin: 5px;
