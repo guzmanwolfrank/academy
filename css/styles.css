@@ -18,11 +18,19 @@ body {
     background-color: #20242c;
 
 }
+.container h1{
+    color: #fff;
+    text-align: center;
+    margin: 40px ;
+
+
+
+}
 .containerfooter {
   width: 100%;
   margin: auto;
   overflow: hidden;
-  background-color: #000;
+  background-color: inherit;
 
 }
 .container2 {
@@ -599,7 +607,7 @@ nav h5 {
 /*footer*/
 
 footer {
-  background-color: #000;;
+  background-color: #17191f;
   padding: 50px;
     color: #fff;
     font-size: 14px;
@@ -611,6 +619,7 @@ footer p{
     padding: 50px;
     font-size: 14px;
     color: #fff;
+    background-color: inherit;
 
 }
 
@@ -656,7 +665,7 @@ footer p{
     display: block;
     width: 40%;
     float: left;
-    background-color: #000;
+    background-color: inherit;
 
 }
 
@@ -665,12 +674,16 @@ footer p{
     display: block;
     float: right;
     width: 55%;
+    background-color: inherit;
+}
+.disclaimer p{
+  background-color: inherit;
 }
 
 .info {
     display: block;
     text-decoration: none;
-    background-color: #000;
+    background-color: inherit;
 
 }
 .info a,p,a:hover,a:visited {
@@ -682,7 +695,7 @@ footer p{
 .contact {
     text-align: left;
     text-decoration: none;
-    color: #000;
+    color: inherit;
 }
 .contact a,p {
     text-align: left;
@@ -758,6 +771,7 @@ footer p{
 }
 .leftcol h1{
   font-size: 24px;
+  
 
 }
 .leftcol h2{
@@ -877,6 +891,7 @@ footer p{
     .bottomfooter, .disclaimer {
       width: 100%;
       float: none;
+      background-color: inherit;
     }
   
     .social-icons li {
