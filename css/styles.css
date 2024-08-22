@@ -583,7 +583,7 @@ footer {
 
 /* Add these media queries at the end of your CSS file */
 
-@media screen and (max-width: 728px) {
+@media screen and (min-width: 320px) and (max-width: 1024px){
   /* iPhone Pro Max 12 width */
   
   * {
@@ -597,7 +597,6 @@ footer {
     color: #000;
     margin: 0;          
     padding: 0;
-    width: 100%;
     font-weight: 400;
 }
   /*mobile*/
