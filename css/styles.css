@@ -427,22 +427,22 @@ blockquote::after {
 
 
 /**/
-footer {
-    background-color: #17191f;
+
+.footer {
+  background-color: #17191f;
+  padding: 50px;
+  color: #fff;
+  font-size: 14px;
+  width: 100%;
+}
+
+.footer p{
     padding: 50px;
-      color: #fff;
-      font-size: 14px;
-    width: 100%;
-  }
-  
-  footer p{
-  
-      padding: 50px;
-      font-size: 14px;
-      color: #fff;
-      background-color: inherit;
-  
-  }
+    font-size: 14px;
+    color: #fff;
+    background-color: inherit;
+
+}
   
   .social-icons {
       list-style: none;
