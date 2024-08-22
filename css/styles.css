@@ -811,6 +811,7 @@ footer {
     margin:10px;
     background-image: none;
     background-color:none; /* Light grey background */
+    display: none;
   }
 .card {
     width: 100%;
@@ -1035,16 +1036,15 @@ blockquote::after {
 
   /*mobile*/
 
-footer {
+.footer {
     background-color: #17191f;
     padding: 50px;
-      color: #fff;
-      font-size: 14px;
+    color: #fff;
+    font-size: 14px;
     width: 100%;
   }
   
-  footer p{
-  
+  .footer p{
       padding: 50px;
       font-size: 14px;
       color: #fff;
