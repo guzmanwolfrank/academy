@@ -130,6 +130,7 @@
     color: #fff;
     font-size: 1.5em;
     background-image: inherit;
+    background-color: inherit;
 }
   /**/
 .button {
@@ -214,11 +215,11 @@
     display: flex;
     justify-content: space-between;
     padding: 60px;
-    padding: 60px;
+
     width: 80%;
-    margin: 0 auto;
+    margin:80px;
     background-image: url("/img/carousel-1.jpg");*/
-   /*background-color: #f0f0f0; /* Light grey background */
+   background-color: #f0f0f0; /* Light grey background */
   }
 .card {
     width: 30%;
@@ -226,6 +227,7 @@
     padding: 20px;
     border-radius: 5px;
     background-color: rgb(217, 223, 226);
+
 
 }
 
@@ -248,8 +250,9 @@
     display: flex;
     justify-content: space-between;
     padding: 60px;
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
+    background-color: #b4bcc4;
   }
   
   .text-column {
@@ -340,27 +343,96 @@
     background-color: #d2d7db;
 }
 .testimonials {
-    width: 100%;
+    width: 80%;
     height: 600px;
     margin: 0 auto;
     background-color: #fff;
+    padding-top: 20px;
 }
-.testimonials h1 {}
+.testimonials h1 {
+    font-size: 1.8em;
+    font-weight: 500;
+}
 
-.testimonials h2 {}
+.testimonials h2 {
+    font-size: 1.4em;
+    font-weight: 300;
+}
+/**/
+.testimonialsrow{
+  background-color: #d2d7db;
+  width: 30%;
+  height: 50px;
+}
 
-.testimonials h3 {}
+.quote-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 
-.testimonials h4 {}
+.quote-box {
+  width: 30%;
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+  float: left;
+  padding: 10px;
+}
+
+.quote {
+  background-color: #d2d7db;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  color: #333;
+  margin: 0px;
+  padding: 20px;
+  font-size: 20px;
+  flex: 1;
+}
+
+.name {
+  background-color: #b4bcc4;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  color: #000;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+  width: 100%; /* Ensure name fills the entire width of the quote-box */
+  text-align: center;
+}
+
+/* Reset */
+blockquote {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  font-size: 1.1em;
+  font-weight: 300;
+}
+
+blockquote::after {
+  border-color: transparent #d2d7db transparent transparent;
+  border-image: none;
+  border-style: solid;
+  border-width: 20px;
+  top: 40px;
+  content: " ";
+  display: flex;
+  right: 75%;
+  position: relative;
+}
 
 
-
+/**/
 footer {
     background-color: #17191f;
     padding: 50px;
       color: #fff;
       font-size: 14px;
-  
+    width: 100%;
   }
   
   footer p{
@@ -503,4 +575,7 @@ footer {
       background-color: #0056b3;
       color: #fff;
   }
-  
+
+
+  /*********************************************MOBILE***************************************************/
+
