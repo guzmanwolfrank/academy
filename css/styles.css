@@ -579,3 +579,614 @@ footer {
 
   /*********************************************MOBILE***************************************************/
 
+  /* Existing CSS remains the same */
+
+/* Add these media queries at the end of your CSS file */
+
+@media screen and (max-width: 728px) {
+  /* iPhone Pro Max 12 width */
+  
+  * {
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+  /*mobile*/
+  body {
+    font-family:  "Roboto", sans-serif;
+    line-height: 1.2;
+    color: #000;
+    margin: 0;          
+    padding: 0;
+    width: 100%;
+    font-weight: 400;
+}
+  /*mobile*/
+  .container {
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    /*background-color: #20242c;*/
+}
+  /*mobile*/
+  .navbar {
+    position: fixed;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 9999;
+    text-decoration: none;
+    font-size: 15px;
+}
+.navbar a {
+    color: #000;
+    font-weight: 500;
+    text-decoration: none;
+    background-image: url('#');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #fff;
+    z-index: 9999;
+    padding-left: 10px;
+    padding-right: 15px;
+    padding-top: ;
+    }
+        /*mobile*/
+
+.top{
+    position: fixed;
+    width: 100%;
+    z-index: 9999; /* Lower z-index than navbar */
+}
+  /*mobile*/
+
+.topticker-widget {
+    position: fixed;
+    z-index: 9996; /* Lower z-index than navbar */
+    width: 100%;
+}
+  /*mobile*/
+  .navlinks {
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    background-image: url('#');
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 9999;
+    padding-left: 10px;
+    padding-right: 15px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.navlinks a:active, a:hover,a:visited  {
+    color: #000;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    background-image: url('#');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #fff;
+    z-index: 9999;
+    padding-left: 10px;
+    padding-right: 15px;
+    
+}
+  /*mobile*/
+  .logo a {
+    font-size: 16px;
+    font-weight: 500;
+    padding-left: 15px;
+    padding-right: 10px;
+    padding-top: 10px;
+  }
+      /*mobile*/
+
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    text-decoration: none;
+    color: inherit;
+}
+    /*mobile*/
+
+.tradingview-widget-container {
+    flex-grow: 1;
+    width: 100%;
+}
+    /*mobile*/
+
+.hero{
+    width: 100%;
+    height: auto;
+    background-color: #333;
+    margin-top: 10px;
+    padding-top: 140px;
+    padding-left: 40px;
+    padding-bottom: 120px;
+    background-image: url(/img/chalkboard.png);*/
+    }
+
+.hero h1{
+    color: #fff;
+    font-size: 2.1em;
+    width: 100%;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.hero p {
+    color: #fff;
+    font-size: 1em;
+    background-image: inherit;
+    background-color: inherit;
+}
+  /*mobile*/
+  .button {
+    display: inline-block;
+    padding: 10px 20px 10px 10px;
+    background-color: #2db856;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease-in-out;
+  }
+    /*mobile*/
+
+  .button:hover {
+    background-color: #2db856;
+  }
+  .button1 {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #666;
+    color: #fff;
+    /*border: 1px solid black;*/
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease-in-out;
+    border: none;
+  }
+    /*mobile*/
+
+  .button1:hover {
+    background-color: #000;
+    border: none;
+    color: #fff;
+  }
+  .button2 {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #20242c;
+    color: #fff;
+    /*border: 1px solid black;*/
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    font-size: 20px;
+    font-size: 20px;
+    transition: background-color 0.3s ease-in-out;
+    border: none;
+
+  }
+    /*mobile*/
+
+  .button2:hover {
+    background-color: #2db856;
+    border: none;
+    color: #fff;
+  }
+  /*mobile*/
+  .callrow {
+    width: 100%;
+    text-align: center;
+    padding-top: 40px;
+  
+}
+.callrow h1 {
+    font-size: 1.6em;
+    color: #000;
+    font: "roboto";
+    font-weight: 400;
+
+}
+.callrow p {
+    font-size: 1.4em;
+    color: #000;
+    text-align: center;
+    font-weight: 300;
+    background-color: inherit;
+
+
+}
+  /*mobile*/
+  .card-container {
+    padding: 10px;
+    width: 100%;
+    margin:10px;
+    background-image: none;
+    background-color:none; /* Light grey background */
+  }
+.card {
+    width: 100%;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: rgb(217, 223, 226);
+    float: none;
+    height: auto;
+    margin: 0 auto;
+    flex: none;
+}
+.card h1{
+    font-size: 1.4em;
+    color: #000;
+    font-weight: 400 ;
+    /*text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);*/
+    width: 100%;
+}
+.card p{
+    font-size: 1.2em;
+    color: #000;
+    font-weight: 300;
+    background-color: inherit;
+    width: 100%;
+}
+
+    /*mobile*/
+
+  .rowcontainer {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #b4bcc4;
+  }
+  
+  .text-column {
+    flex: 1;
+    padding: 20px;
+    padding-left: 40px;
+    width: 100%;
+  }
+  .text-column h1 {
+    font-size: 2em;
+    font-weight: 400;
+    color: #000;
+    width: 100%;
+
+  }
+    /*mobile*/
+
+  .text-column h2 {
+    font-size: 1.2em;
+    font-weight: 300;
+    color: #000;
+    width: 100%;
+  }
+  .text-column h3 {
+    font-size: 2.5em;
+    font-weight: 400;
+    color: #000;
+    
+  }
+  .text-column h4 {
+    font-size: 1.2;
+    font-weight: 300;
+    width: 40%;
+  } 
+  .text-column p {
+    
+  } 
+  .image-column {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+    width: 510px;
+    height: auto;
+    display: none;
+  }
+.image-column img {
+    height: flex;
+    width: auto;
+
+}
+.consultcontainer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #d2d7db;
+    padding-top: 80px;
+    padding-bottom: 20px;
+  }
+    /*mobile*/
+
+  .left-column {
+    padding: 20px;
+    font-size: 2em;
+    padding-right: 90px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .left-column h1 {
+    font-size: 1.0em;
+    font-weight: 300;
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 80px;
+  }
+  .left-column p {
+    font-size: .60em;
+    font-weight: 300;
+    padding-left: 80px;
+    background-color: inherit;
+  }
+
+.right-column {
+    flex: 1;
+    padding: 20px;
+    font-size: 2em;
+    padding-right: 60px;
+    padding-left: 160px;
+    padding-top: 80px;
+    display: none;
+}
+  /*mobile*/
+
+.calendly-widget {
+    background-color: #d2d7db;
+    height: inherit;
+}
+.testimonials {
+    width: 100%;
+    height: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding-top: 20px;
+    padding: 10px;
+}
+.testimonials h1 {
+    font-size: 1.5em;
+    font-weight: 500;
+    padding: 10px;
+}
+
+.testimonials h2 {
+    font-size: 1.4em;
+    font-weight: 300;
+}
+  /*mobile*/
+  .testimonialsrow{
+  background-color: #d2d7db;
+  width: 30%;
+  height: 50px;
+}
+
+.quote-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 150px;
+  padding-bottom: 80px;
+}
+
+.quote-box {
+  width: 100%;
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+  float: left;
+  padding: 10px;
+  
+}
+
+.quote {
+  background-color: #d2d7db;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  color: #333;
+  margin: 0px;
+  padding: 20px;
+  font-size: 20px;
+  flex: 1;
+}
+
+.name {
+  background-color: #b4bcc4;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  color: #000;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+  width: 100%; /* Ensure name fills the entire width of the quote-box */
+  text-align: center;
+}
+  /*mobile*/
+
+/* Reset */
+blockquote {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  font-size: 1.1em;
+  font-weight: 300;
+}
+
+blockquote::after {
+  border-color: transparent #d2d7db transparent transparent;
+  border-image: none;
+  border-style: solid;
+  border-width: 20px;
+  top: 40px;
+  content: " ";
+  display: flex;
+  right: 75%;
+  position: relative;
+}
+
+
+  /*mobile*/
+
+footer {
+    background-color: #17191f;
+    padding: 50px;
+      color: #fff;
+      font-size: 14px;
+    width: 100%;
+  }
+  
+  footer p{
+  
+      padding: 50px;
+      font-size: 14px;
+      color: #fff;
+      background-color: inherit;
+  
+  }
+    /*mobile*/
+
+  .social-icons {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      color: #fff;
+      text-decoration: none;
+      float: none;
+      justify-self: none;  
+      background-color: inherit;
+  }
+  
+  .social-icons li {
+      display: inline-block;
+      margin-right: 1rem;
+    }
+    
+  .social-icons li img {
+      display: inline-block;
+      margin-right: 1rem;
+      width: 24px; /* Adjust width as needed */
+      height: 24px; /* Adjust height as needed */
+    }
+  
+  .social-icons img {
+          width: 24px; /* Adjust width as needed */
+          height: 24px; /* Adjust height as needed */
+  }
+        
+  .social-icons a {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      color: inherit;
+      text-decoration: none;
+    }
+  
+    /*mobile*/
+
+  
+  .bottomfooter{
+      display: block;
+      width: 100%;
+      float: left;
+      background-color: inherit;
+  
+  }
+  .containerfooter {
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    background-color: inherit;
+  
+  }
+    /*mobile*/
+
+  .disclaimer{
+      display: block;
+      float: right;
+      width: 100%;
+      background-color: inherit;
+  }
+  .disclaimer p{
+    background-color: inherit;
+  }
+  
+  .info {
+      display: block;
+      text-decoration: none;
+      background-color: inherit;
+  
+  }
+  .info a,p,a:hover,a:visited {
+      display: block;
+      text-decoration: none;
+      color: #fff;
+  
+  }
+  .contact {
+      text-align: left;
+      text-decoration: none;
+      color: inherit;
+  }
+  .contact a,p {
+      text-align: left;
+      text-decoration: none;
+      color: inherit;
+      background-color: #000;
+  }
+  .contact a:active, a:hover,a:visited,p {
+      text-align: left;
+      text-decoration: inherit;
+      color: inherit;
+  }
+    /*mobile*/
+
+  
+    .floating-badge {
+      position: fixed;
+      right: 20px;
+      bottom: 50px;
+      background-color: #1774d8;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+      transition: all 0.3s ease;
+      z-index: 9999;
+      text-decoration: none;
+      font-size: 1.5em;
+  }
+  
+  .floating-badge:hover {
+      background-color: #20242c; /* Darker background on hover */
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+      transform: translateY(-2px);
+  }
+  
+  .floating-badge a {
+      text-decoration: none;
+      color: #fff;
+  }
+  
+  .floating-badge a:visited {
+      text-decoration: none;
+      color: #fff;
+  }
+  
+  .floating-badge a:active {
+      text-decoration: none;
+      background-color: #0056b3;
+      color: #fff;
+  }
+
+}
