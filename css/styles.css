@@ -2,6 +2,18 @@
     max-width: 100%;
     box-sizing: border-box;
   }
+  .hover-trigger {
+    /* Styles for the div you hover over */
+  }
+  
+  .hover-content {
+    display: none;
+    /* Styles for the div that shows different text */
+  }
+  
+  .hover-trigger:hover + .hover-content {
+    display: block;
+  }
   /**/
   body {
     font-family:  "Roboto", sans-serif;
@@ -251,7 +263,7 @@
   padding: 20px;
   border-radius: 5px;
   background-color: rgb(149, 161, 167);
-
+  
 
 }
 
@@ -262,6 +274,17 @@
   /*text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);*/
 
 }
+
+/*hovercraft*/
+
+.card1:hover + .text-column h1 {
+  content: "Jumps over the lazy dog.";
+}
+.hover-target:hover + .text {
+  content: "Jumps over the lazy dog.";
+}
+
+/**/
 .card1 p{
   font-size: 1.2em;
   color: #000;
