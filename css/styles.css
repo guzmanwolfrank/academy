@@ -2,7 +2,7 @@
     max-width: 100%;
     box-sizing: border-box;
   }
-  /**/
+ /**/
   body {
     font-family:  "Roboto", sans-serif;
     line-height: 1.2;
@@ -38,7 +38,7 @@
     background-repeat: no-repeat;
     background-color: #fff;
     z-index: 9999;
-    padding-left: 10px;
+    padding-left: 15px;
     padding-right: 15px;
     padding-top: ;
     }
@@ -86,9 +86,11 @@
 .logo a {
     font-size: 16px;
     font-weight: 500;
-    padding-left: 5px;
+    padding-left: 15px;
     padding-right: 10px;
     padding-top: 10px;
+    z-index: 9999;
+
   }
     /**/
   nav {
@@ -146,7 +148,7 @@
   }
   
   .button:hover {
-    background-color: #2db856;
+    background-color: #666;
   }
   .button1 {
     display: inline-block;
@@ -166,6 +168,7 @@
     border: none;
     color: #fff;
   }
+  /**/
   .button2 {
     display: inline-block;
     padding: 10px 20px;
@@ -174,8 +177,6 @@
     /*border: 1px solid black;*/
     border-radius: 5px;
     cursor: pointer;
-    font-size: 20px;
-    font-size: 20px;
     font-size: 20px;
     transition: background-color 0.3s ease-in-out;
     border: none;
@@ -187,6 +188,47 @@
     border: none;
     color: #fff;
   }
+  /**/
+  .button3 {
+    display: inline-block;
+    padding: 10px;
+    background-color: #20242c;
+    color: #fff;
+    /*border: 1px solid black;*/
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: .9em;
+    transition: background-color 0.3s ease-in-out;
+    border: none;
+    overflow: hidden;
+    text-decoration: none;
+    size: fixed;
+
+  }
+   .button3:hover, .button3:active, {
+    background-color: #20242c;
+    border: none;
+    border-radius: inherit;
+    color: #fff;
+    font-size: .9em;
+    overflow: hidden;
+    text-decoration: none;
+    cursor: inherit;
+    size: fixed;
+
+   }
+   .button3 a {
+    text-decoration: none;
+    color: inherit;
+    background-color: inherit;
+    border: inherit;
+    border-radius: inherit;
+    font-size: inherit;
+    cursor: inherit;
+    size: fixed;
+
+   }
+
   /**/
 .callrow {
     width: 100%;
@@ -215,7 +257,6 @@
     display: flex;
     justify-content: space-between;
     padding: 60px;
-
     width: 80%;
     margin:80px;
     background-image: url("/img/carousel-1.jpg");*/
@@ -227,8 +268,6 @@
     padding: 20px;
     border-radius: 5px;
     background-color: rgb(217, 223, 226);
-
-
 }
 
 .card h1{
@@ -236,13 +275,56 @@
     color: #000;
     font-weight: 400 ;
     /*text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);*/
-
 }
 .card p{
     font-size: 1.2em;
     color: #000;
     font-weight: 300;
     background-color: inherit;
+}
+/**/
+.card1 {
+  width: 30%;
+  height: flex;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: rgb(149, 161, 167);
+  }
+
+.card1 h1{
+  font-size: 1.4em;
+  color: #000;
+  font-weight: 400 ;
+  /*text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);*/
+}
+
+/**/
+.card1 p{
+  font-size: 1.2em;
+  color: #000;
+  font-weight: 300;
+  background-color: inherit;
+}
+/**/
+.card2 {
+  width: 30%;
+  height: flex;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: rgb(121, 131, 136);
+}
+
+.card2 h1{
+  font-size: 1.4em;
+  color: #000;
+  font-weight: 400 ;
+  /*text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);*/
+}
+.card2 p{
+  font-size: 1.2em;
+  color: #000;
+  font-weight: 300;
+  background-color: inherit;
 }
 
   /**/
@@ -277,7 +359,6 @@
     font-size: 2.5em;
     font-weight: 400;
     color: #000;
-    
   }
   .text-column h4 {
     font-size: 1.2;
@@ -297,7 +378,6 @@
 .image-column img {
     height: flex;
     width: auto;
-
 }
 .consultcontainer {
     display: flex;
@@ -575,7 +655,9 @@ blockquote::after {
       background-color: #0056b3;
       color: #fff;
   }
+  /***/
 
+/**/
 
   /*********************************************MOBILE***************************************************/
 
@@ -602,7 +684,7 @@ blockquote::after {
   /*mobile*/
   .container {
     width: 100%;
-    margin: auto;
+     margin: auto;
     overflow: hidden;
     /*background-color: #20242c;*/
 }
@@ -768,8 +850,6 @@ blockquote::after {
     border-radius: 5px;
     cursor: pointer;
     font-size: 20px;
-    font-size: 20px;
-    font-size: 20px;
     transition: background-color 0.3s ease-in-out;
     border: none;
 
@@ -780,6 +860,28 @@ blockquote::after {
     background-color: #2db856;
     border: none;
     color: #fff;
+  }
+  .button3 {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #20242c;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em;
+    border: none;
+  }
+  
+  .button3:hover {
+    background-color: #20242c;
+    color: #fff;
+  }
+  
+  .button3 a, .button3 a:active {
+    text-decoration: none;
+    color: #fff;
+    background-color: #20242c;
+    font-size: .9em;
   }
   /*mobile*/
   .callrow {
@@ -807,11 +909,11 @@ blockquote::after {
   /*mobile*/
   .card-container {
     padding: 10px;
-    width: 100%;
+    width: auto;
     margin:10px;
     background-image: none;
     background-color:none; /* Light grey background */
-    display: none;
+    display: block;
   }
 .card {
     width: 100%;
@@ -819,9 +921,10 @@ blockquote::after {
     border-radius: 5px;
     background-color: rgb(217, 223, 226);
     float: none;
-    height: auto;
+    height: flex;
     margin: 0 auto;
     flex: none;
+    margin-bottom: 10px;
 }
 .card h1{
     font-size: 1.4em;
@@ -837,6 +940,57 @@ blockquote::after {
     background-color: inherit;
     width: 100%;
 }
+
+/*mobile*/
+.card1 {
+width: auto;
+height: flex;
+padding: 20px;
+border-radius: 5px;
+background-color: rgb(149, 161, 167);
+margin-bottom: 10px;
+
+}
+
+.card1 h1{
+font-size: 1.4em;
+color: #000;
+font-weight: 400 ;
+/*text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);*/
+}
+
+/**/
+.card1 p{
+font-size: 1.2em;
+color: #000;
+font-weight: 300;
+background-color: inherit;
+}
+/**/
+.card2 {
+width: auto;
+height: flex;
+padding: 20px;
+border-radius: 5px;
+background-color: rgb(123, 131, 136);
+margin-bottom: 10px;
+
+}
+
+.card2 h1{
+font-size: 1.4em;
+color: #000;
+font-weight: 400 ;
+/*text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);*/
+}
+.card2 p{
+font-size: 1.2em;
+color: #000;
+font-weight: 300;
+background-color: inherit;
+}
+
+/**/
 
     /*mobile*/
 
@@ -1188,4 +1342,6 @@ blockquote::after {
       color: #fff;
   }
 
+
+/**/
 }
