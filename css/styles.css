@@ -326,7 +326,84 @@
   font-weight: 300;
   background-color: inherit;
 }
+.card3 {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: rgb(228, 244, 252);
+  margin-bottom: 10px;
+  height: flex;
 
+}
+
+.card3 h1{
+  font-size: 1.4em;
+  color: #000;
+  font-weight: 400 ;
+  /*text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);*/
+}
+.card3 p{
+  font-size: 1.2em;
+  color: #000;
+  font-weight: 300;
+  background-color: inherit;
+}
+
+  /**/
+    
+    
+  .card4 {
+  width: 80%;
+  margin: 0 auto;
+  height: flex;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: rgb(162, 179, 187);
+  margin-bottom: 10px;
+  height: flex;
+}
+
+.card4 h1{
+  font-size: 1.4em;
+  color: #000;
+  font-weight: 400 ;
+  /*text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);*/
+}
+.card4 p{
+  font-size: 1.2em;
+  color: #000;
+  font-weight: 300;
+  background-color: inherit;
+}
+   
+  /**/
+    
+    
+  .card5 {
+  width: 80%;
+  margin: 0 auto;
+  height: flex;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: rgb(210, 213, 216);
+  margin-bottom: 10px;
+  height: flex;
+}
+
+.card5 h1{
+  font-size: 1.4em;
+  color: #000;
+  font-weight: 400 ;
+  /*text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);*/
+}
+.card5 p{
+  font-size: 1.2em;
+  color: #000;
+  font-weight: 300;
+  background-color: inherit;
+}
+   
   /**/
   .rowcontainer {
     display: flex;
@@ -655,9 +732,48 @@ blockquote::after {
       background-color: #0056b3;
       color: #fff;
   }
-  /***/
 
+  /***/
+.coursecontainer {
+  display: flex; /* Use flexbox for efficient layout */
+  flex-direction: row; /* Arrange columns horizontally */
+  justify-content: space-between; /* Distribute columns evenly with space between */
+  width: 80%; /* Ensure the container takes up the full width */
+  max-width: 800px; /* Set a maximum width for responsiveness */
+  margin: 0 auto; /* Center the container horizontally */
+}
+
+.leftcolumn2 { 
+  color: #000;
+  width: 60%;
+  height: auto;
+  display: inline-block;
+  margin: 0 auto;
+
+}
+.rightcolumn2 {
+  color: #000;
+  width: 50%;
+  float: right;
+}
+.columnA {
+    flex: 1;
+    padding: 20px;
+    display: inline-block;
+    width: 100%;
+}
 /**/
+.colcontainer {
+  display: flex;
+  width: 80%;
+  margin: auto;
+}
+
+.column1, .column2 {
+  flex: 50%;
+  background-color: inherit;
+  color: inherit;
+}
 
   /*********************************************MOBILE***************************************************/
 
@@ -1000,9 +1116,16 @@ background-color: inherit;
     padding: 60px;
     width: 100%;
     margin: 0 auto;
+    background-color:inherit;
+  }
+  .rowcontainer2 {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px;
+    width: 100%;
+    margin: 0 auto;
     background-color: #b4bcc4;
   }
-  
   .text-column {
     flex: 1;
     padding: 20px;
