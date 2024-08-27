@@ -191,26 +191,44 @@
   /**/
   .button3 {
     display: inline-block;
-    padding: 10px 20px;
+    padding: 10px;
     background-color: #20242c;
     color: #fff;
     /*border: 1px solid black;*/
     border-radius: 5px;
     cursor: pointer;
-    font-size: 14px;
+    font-size: .9em;
     transition: background-color 0.3s ease-in-out;
     border: none;
+    overflow: hidden;
+    text-decoration: none;
+    size: fixed;
 
   }
-   .button3:hover {
+   .button3:hover, .button3:active, {
     background-color: #20242c;
     border: none;
+    border-radius: inherit;
     color: #fff;
-   }
-  .button3 a {
+    font-size: .9em;
+    overflow: hidden;
     text-decoration: none;
-    color: #fff;
-  }
+    cursor: inherit;
+    size: fixed;
+
+   }
+   .button3 a {
+    text-decoration: none;
+    color: inherit;
+    background-color: inherit;
+    border: inherit;
+    border-radius: inherit;
+    font-size: inherit;
+    cursor: inherit;
+    size: fixed;
+
+   }
+
   /**/
 .callrow {
     width: 100%;
@@ -239,7 +257,6 @@
     display: flex;
     justify-content: space-between;
     padding: 60px;
-
     width: 80%;
     margin:80px;
     background-image: url("/img/carousel-1.jpg");*/
@@ -833,8 +850,6 @@ blockquote::after {
     border-radius: 5px;
     cursor: pointer;
     font-size: 20px;
-    font-size: 20px;
-    font-size: 20px;
     transition: background-color 0.3s ease-in-out;
     border: none;
 
@@ -845,6 +860,28 @@ blockquote::after {
     background-color: #2db856;
     border: none;
     color: #fff;
+  }
+  .button3 {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #20242c;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em;
+    border: none;
+  }
+  
+  .button3:hover {
+    background-color: #20242c;
+    color: #fff;
+  }
+  
+  .button3 a, .button3 a:active {
+    text-decoration: none;
+    color: #fff;
+    background-color: #20242c;
+    font-size: .9em;
   }
   /*mobile*/
   .callrow {
