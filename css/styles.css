@@ -371,14 +371,12 @@
   .card4 {
   width: 80%;
   margin: 0 auto;
-  height: flex;
   padding: 20px;
   border-radius: 5px;
   background-color: rgb(240, 240, 240);
   margin-bottom: 80px;
   height: flex;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-
 }
 
 .card4 h1{
@@ -790,18 +788,17 @@ blockquote::after {
 }
 /**/
 .colcontainer {
-  display: flex;
   width: 80%;
   margin: auto;
 }
 
 .column1 {
-  flex: 50%;
+  flex: 100%;
   background-color: inherit;
   color: inherit;
 }
 .column2 {
-  flex: 20%;
+  flex: 100%;
   background-color: inherit;
   color: inherit;
   border: 1px solid black;
@@ -1167,8 +1164,14 @@ color: #000;
 font-weight: 300;
 background-color: inherit;
 }
+.card4 {
+  width: 100%;
+}
+.columncontainer column1,.columncontainer column2 {
 
-/**/
+  flex: 100%;
+}
+/*mobile*/
 
     /*mobile*/
 
@@ -1534,6 +1537,13 @@ blockquote::after {
 .column1 {
   width: 100%;
 
+}
+.column2 {
+  width: 100%;
+  
+}
+.colcontainer {
+  width: 100%;
 }
 /**/
 }
