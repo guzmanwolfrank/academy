@@ -188,7 +188,7 @@
     border: none;
     color: #fff;
   }
-  /**/
+  /*desktop*/
   .button3 {
     display: inline-block;
     padding: 10px;
@@ -203,6 +203,7 @@
     overflow: hidden;
     text-decoration: none;
     size: fixed;
+    margin-left: 40px;
 
   }
    .button3:hover, .button3:active, {
@@ -349,6 +350,11 @@
   font-weight: 300;
   background-color: inherit;
 }
+.card3 li {
+  font-size: 1.2em;
+  font-weight: 300;
+  line-height: 1.9rem;
+}
 
   /**/
     
@@ -359,9 +365,11 @@
   height: flex;
   padding: 20px;
   border-radius: 5px;
-  background-color: rgb(162, 179, 187);
-  margin-bottom: 10px;
+  background-color: rgb(240, 240, 240);
+  margin-bottom: 80px;
   height: flex;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+
 }
 
 .card4 h1{
@@ -376,7 +384,11 @@
   font-weight: 300;
   background-color: inherit;
 }
-   
+.card4 li {
+  font-size: 1.2em;
+  font-weight: 300;
+  line-height: 1.9rem;
+}
   /**/
     
     
@@ -386,7 +398,7 @@
   height: flex;
   padding: 20px;
   border-radius: 5px;
-  background-color: rgb(210, 213, 216);
+  background-color:#fff;
   margin-bottom: 10px;
   height: flex;
 }
@@ -402,6 +414,11 @@
   color: #000;
   font-weight: 300;
   background-color: inherit;
+}
+.card5 li {
+  font-size: 1.2em;
+  font-weight: 300;
+  line-height: 1.9rem;
 }
    
   /**/
@@ -769,12 +786,47 @@ blockquote::after {
   margin: auto;
 }
 
-.column1, .column2 {
+.column1 {
   flex: 50%;
   background-color: inherit;
   color: inherit;
 }
+.column2 {
+  flex: 20%;
+  background-color: inherit;
+  color: inherit;
+  border: 1px solid black;
+  border-radius: 15px;
+  border-style: thin;
+}
+.column2 p {
+  padding: 10px;
+  width: 100%;
+  font-size: 1em;
+  line-height: .5rem;
+}
+.column3 {
+  flex: 50%;
+  background-color: inherit;
+  color: inherit;
+  border: 1px solid black;
 
+
+}
+.column3 p {
+  flex: 50%;
+  background-color: inherit;
+  color: inherit;
+  padding: 10px;
+  width:  auto;
+}
+.column4 {
+  flex: 50%;
+  background-color: inherit;
+  color: inherit;
+  border-radius: 15px;
+  border-style: thin;
+}
   /*********************************************MOBILE***************************************************/
 
   /* Existing CSS remains the same */
@@ -986,6 +1038,7 @@ blockquote::after {
     cursor: pointer;
     font-size: 0.9em;
     border: none;
+    
   }
   
   .button3:hover {
@@ -1464,7 +1517,14 @@ blockquote::after {
       background-color: #0056b3;
       color: #fff;
   }
+.column3 {
+  width: 100%;
+  flex: 1;
+}
+/*mobile*/
+.column1 {
+  width: 100%;
 
-
+}
 /**/
 }
