@@ -148,12 +148,17 @@
   }
   .button a {
     text-decoration: none;
+    color: #fff;
+    border: none;
+    background-color: inherit;
+    padding: inherit;
   }
   
   .button:hover {
     background-color: #666;
     border: none;
     color: #fff;
+    padding: inherit;
   }
   .button1 {
     display: inline-block;
