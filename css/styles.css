@@ -1005,6 +1005,7 @@ blockquote::after {
   .button:hover {
     background-color: #2db856;
   }
+  
   .button1 {
     display: inline-block;
     padding: 10px 20px;
