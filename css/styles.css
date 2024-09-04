@@ -713,6 +713,8 @@ blockquote::after {
       display: block;
       text-decoration: none;
       color: #fff;
+      background-color: inherit;
+      font-size: 1em;
   
   }
   .contact {
@@ -755,6 +757,8 @@ blockquote::after {
       background-color: #20242c; /* Darker background on hover */
       box-shadow: 0 4px 8px rgba(0,0,0,0.3);
       font-size: 1.4em;
+      cursor: pointer;
+      text-decoration: none;
     
   }
   
@@ -769,6 +773,7 @@ blockquote::after {
       text-decoration: none;
       color: #fff;
       background-color: inherit;
+      font-size: inherit;
   }
   
   .floating-badge a:active {
