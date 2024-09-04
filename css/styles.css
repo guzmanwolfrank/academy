@@ -737,7 +737,7 @@ blockquote::after {
       position: fixed;
       right: 20px;
       bottom: 50px;
-      background-color: #1774d8;
+      background-color: #2db856;
       color: white;
       padding: 10px 20px;
       border-radius: 10px;
@@ -747,30 +747,35 @@ blockquote::after {
       transition: all 0.3s ease;
       z-index: 9999;
       text-decoration: none;
-      font-size: 1.5em;
+      font-size: 1.4em;
       cursor: pointer;
   }
   
   .floating-badge:hover {
       background-color: #20242c; /* Darker background on hover */
       box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-      transform: translateY(-2px);
+      font-size: 1.4em;
+    
   }
   
   .floating-badge a {
       text-decoration: none;
       color: #fff;
+      background-color: inherit;
+      font-size: inherit;
   }
   
   .floating-badge a:visited {
       text-decoration: none;
       color: #fff;
+      background-color: inherit;
   }
   
   .floating-badge a:active {
       text-decoration: none;
-      background-color: #0056b3;
+      background-color: #2db856;
       color: #fff;
+      font-size: inherit;
   }
 
   /***/
@@ -1523,7 +1528,7 @@ blockquote::after {
       position: fixed;
       right: 20px;
       bottom: 50px;
-      background-color: #1774d8;
+      background-color: #2db856;
       color: white;
       padding: 10px 20px;
       border-radius: 10px;
@@ -1554,7 +1559,7 @@ blockquote::after {
   
   .floating-badge a:active {
       text-decoration: none;
-      background-color: #0056b3;
+      background-color: #2db856;
       color: #fff;
   }
 .column3 {
