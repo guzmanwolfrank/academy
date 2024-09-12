@@ -38,17 +38,17 @@
     font-size: 25px;
 }
 .navbar a {
-    color: #000;
+    color: #fff;
     font-weight: 500;
     text-decoration: none;
     background-image: url('#');
     background-size: contain;
     background-repeat: no-repeat;
-    background-color: #fff;
+    background-color: #20242c;
     z-index: 9999;
-    padding-left: 15px;
+    padding-left: 10px;
     padding-right: 15px;
-    padding-top: ;
+    padding-top: 10px;
     }
       /**/
 .top{
@@ -86,7 +86,7 @@
     background-image: url('#');
     background-size: contain;
     background-repeat: no-repeat;
-    background-color: inherit;
+    background-color: #20242c;
     z-index: 9999;
     padding-left: 10px;
     padding-right: 15px;
@@ -94,10 +94,10 @@
 }
   /**/
 .logo, .logo a, .logo:hover, .logo:active, .logo a:visited {
-    font-size: 16px;
-    font-weight: 500;
-    padding-left: 15px;
-    padding-right: 10px;
+    font-size: .81em;
+    font-weight: 400;
+    padding-left: 10px;
+    padding-right: 15px;
     padding-bottom: 10px;
     padding-top: 10px;
     z-index: 9999;
@@ -275,6 +275,7 @@
     padding-bottom: px;
     background-color: #fff;
     margin-top: 0px;
+    text-align: center;
   
 }
 .callrow h1 {
@@ -290,7 +291,8 @@
     text-align: center;
     font-weight: 300;
     background-color: inherit;
-
+    width: 100%;
+    text-align: center;
 
 }
 /**/
@@ -323,7 +325,7 @@
     display: flex;
     justify-content: space-between;
     padding: 60px;
-    width: 80%;
+    width: auto;
     margin:80px;
     background-image: url("/img/carousel-1.jpg");*/
    background-color: #f0f0f0; /* Light grey background */
@@ -333,20 +335,21 @@
     height: flex;
     padding: 20px;
     border-radius: 5px;
-    background-color: rgb(217, 223, 226);
+   /* background-color: rgb(217, 223, 226);*/
+   background-color: #0d1c2e7a;
 }
 
 .card h1{
     font-size: 1.4em;
-    color: #000;
+    color: #fff;
     font-weight: 400 ;
     /*text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);*/
 }
 .card p{
     font-size: 1.2em;
-    color: #000;
+    color: #fff;
     font-weight: 300;
-    background-color: inherit;
+    background-color: transparent;
 }
 /**/
 .card1 {
@@ -995,6 +998,66 @@ blockquote::after {
   border-radius: 15px;
   border-style: thin;
 }
+.faqcontainer {
+  max-width: 800px;
+  margin: 0 auto;
+  /*font-family: Arial, sans-serif;*/
+}
+.faqcontainer h1 {
+  text-align: center;
+}
+.faq-item {
+  margin-bottom: 10px;
+ border: 1px solid #ddd;
+  border-radius: 5px;*/
+}
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background-color: #fff;
+  cursor: pointer;
+  font-weight:600;
+  color: #000;
+}
+.faq-question:hover {
+ /* background-color: #b3c6d1;*/
+ background-color: #2db856;
+ color: #fff;
+}
+.faq-question::after {
+  content: '+';
+  font-size: 14px;
+  font-weight: 200;
+  transition: transform 0.3s ease;
+  color: #000;
+}
+.faq-question.active::after {
+  content: '-';
+  font-size: 18px;
+  font-weight: 200;
+}
+.faq-answer {
+  display: none;
+  padding: 15px;
+  border-top: 1px solid #ddd;
+}
+.faq-answer h1 {
+font-size: ;
+color: #000;
+font-weight: 400;
+}
+.faq-answer p {
+  color: #000;
+  font-weight: 300;
+  
+}
+
+.faq-answer.show {
+  display: block;
+}
+
   /*********************************************MOBILE***************************************************/
 
   /* Existing CSS remains the same */
