@@ -19,10 +19,18 @@
     overflow: hidden;
     /*background-color: #20242c;*/
 }
+.imgcontainer{
+  width: 100%; /* Adjust width as needed */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Ensure image fills container without distortion */
+  display: block; /* Prevent default line breaks */
+  margin: 0; /* Remove default margins */
+  padding: 0; /* Remove default padding */
+}
   /**/
 .navbar {
     position: fixed;
-    width: 100%;
+    width: 200%;
     align-items: center;
     justify-content: space-between;
     z-index: 9999;
@@ -67,32 +75,38 @@
     padding-right: 15px;
     padding-bottom: 10px;
     padding-top: 10px;
+    background-color: #20242c;
+    color: #fff;
 }
 .navlinks a:active, a:hover,a:visited  {
-    color: #000;
+    color: #fff;
     font-size: 16px;
     font-weight: 500;
     text-decoration: none;
     background-image: url('#');
     background-size: contain;
     background-repeat: no-repeat;
-    background-color: #fff;
+    background-color: inherit;
     z-index: 9999;
     padding-left: 10px;
     padding-right: 15px;
     
 }
   /**/
-.logo a {
+.logo, .logo a, .logo:hover, .logo:active, .logo a:visited {
     font-size: 16px;
     font-weight: 500;
     padding-left: 15px;
     padding-right: 10px;
+    padding-bottom: 10px;
     padding-top: 10px;
     z-index: 9999;
+    background-color: #20242c;
+    color: #fff;
 
   }
-    /**/
+  /**/
+
   nav {
     display: flex;
     align-items: center;
@@ -111,7 +125,7 @@
 .hero{
     width: 100%;
     height: auto;
-    background-color: #333;
+    background-color: #20242c;
     margin-top: 10px;
     padding-top: 140px;
     padding-left: 140px;
@@ -258,7 +272,9 @@
 .callrow {
     width: 100%;
     text-align: center;
-    padding-top: 40px;
+    padding-bottom: px;
+    background-color: #fff;
+    margin-top: 0px;
   
 }
 .callrow h1 {
@@ -274,6 +290,31 @@
     text-align: center;
     font-weight: 300;
     background-color: inherit;
+
+
+}
+/**/
+.callrow2 {
+  width: 100%;
+  text-align: center;
+  padding-bottom: 40px;
+  background-color: #20242c;
+  margin-top: 0px;
+
+}
+.callrow2 h1 {
+  font-size: 2.6em;
+  color: #fff;
+  font: "roboto";
+  font-weight: 400;
+
+}
+.callrow2 p {
+  font-size: 1.4em;
+  color: #fff;
+  text-align: center;
+  font-weight: 300;
+  background-color: inherit;
 
 
 }
@@ -352,20 +393,19 @@
   background-color: inherit;
 }
 .card3 {
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
   padding: 20px;
-  border-radius: 5px;
-  background-color: rgb(228, 244, 252);
-  margin-bottom: 10px;
-  height: flex;
+  background-color:#fff; 
+    height: flex;
 
 }
 
 .card3 h1{
-  font-size: 1.4em;
+  font-size: 2.4em;
   color: #000;
-  font-weight: 400 ;
+  font-weight: 500 ;
+  text-align: center;
   /*text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);*/
 }
 .card3 p{
@@ -379,25 +419,41 @@
   font-weight: 300;
   line-height: 1.9rem;
 }
+/**/
+.topline {
+  color: #fff;
+  background-color: #20242c;
+  width: 100%; 
+  padding-top: 40px;
+  height: auto;
+}
+.topline p {
+  width: 50%;
+  padding: 20px;
+  font-weight: 500;
+  font-size: 1em;
 
+}
   /**/
     
     
   .card4 {
-  width: 80%;
+  width: 70%;
   margin: 0 auto;
   padding: 20px;
   border-radius: 5px;
-  background-color: rgb(240, 240, 240);
-  margin-bottom: 80px;
+  background-color: #fff;
   height: flex;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
 .card4 h1{
   font-size: 1.4em;
-  color: #000;
-  font-weight: 400 ;
+  color: #fff;
+  font-weight: 500 ;
+  text-align: center;
+  background-color: #000;
+  display: inline-block;
+  padding: 10px;
   /*text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);*/
 }
 .card4 p{
@@ -415,42 +471,121 @@
     
     
   .card5 {
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
   height: flex;
   padding: 20px;
-  border-radius: 5px;
   background-color:#fff;
-  margin-bottom: 10px;
+  margin-bottom: px;
   height: flex;
+ /* background-image: url("/img/chartss.jpg");*/
 }
 
 .card5 h1{
   font-size: 1.4em;
   color: #000;
-  font-weight: 400 ;
-  /*text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);*/
+  font-weight: 500 ;
+  text-align: center;
+  background-color: #fff;
+  display: inline-block;
+  padding: 10px;
 }
 .card5 p{
   font-size: 1.2em;
   color: #000;
-  font-weight: 300;
-  background-color: inherit;
+  font-weight: 400;
+  background-color: transparent;
+  display: inline-block;
+
 }
 .card5 li {
   font-size: 1.2em;
-  font-weight: 300;
+  font-weight: 500;
   line-height: 1.9rem;
+  color:#000;
 }
-   
+   /**/
+.bluecontainer {
+    width: 100%;
+
+}
+.bluerow {
+   display: flex;
+   flex-wrap: wrap;
+   /*margin: 0px;*/
+   width: 100%;
+
+}
+.bluecolumn {
+    flex: 1;
+    padding: px;
+    width: 100%;
+}
+
+.bluecontent {
+    background-color: #0d79ac;
+    padding: 40px;
+    color: #fff;
+    font-weight: 300;
+}
+
+.bluecontent h2 {
+  font-size: 1.14em ;
+  font-weight: 500;
+  color: #fff;
+}
+.bluecontent p {
+  font-size: 1 em ;
+  font-weight: 300;
+  color: #fff;
+  background-color: inherit;
+
+}
   /**/
+.chatroomcontent {
+    background-color: #0d79ac;
+    padding: 40px;
+    color: #fff;
+    font-weight: 300;
+}
+.chatroomcontent h2 {
+  font-size: 1.14em ;
+  font-weight: 500;
+  color: #fff;
+
+}
+.chatroomcontent p{
+  font-size: 1 em ;
+  font-weight: 300;
+  color: #fff;
+  background-color: inherit;
+}
+/**/
+.marketcontent {
+  background-color: #0d79ac;
+  padding: 40px;
+  color: #fff;
+  font-weight: 300;
+}
+.marketcontent h2{
+  font-size: 1.14em ;
+  font-weight: 500;
+  color: #fff;
+}
+.marketcontent p {
+  font-size: 1 em ;
+  font-weight: 300;
+  color: #fff;
+  background-color: inherit;
+}
+/*desktop*/
   .rowcontainer {
     display: flex;
     justify-content: space-between;
     padding: 60px;
     width: 100%;
     margin: 0 auto;
-    background-color: #b4bcc4;
+    background-color: #20242c;
   }
   
   .text-column {
@@ -461,14 +596,14 @@
   .text-column h1 {
     font-size: 2em;
     font-weight: 400;
-    color: #000;
+    color: #fff;
     width: 70%;
 
   }
   .text-column h2 {
     font-size: 1.2em;
     font-weight: 300;
-    color: #000;
+    color: #fff;
     width: 70%;
   }
   .text-column h3 {
@@ -827,9 +962,10 @@ blockquote::after {
   flex: 100%;
   background-color: inherit;
   color: inherit;
-  border: 1px solid black;
+  /*border: 1px solid black;
   border-radius: 15px;
   border-style: thin;
+  width: 40%;*/
 }
 .column2 p {
   padding: 10px;
@@ -1211,6 +1347,17 @@ background-color: inherit;
 }
 /*mobile*/
 
+@media (max-width: 768px) {
+  .bluecolumn {
+      flex-basis: 50%;
+  }
+}
+
+@media (max-width: 480px) {
+  .bluecolumn {
+      flex-basis: 100%;
+  }
+}
     /*mobile*/
 
   .rowcontainer {
