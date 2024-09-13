@@ -230,7 +230,7 @@
   .button3 {
     display: inline-block;
     padding: 10px;
-    background-color: #20242c;
+    background-color: #0ca6ee;
     color: #fff;
     /*border: 1px solid black;*/
     border-radius: 5px;
@@ -517,7 +517,9 @@
    flex-wrap: wrap;
    /*margin: 0px;*/
    width: 100%;
-
+  height: auto;
+  background-color: #0ca6ee;
+  padding: 20px;
 }
 .bluecolumn {
     flex: 1;
@@ -525,59 +527,90 @@
     width: 100%;
 }
 
+.bluecontent1 {
+  background-color: #0ca6ee;
+  padding: 20px;
+  color: #fff;
+  font-weight: 300;
+  /*border-top: 1px solid #000; /* Top border, 1 pixel thick, black */
+ /* border-bottom: 1px solid #000; /* Bottom border, 1 pixel thick, black */
+ /* border-left: 1px solid #fff;*/
+  padding-top: 10px; /* Adjust the padding value as needed */
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.bluecontent1 h2 {
+  font-size: 1em ;
+  font-weight: 300;
+  color: #fff;
+}
+.bluecontent1 p {
+  font-size: .75 em ;
+  font-weight: 500;
+  color: #fff;
+  background-color: inherit;}
+
 .bluecontent {
-    background-color: #0d79ac;
-    padding: 40px;
+    background-color: #0ca6ee;
+    padding: 20px;
     color: #fff;
     font-weight: 300;
+    /*border-top: 1px solid #000; /* Top border, 1 pixel thick, black */
+   /* border-bottom: 1px solid #000; /* Bottom border, 1 pixel thick, black */
+    border-left: 1px solid #fff;
+    padding-top: 10px; /* Adjust the padding value as needed */
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .bluecontent h2 {
-  font-size: 1.14em ;
-  font-weight: 500;
+  font-size: 1em ;
+  font-weight: 300;
   color: #fff;
 }
 .bluecontent p {
-  font-size: 1 em ;
-  font-weight: 300;
+  font-size: .75 em ;
+  font-weight: 500;
   color: #fff;
   background-color: inherit;
 
 }
   /**/
 .chatroomcontent {
-    background-color: #0d79ac;
+    background-color: #0ca6ee;
     padding: 40px;
     color: #fff;
-    font-weight: 300;
+    font-weight: 500;
 }
 .chatroomcontent h2 {
   font-size: 1.14em ;
-  font-weight: 500;
+  font-weight: 300;
   color: #fff;
 
 }
 .chatroomcontent p{
   font-size: 1 em ;
-  font-weight: 300;
+  font-weight: 500;
   color: #fff;
   background-color: inherit;
 }
 /**/
 .marketcontent {
-  background-color: #0d79ac;
+  background-color: #0ca6ee;
   padding: 40px;
   color: #fff;
   font-weight: 300;
 }
 .marketcontent h2{
   font-size: 1.14em ;
-  font-weight: 500;
+  font-weight: 300;
   color: #fff;
 }
 .marketcontent p {
   font-size: 1 em ;
-  font-weight: 300;
+  font-weight: 500;
   color: #fff;
   background-color: inherit;
 }
