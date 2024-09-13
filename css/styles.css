@@ -709,16 +709,22 @@
 .calendly-widget {
     background-color: #d2d7db;
 }
+.containertestimonials {
+  width: 100%;
+  background-color: #ececec;
+}
 .testimonials {
     width: 80%;
     height: 600px;
     margin: 0 auto;
-    background-color: #fff;
+    background-color:inherit;
     padding-top: 20px;
+    align-content: center;
 }
 .testimonials h1 {
     font-size: 1.8em;
     font-weight: 500;
+    width: 80%;
 }
 
 .testimonials h2 {
@@ -904,7 +910,83 @@ blockquote::after {
       text-decoration: inherit;
       color: inherit;
   }
+
+  /**/
+  #contact1 {
+    padding: 50px 0;
+    background-color: #fff;
+    
+  }
   
+  .container1 {
+    height: auto;
+    max-width: 80%;
+    margin: 0 auto;
+    background-color: #fff;
+    position: fixed;
+    right: 10px;
+    top: 150px;
+    background-color: #fff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+    z-index: 9999;
+    text-decoration: none;
+    font-size: 1.4em;
+    cursor: pointer;
+  }
+  .container1 h2{
+    color: #000;
+    font-size: .8em;
+  }
+  .contact-info1 {
+    margin-bottom: 20px;
+    color: #000;
+    background-color: inherit;
+
+  }
+  .contact-info1 h2{
+    color: #000;
+  }
+  
+  .map1 {
+    height: 100px;
+    margin-bottom: 10px;
+    background-color: inherit;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial;
+    background-color: #fff;
+  }
+  
+  input, textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    background-color: inherit;
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  buttonS{
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: .92em;
+    border-radius: 5px;
+
+  }
+
+  /**/
   
     .floating-badge {
       position: fixed;
@@ -1031,10 +1113,17 @@ blockquote::after {
   border-radius: 15px;
   border-style: thin;
 }
+.faq{
+  width: 100%;
+  background-color: #ccc;
+  padding: 50px;
+  padding-bottom: 80px;
+}
 .faqcontainer {
   max-width: 800px;
   margin: 0 auto;
   /*font-family: Arial, sans-serif;*/
+  background-color: inherit;
 }
 .faqcontainer h1 {
   text-align: center;
@@ -1253,13 +1342,14 @@ font-weight: 400;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 1em;
+    font-size: .5em;
     transition: background-color 0.3s ease-in-out;
   }
   .button a{
     text-decoration: none;
     color: #fff;
     background-color: inherit;
+    font-size: inherit;
   }
     /*mobile*/
 
@@ -1875,5 +1965,45 @@ blockquote::after {
         border-radius: 5px;
         overflow: hidden;
     }
+      /*mobile*/
+  .container1 {
+    height: auto;
+    max-width: 40%;
+    margin: 0 auto;
+    background-color: #fff;
+    position: fixed;
+    right: 10px;
+    top: 150px;
+    background-color: #fff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+    z-index: 9999;
+    text-decoration: none;
+    font-size: 1.4em;
+    cursor: pointer;
+      }
+
+      /*mobile*/
+        
+  .map1 {
+    height: 100px;
+    margin-bottom: 10px;
+    background-color: inherit;
+    display: none;
+  }
+  buttonS{
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: .72em;
+    border-radius: 5px;
+  }
   }
 }
