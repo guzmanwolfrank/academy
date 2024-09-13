@@ -1164,11 +1164,13 @@ blockquote::after {
   display: none;
   padding: 15px;
   border-top: 1px solid #ddd;
+  background-color: #fff
 }
 .faq-answer h1 {
 font-size: ;
 color: #000;
 font-weight: 400;
+background-color: #fff;
 }
 .faq-answer p {
   color: #000;
