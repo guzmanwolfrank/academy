@@ -8,6 +8,16 @@ body {
   box-sizing: border-box;
   margin-top: 40px;
 
+} 
+ nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  text-decoration: none;
+  color: inherit;
 }
 
 .navbar {
@@ -20,14 +30,18 @@ body {
   top: 0;
   width: 100%;
   left: 0;
-  padding: 10px;
+  padding: 20px;
   font-family: 'Roboto', Arial, sans-serif;
+  z-index: 9999;
 }
 
 .logo {
   font-size: 24px;
   padding: 10px;
   font-weight: 500;
+  border: 2px solid #fff;
+  border-radius: 10px;
+
 }
 
 .login {
@@ -38,7 +52,22 @@ body {
   margin-right: 20px;
   background-color:#20242c;
   color: #fff;
+  }
+  .top{
+      position: fixed;
+      width: 100%;
+      z-index: 9999; /* Lower z-index than navbar */
+      height: auto;
+      top: 90px;
+      left: 0;
+      right: 0                                                                                                                                                                                                                                                                                                                                ;
+  
 
+  }
+  .topticker {
+    position: fixed;
+    z-index: 9996; /* Lower z-index than navbar */
+    width: 100%;
   }
 .container {
   width: 100%;
@@ -431,6 +460,9 @@ background-color: #fff;
 .faq-answer.show {
   display: block;
 }
+/************************contact**************************************/
+
+
 /*******End FAQ Desktop version********/
 /**footer**/
 .footer {
@@ -521,7 +553,7 @@ background-color: inherit;
     position: fixed;
     right: 20px;
     top: 150px;
-    background-color: #2db856;
+    background-color: #0e8cbe;
     color: white;
     padding: 10px 20px;
     border-radius: 10px;
@@ -560,9 +592,16 @@ background-color: inherit;
 
 .floating-badge a:active {
     text-decoration: none;
-    background-color: #2db856;
+    background-color: #0e8cbe;
     color: #fff;
     font-size: inherit;
 }
+/*****MOBILE********************************************************************************************************************************************************************************************/
+
+
+
+
+
+
 
 }

@@ -12,11 +12,56 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
+
+
 <nav class="navbar">
   <div class="logo">Futures Classes</div>
   <div class="login">Login</div>
-</nav>
+    </nav>
+<!---End ofTop NavBar and Tradingview Widget-->
+<div class="container"><!---Top NavBar and Tradingview Widget-->
+  <div class="top"> <div class="topticker"><!-- TradingView Widget BEGIN -->
+  <!-- TradingView Widget BEGIN -->
+  <div class="tradingview-widget-container">
+    <div class="tradingview-widget-container__widget"></div>
+    <div class="tradingview-widget-copyright"></div>
+    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+    {
+    "symbols": [
+      {
+        "proName": "FOREXCOM:SPXUSD",
+        "title": "S&P 500 Index"
+      },
+      {
+        "proName": "FOREXCOM:NSXUSD",
+        "title": "US 100 Cash CFD"
+      },
+      {
+        "proName": "FX_IDC:EURUSD",
+        "title": "EUR to USD"
+      },
+      {
+        "proName": "BITSTAMP:BTCUSD",
+        "title": "Bitcoin"
+      },
+      {
+        "proName": "BITSTAMP:ETHUSD",
+        "title": "Ethereum"
+      }
+    ],
+    "showSymbolLogo": true,
+    "isTransparent": false,
+    "displayMode": "regular",
+    "colorTheme": "light",
+    "locale": "en"
+  }
+    </script>
+  </div>
+  <!-- TradingView Widget END -->
+      <!-- TradingView Widget END --></div>  </div></div>
+  
 <body>
+  
 <!---->
 <div class="container">
       <div class="hero">
@@ -30,6 +75,8 @@
           <img src="/img/Student3_v4.png" alt="Placeholder Image"></div>
       </div>
   </div>
+
+
 <!---->
 <div class="container">
   <div class="sectioncontainer">
@@ -216,6 +263,7 @@
   </div>
   </div>
 <!--end testimonials section-->
+
 <!--Footer-->
 <div class="footer">
  
