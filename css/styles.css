@@ -27,6 +27,7 @@ body {
 .logo {
   font-size: 24px;
   padding: 10px;
+  font-weight: 500;
 }
 
 .login {
@@ -47,15 +48,17 @@ body {
 .hero {
   display: flex;
   justify-content: space-between;
-  padding: 100px;
+  padding: 80px;
   width: 100%;
   margin: auto 0;
+  height: 500px;
+  margin-bottom: 20px;
 }
 
 .hero-column {
   flex: 1; /* Allow the text column to expand to fill available space */
   width: 100%;
-  
+  padding-bottom: 50px;
 }
 .hero-column h1 {
   color: #000;
@@ -77,8 +80,8 @@ body {
   width: 50%; /* Set the width of the image column */
 }
 .heroimage-column img{
-width:auto;
-height: 70%;
+width:400px;
+height: auto;
 }
 .button1, a, .button1 :visited , .button1:hover{
   text-decoration: none;
@@ -87,4 +90,54 @@ height: 70%;
   display: inline-block;
   padding: 8px;
   border-radius: 15px;
+}
+.sectioncontainer {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #20242c;
+}
+.text-column {
+  flex: 1;
+  padding: 20px;
+  padding-left: 40px;
+}
+.text-column h1 {
+  font-size: 2em;
+  font-weight: 400;
+  color: #fff;
+  width: 70%;
+
+}
+.text-column h2 {
+  font-size: 1.2em;
+  font-weight: 300;
+  color: #fff;
+  width: 70%;
+}
+.text-column h3 {
+  font-size: 2.5em;
+  font-weight: 400;
+  color: #000;
+}
+.text-column h4 {
+  font-size: 1.2;
+  font-weight: 300;
+  width: 40%;
+} 
+.text-column p {
+  
+} 
+.image-column {
+  flex: 1;
+  text-align: center;
+  padding: 20px;
+  width: 510px;
+  height: auto;
+}
+.image-column img {
+  height: flex;
+  width: auto;
 }
