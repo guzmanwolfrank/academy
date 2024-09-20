@@ -182,7 +182,6 @@ height: auto;
   display: inline-block;
   padding: 8px;
   border-radius: 15px;
-  border: #000 1px;
 }
 
 .button2, a, .button2 :visited , .button2:hover{
@@ -192,7 +191,7 @@ height: auto;
   display: inline-block;
   padding: 8px;
   border-radius: 15px;
-  border: #000 1px;
+
 }
 .button2:visited {
   color: #20242c; /* Keep color unchanged for visited links */
@@ -334,7 +333,6 @@ font-size: 3em;
   display: inline-block;
   padding: 8px;
   border-radius: 15px;
-  border: #000 1px;
 }
 .consultcontainer {
   display: flex;
@@ -999,9 +997,7 @@ background-color: inherit;
   }
 /*mobile*/
   .about {
-    background-color: #0e8cbe;
-    border-radius: none;
-  
+    background-color: #0e8cbe; 
   }
 
   /* Footer mobile*/
