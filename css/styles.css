@@ -433,7 +433,7 @@ font-size: 3em;
 /*****/
 .container-testimonials {
   width: 100%;
-  background-color: #ececec;
+  background-color: #fff;
   padding: 20px;
 }
 .testimonials {
@@ -938,7 +938,7 @@ background-color: inherit;
 
   /* Testimonials section */
   .containertestimonials {
-    background-color: #ececec;
+    background-color: #fff;
     padding: 20px 0;
     overflow: hidden;
   }
@@ -996,10 +996,24 @@ background-color: inherit;
     overflow-x: hidden;
     word-wrap: break-word;
   }
+  .contact h2 {
+    text-align: center;
+    margin: auto 0;
+    width: 100%;
+    align-content: center;
+  }
 /*mobile*/
   .about {
-    background-color: #0e8cbe; 
-  }
+    background-color: #0e8cbe;
+    border-radius: 0px; 
+    height: 100%;
+    margin-bottom: -60px;
+    padding-bottom: 100px;
+    padding-top: 40px;
+}
+.about h1 {
+  font-size: 1.2em;
+}
 
   /* Footer mobile*/
   .footer {
