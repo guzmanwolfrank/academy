@@ -668,3 +668,175 @@ background-color: inherit;
 }
 /*****MOBILE********************************************************************************************************************************************************************************************/
 
+@media screen and (max-width: 768px) {
+  /* General styles */
+  body {
+    margin-top: 60px;
+  }
+
+  /* Navigation */
+  .navbar {
+    padding: 10px;
+  }
+
+  .logo {
+    font-size: 18px;
+    padding: 5px;
+  }
+
+  .login {
+    font-size: 14px;
+    padding: 5px;
+    margin-right: 10px;
+  }
+
+  /* Top ticker */
+  .top {
+    top: 60px;
+  }
+
+  /* Hero section */
+  .hero {
+    flex-direction: column;
+    padding: 20px;
+    height: auto;
+    padding-top: 100px;
+    padding-bottom: 40px;
+  }
+
+  .hero-column h1 {
+    font-size: 2em;
+    width: 100%;
+  }
+
+  .hero-column h2,
+  .hero-column p {
+    width: 100%;
+  }
+
+  .heroimage-column {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .heroimage-column img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Section containers */
+  .sectioncontainer,
+  .section2container {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .text-column,
+  .image-column {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .text-column h1,
+  .text-column h2,
+  .text-column h3,
+  .text-column h4 {
+    width: 100%;
+  }
+
+  /* Services */
+  .cardcontainer {
+    flex-direction: column;
+    margin: 20px;
+  }
+
+  .card {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  /* Consult container */
+  .consultcontainer {
+    flex-direction: column;
+    padding-top: 40px;
+  }
+
+  .left-column,
+  .right-column {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .left-column h1,
+  .left-column p {
+    padding-left: 0;
+  }
+
+  /* Testimonials */
+  .quote-box {
+    width: 100%;
+  }
+
+  /* Contact and About */
+  .cacontainer {
+    flex-direction: column;
+    padding-top: 40px;
+  }
+
+  .contact,
+  .about {
+    width: 100%;
+    padding: 20px;
+  }
+
+  /* Footer */
+  .footer {
+    padding: 20px;
+  }
+
+  .bottomfooter,
+  .disclaimer {
+    width: 100%;
+    float: none;
+  }
+
+  /* Floating badge */
+  .floating-badge {
+    right: 10px;
+    top: 70px;
+    font-size: 1em;
+    padding: 5px 10px;
+  }
+}
+
+/* Additional styles for very small screens (e.g., iPhone 12 Pro Max) */
+@media screen and (max-width: 428px) {
+  .hero-column h1 {
+    font-size: 1.5em;
+  }
+
+  .hero-column h2 {
+    font-size: 1.2em;
+  }
+
+  .card h1 {
+    font-size: 1.2em;
+  }
+
+  .faq-question {
+    font-size: 0.9em;
+  }
+
+  .faq-answer {
+    font-size: 0.8em;
+  }
+
+  .social-icons li {
+    margin-right: 0.5rem;
+  }
+
+  .social-icons img {
+    width: 20px;
+    height: 20px;
+  }
+}
