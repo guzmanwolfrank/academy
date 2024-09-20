@@ -69,7 +69,6 @@ html {
 
 .logo  {
   font-size: 18px;
-  padding: 10px;
   font-weight: 400;
   border: 2px solid #fff;
   border-radius: 10px;
@@ -87,8 +86,11 @@ html {
   padding: 8px;
   border-radius: 5px;
   margin-right: 20px;
-  background-color:#20242c;
+  background-color:#0e8cbe;
   color: #fff;
+  }
+  .login:active, .login :hover, .login:visited, .login a {
+    background-color: inherit;
   }
 
 .top{
