@@ -667,11 +667,14 @@ background-color: inherit;
     font-size: inherit;
 }
 /*****MOBILE********************************************************************************************************************************************************************************************/
-
 @media screen and (max-width: 768px) {
   /* General styles */
   body {
     margin-top: 60px;
+  }
+
+  .container {
+    overflow: hidden;
   }
 
   /* Navigation */
@@ -772,21 +775,89 @@ background-color: inherit;
     padding-left: 0;
   }
 
-  /* Testimonials */
-  .quote-box {
-    width: 100%;
+  /* Fix for overlapping sections */
+  .faq,
+  .containertestimonials,
+  .cacontainer {
+    position: relative;
+    z-index: auto;
+    margin-bottom: 20px;
   }
 
-  /* Contact and About */
+  /* FAQ section */
+  .faq {
+    background-color: #fff;
+    padding: 20px 0;
+  }
+
+  .faqcontainer {
+    overflow-x: hidden;
+    word-wrap: break-word;
+  }
+
+  /* Testimonials section */
+  .containertestimonials {
+    background-color: #ececec;
+    padding: 20px 0;
+    overflow: hidden;
+  }
+
+  .testimonials {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    word-wrap: break-word;
+  }
+
+  .testimonials h1 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+  }
+
+  .testimonials h2 {
+    font-size: 1em;
+    margin-bottom: 20px;
+  }
+
+  .quotecontainer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .quote-box {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .quote {
+    font-size: 0.9em;
+  }
+
+  .name {
+    font-size: 0.8em;
+  }
+
+  /* Contact and About section */
   .cacontainer {
     flex-direction: column;
-    padding-top: 40px;
+    background-color: #fff;
+    padding: 20px 0;
   }
 
   .contact,
   .about {
     width: 100%;
     padding: 20px;
+    margin: 0 0 20px 0;
+    overflow-x: hidden;
+    word-wrap: break-word;
+  }
+
+  .about {
+    background-color: #0e8cbe;
+    border-radius: 10px;
   }
 
   /* Footer */
@@ -798,6 +869,7 @@ background-color: inherit;
   .disclaimer {
     width: 100%;
     float: none;
+    margin-bottom: 20px;
   }
 
   /* Floating badge */
@@ -831,6 +903,22 @@ background-color: inherit;
     font-size: 0.8em;
   }
 
+  .testimonials h1 {
+    font-size: 1.3em;
+  }
+
+  .testimonials h2 {
+    font-size: 0.9em;
+  }
+
+  .quote {
+    font-size: 0.8em;
+  }
+
+  .name {
+    font-size: 0.7em;
+  }
+
   .social-icons li {
     margin-right: 0.5rem;
   }
@@ -838,5 +926,16 @@ background-color: inherit;
   .social-icons img {
     width: 20px;
     height: 20px;
+  }
+
+  .faq,
+  .containertestimonials,
+  .cacontainer {
+    padding: 15px 0;
+  }
+
+  .contact,
+  .about {
+    padding: 15px;
   }
 }
