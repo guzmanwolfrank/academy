@@ -64,6 +64,7 @@ html {
   padding: 20px;
   font-family: 'Roboto', Arial, sans-serif;
   z-index: 9999;
+
 }
 
 .logo  {
@@ -97,7 +98,7 @@ html {
       height: auto;
       top: 90px;
       left: 0;
-      right: 0                                                                                                                                                                                                                                                                                                                                ;
+      right: 0;                                                                                                                                                                                                                                                                                                                                ;
   
 
   }
@@ -105,6 +106,8 @@ html {
     position: fixed;
     z-index: 9996; /* Lower z-index than navbar */
     width: 100%;
+    height: auto ;
+    
   }
 .container {
   width: 100%;
@@ -150,18 +153,17 @@ html {
 .hero-column h2 {
   color: #0e8cbe;
   font-size: 1.4 em;
-  width: 50%;
+  width: 100%;
 }
 .hero-column h3 {
-  color: #000;
-  font-size: 14px;
-  width: 50%;
-  font-weight: 400;
+  color: #666;
+  font-size: 16px;
+  width: 100%;
 }
 .hero-column p{
   color: #666;
   font-size: 16px;
-  width: 50%;
+  width: 100%;
 }
 
 .heroimage-column {
@@ -171,14 +173,40 @@ html {
 width:400px;
 height: auto;
 }
-.button1, a, .button1 :visited , .button1:hover{
+
+/***desktop**/
+.button1,.button1 a, .button1 :visited , .button1:hover{
   text-decoration: none;
   color: #fff;
   background-color: #20242c;
   display: inline-block;
   padding: 8px;
   border-radius: 15px;
+  border: #000 1px;
 }
+
+.button2, a, .button2 :visited , .button2:hover{
+  text-decoration: none;
+  color: #fff;
+  background-color: #20242c;
+  display: inline-block;
+  padding: 8px;
+  border-radius: 15px;
+  border: #000 1px;
+}
+.button2:visited {
+  color: #20242c; /* Keep color unchanged for visited links */
+}
+
+.button2:hover {
+  background-color: #20242c; /* Change background color on hover */
+}
+
+.button2:active {
+  background-color: #20242c; /* Change background color on click */
+  color: #fff;
+}
+
 .sectioncontainer {
   display: flex;
   justify-content: space-between;
@@ -299,6 +327,15 @@ font-size: 3em;
   padding: 10px;
   border-radius: 10px;
 }
+.button,.button a, .button :visited , .button:hover{
+  text-decoration: none;
+  color: #fff;
+  background-color: #20242c;
+  display: inline-block;
+  padding: 8px;
+  border-radius: 15px;
+  border: #000 1px;
+}
 .consultcontainer {
   display: flex;
   justify-content: space-between;
@@ -341,13 +378,46 @@ font-size: 3em;
   padding-top: 80px;
   width: 60%;
 }
+.right-column {
+  flex: 1;
+  padding: 20px;
+  font-size: 2em;
+  padding-right: 60px;
+  padding-left: 160px;
+  padding-top: 80px;
+  width: 60%;
+  @media only screen and (orientation: portrait) {
+    flex: 0 0 100%; /* Adjust flex property for portrait mode */
+  }
+}
+
+.left-column {
+  flex: 1;
+  padding: 20px;
+  font-size: 2em;
+  padding-right: 90px;
+  width: 40%;
+  margin: 0 auto;
+  @media only screen and (orientation: portrait) {
+    flex: 0 0 100%; /* Adjust flex property for portrait mode */
+  }
+}
 .right-column img {
   width: 100%;
-  height: auto;
-  border-radius: 10px;
-  margin: 80px auto; /* Centers the image horizontally */
-  padding-top: 0px;
+  height: auto; /* Maintain aspect ratio */
+  @media only screen and (orientation: portrait) {
+    display: block; /* Ensure the image is displayed as a block element */
+    margin: 0 auto; /* Center the image horizontally */
+    width: 100%;
+    height: auto;
+    flex: 0 0 100%;
+  } 
 }
+
+
+
+
+
 .calendly-widget {
  /* background-color: #d2d7db;*/
  background-color: #fff;
@@ -759,12 +829,17 @@ background-color: inherit;
     margin-right: 0px;
   }
 
-  /* Top ticker */
+  /* Top */
   .top {
     top: 60px;
     z-index: 9998;
   }
 
+  /* Top ticker */
+  .topticker {
+    z-index: 9999;
+    top: 80px;
+  }
   /* Hero section */
   .hero {
     flex-direction: column;
@@ -906,7 +981,7 @@ background-color: inherit;
     font-size: 0.8em;
   }
 
-  /* Contact and About section */
+  /* Contact and About section - mobile */
   .cacontainer {
     flex-direction: column;
     background-color: #fff;
@@ -916,15 +991,17 @@ background-color: inherit;
   .contact,
   .about {
     width: 100%;
-    padding: 20px;
-    margin: 0 0 20px 0;
+    padding: 10px;
+    padding-bottom: 40px;
+    margin: auto 0;
     overflow-x: hidden;
     word-wrap: break-word;
   }
-
+/*mobile*/
   .about {
     background-color: #0e8cbe;
-    border-radius: 10px;
+    border-radius: none;
+  
   }
 
   /* Footer mobile*/
@@ -1025,8 +1102,4 @@ background-color: inherit;
     padding: 15px 0;
   }
 
-  .contact,
-  .about {
-    padding: 15px;
-  }
 }
