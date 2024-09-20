@@ -3,12 +3,21 @@
   box-sizing: border-box;
   font-family: 'Roboto';
 }
+
+
 body {
+  min-height: 100vh;
+  position: relative;
+  margin: 0;
+  padding-bottom: [footer-height]; /* Replace [footer-height] with the actual height of your footer */
   max-width: 100%;
   box-sizing: border-box;
   margin-top: 40px;
+}
 
-} 
+html {
+  height: 100%;
+}
  nav {
   display: flex;
   align-items: center;
@@ -73,6 +82,7 @@ body {
   width: 100%;
   overflow: hidden;
   margin: auto 0;
+  position: flex;
 }
 .hero {
   display: flex;
@@ -129,6 +139,7 @@ height: auto;
   width: 100%;
   margin: 0 auto;
   background-color: #20242c;
+  
 }
 .section2container {
   display: flex;
@@ -536,14 +547,14 @@ buttonS{
 
 /**footer**/
 .footer {
-  background-color: #17191f;
+  background-color: #20242c;
   padding: 50px;
   color: #fff;
   font-size: 14px;
   width: 100%;
-  margin: auto 0;
-  bottom: 0;
-  right: 0;
+  margin: 0;
+  position: absolute;
+ 
 }
 .footer p{
   padding: 50px;
@@ -576,7 +587,8 @@ buttonS{
 }
 .social-icons li {
   display: inline-block;
-  margin-right: 1rem;
+  margin-right: rem;
+  background-color: inherit;
 }
 .social-icons li img {
   display: inline-block;
@@ -587,19 +599,23 @@ buttonS{
 .social-icons img {
       width: 24px; /* Adjust width as needed */
       height: 24px; /* Adjust height as needed */
+      background-color: inherit;
 }  
 .social-icons a {
   list-style: none;
   padding: 0;
   margin: 0;
   color: inherit;
+  color: inherit;
   text-decoration: none;
+  background-color: inherit;
 }
 .disclaimer{
   display: block;
   float: right;
   width: 55%;
   background-color: inherit;
+  margin: 0;
 }
 .disclaimer p{
 background-color: inherit;
@@ -609,6 +625,7 @@ background-color: inherit;
   display: block;
   text-decoration: none;
   background-color: inherit;
+  margin: 0;
 
 }
 .info a,p,a:hover,a:visited {
@@ -866,10 +883,11 @@ background-color: inherit;
 
   /* Footer mobile*/
   .footer {
-    padding: 20px;
-    bottom: 0px;
-    left: 0;
+    padding: 20;
+    margin: 0;
+    position: absolute;
     width: 100%;
+    box-sizing: border-box;
   }
 
   .bottomfooter,
