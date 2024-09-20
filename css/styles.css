@@ -82,6 +82,8 @@ body {
   margin: auto 0;
   height: 500px;
   margin-bottom: 20px;
+  padding-top: 180px;
+  padding-bottom: 480px;
 }
 
 .hero-column {
@@ -461,9 +463,77 @@ background-color: #fff;
   display: block;
 }
 /************************contact**************************************/
+.cacontainer{
+  display: flex;
+  justify-content: center;
+  margin: auto 0;
+  width: 100%;
+  padding-top: 60px;
+}
 
 
-/*******End FAQ Desktop version********/
+.contact {
+  flex: 1;
+  padding: 80px;
+  width: 40%;
+  margin: auto 0;
+}
+
+.contact h2{
+  color: #0e8cbe;
+  font-size: 2.2em;
+  padding-bottom: 40px;
+}
+.about{
+  flex: 1;
+  padding: 80px;
+  width: 40%;
+  margin: auto 0;
+  background-color: #0e8cbe;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+.about h1{
+  color: #fff;
+}
+.about p {
+  color: #fff;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  font-family: Arial;
+  background-color: #fff;
+}
+
+input, textarea {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  background-color: inherit;
+  color: #000;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+buttonS{
+  padding: 10px 20px;
+  background-color: #0e8cbe;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: .92em;
+  border-radius: 5px;
+
+}
+/*******End contact Desktop version********/
+/***about******/
+
+
+
+
 /**footer**/
 .footer {
   background-color: #17191f;
@@ -598,10 +668,3 @@ background-color: inherit;
 }
 /*****MOBILE********************************************************************************************************************************************************************************************/
 
-
-
-
-
-
-
-}
