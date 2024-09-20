@@ -1,3 +1,23 @@
+/*
+ * Author: GhostOkamiiii  // @guzmanwolfrank : Github
+ * Created: [2024]
+ * Description: Main stylesheet for [FC Website]
+ * Version: 1.0
+ * Location: New Jersey / San Francisco / New York
+
+
+____  _               _    ___  _                  _ _ _ 
+ / ___|| |__   ___  ___| |_ / _ \| | ____ _ _ __ ___ (_|_|_)
+| |  _ | '_ \ / _ \/ __| __| | | | |/ / _` | '_ ` _ \| | | |
+| |_| || | | | (_) \__ \ |_| |_| |   < (_| | | | | | | | | |
+ \____||_| |_|\___/|___/\__|\___/|_|\_\__,_|_| |_| |_|_|_|_|
+
+
+
+
+ */
+
+
 * {
   max-width: 100%;
   box-sizing: border-box;
@@ -14,6 +34,8 @@ body {
   box-sizing: border-box;
   margin-top: 40px;
 }
+
+
 
 html {
   height: 100%;
@@ -44,15 +66,20 @@ html {
   z-index: 9999;
 }
 
-.logo {
-  font-size: 24px;
+.logo  {
+  font-size: 18px;
   padding: 10px;
-  font-weight: 500;
+  font-weight: 400;
   border: 2px solid #fff;
   border-radius: 10px;
+  background-color: #0e8cbe;
+  
+}
+.logo :active, .logo :hover, .logo:visited, .logo a {
+  background-color: #0e8cbe;
+
 
 }
-
 .login {
   font-size: 16px;
   text-decoration: none;
@@ -62,7 +89,8 @@ html {
   background-color:#20242c;
   color: #fff;
   }
-  .top{
+
+.top{
       position: fixed;
       width: 100%;
       z-index: 9999; /* Lower z-index than navbar */
@@ -84,16 +112,29 @@ html {
   margin: auto 0;
   position: flex;
 }
+/****Desktop **/
 .hero {
   display: flex;
   justify-content: space-between;
   padding: 80px;
   width: 100%;
   margin: auto 0;
-  height: 500px;
   margin-bottom: 20px;
-  padding-top: 180px;
-  padding-bottom: 480px;
+  padding-top: 20vh;
+  padding-bottom: 5vh;
+  min-height: 100%;
+  
+
+
+ /* display: flex;
+  flex-direction: row;
+  justify-content:center ;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  padding: 40px 20px;
+  box-sizing: border-box;
+  padding-top: 0px;*//*ML sample*/
 }
 
 .hero-column {
@@ -110,6 +151,12 @@ html {
   color: #0e8cbe;
   font-size: 1.4 em;
   width: 50%;
+}
+.hero-column h3 {
+  color: #000;
+  font-size: 14px;
+  width: 50%;
+  font-weight: 400;
 }
 .hero-column p{
   color: #666;
@@ -531,7 +578,7 @@ input, textarea {
 
 buttonS{
   padding: 10px 20px;
-  background-color: #0e8cbe;
+  background-color: #20242c;
   color: #fff;
   border: none;
   cursor: pointer;
@@ -640,7 +687,7 @@ background-color: inherit;
     position: fixed;
     right: 20px;
     top: 150px;
-    background-color: #0e8cbe;
+    background-color: #20242c;
     color: white;
     padding: 10px 20px;
     border-radius: 10px;
@@ -650,12 +697,11 @@ background-color: inherit;
     transition: all 0.3s ease;
     z-index: 9999;
     text-decoration: none;
-    font-size: 1.4em;
+    font-size: 1.4em;url(http://127.0.0.1:3000/freecourse.html)
     cursor: pointer;
 }
 
 .floating-badge:hover {
-    background-color: #666; /* Darker background on hover  #2db856*/
     box-shadow: 0 4px 8px rgba(0,0,0,0.3);
     font-size: 1.4em;
     cursor: pointer;
@@ -893,16 +939,36 @@ background-color: inherit;
   .bottomfooter,
   .disclaimer {
     width: 100%;
-    float: none;
+    float: none;)
     margin-bottom: 20px;
   }
 
   /* Floating badge mobile */
   .floating-badge {
     right: 10px;
-    top: 120px;
-    font-size: 1em;
-    padding: 5px 10px;
+    top: 100px;
+    font-size: small;
+    /*padding: 5px 10px;*/}
+
+    .floating-badge a {
+      text-decoration: none;
+      color: #fff;
+      background-color: inherit;
+      font-size: small;
+  }
+  
+  .floating-badge a:visited {
+      text-decoration: none;
+      color: #fff;
+      background-color: inherit;
+      font-size: inherit;
+  }
+  
+  .floating-badge a:active {
+      text-decoration: none;
+      background-color: inherit;
+      color: #fff;
+      font-size: small;/** make sure to keep changing all mobile div classes to small font size so the pc doesn't inherit desktop instead!!!**/
   }
 }
 
