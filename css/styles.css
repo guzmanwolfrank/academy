@@ -266,7 +266,20 @@ height: auto;
   height: flex;
   width: auto;
   border-radius: 10px;
-
+}
+/*****services desktop******/
+.servicescontainer{
+  width: 100%;
+  background-image: url("/img/laptopman.jpeg");
+  background-size: cover;
+  height: 100%; /* Adjust height as needed */
+  width: 100%; /* Adjust width as needed */
+  background-color: #000000;
+}
+.servicescontainer img{
+  padding-top: 100px;
+  width: 100%;
+  height:auto;
 }
 .services{
   margin: auto 0;
@@ -278,14 +291,69 @@ height: auto;
 }
 .services h1{
 font-size: 3em;
-
-
 }
 .services h2{
   font-size: 2.5em;
   font-weight: 300;
+}
+.services2{
+  margin: auto 0;
+  width: 480px;
+  height: auto;
+  padding: 20px;
+  text-align: center;
+  padding-top: 60px;
+  color: #fff;
+  background-color: #0000005d;
+  display: inline-block;
+}
+.services2 h1{
+font-size: 3em;
+display: inline-block;
+}
+.services2 h2{
+  font-size: 2.5em;
+  font-weight: 300;
+  display: inline-block;
+}
+/***desktop*****/
+/********************/
+.classescontainer {
+  width: 100%;
+  height: auto;
+  margin: auto 0;
+  background-color: #ebe8e8cc;
+  align-content: center;
 
 }
+.classes{
+  width: 80%;
+  margin: auto 0;
+  padding: 80px;
+}
+.classes h1{
+  font-size: 1.3em;
+  color: #000;
+}
+.classes h2{
+  font-size: 1.1em;
+}
+.classes p {
+color: #000;
+}
+.ribbon {
+  width: 100%;
+  height: 100px;
+  background-color: #0e8cbe;
+  color: #fff;
+}
+.ribbon2{
+  width: 100%;
+  height: 100px;
+  background-color: #cecece;
+  color: #000;
+}
+/******************/
 .cardcontainer{
   display: flex;
   justify-content: space-between;
