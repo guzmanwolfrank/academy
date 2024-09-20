@@ -845,7 +845,7 @@ background-color: inherit;
     flex-direction: column;
     padding: 20px;
     height: auto;
-    padding-top: 100px;
+    padding-top: 120px;
     padding-bottom: 40px;
   }
 
@@ -1021,7 +1021,7 @@ background-color: inherit;
   /* Floating badge mobile */
   .floating-badge {
     right: 10px;
-    top: 100px;
+    top: 130px;
     font-size: small;
     /*padding: 5px 10px;*/}
 
