@@ -677,25 +677,29 @@ background-color: inherit;
     overflow: hidden;
   }
 
-  /* Navigation */
+  /* Navigation mobile*/
   .navbar {
     padding: 10px;
+    position:fixed;
+    z-index: 9999;
+    padding-bottom: 20px;
   }
 
   .logo {
     font-size: 18px;
-    padding: 5px;
+    padding: 05px;
   }
 
   .login {
     font-size: 14px;
     padding: 5px;
-    margin-right: 10px;
+    margin-right: 0px;
   }
 
   /* Top ticker */
   .top {
     top: 60px;
+    z-index: 9998;
   }
 
   /* Hero section */
@@ -860,9 +864,12 @@ background-color: inherit;
     border-radius: 10px;
   }
 
-  /* Footer */
+  /* Footer mobile*/
   .footer {
     padding: 20px;
+    bottom: 0px;
+    left: 0;
+    width: 100%;
   }
 
   .bottomfooter,
@@ -872,10 +879,10 @@ background-color: inherit;
     margin-bottom: 20px;
   }
 
-  /* Floating badge */
+  /* Floating badge mobile */
   .floating-badge {
     right: 10px;
-    top: 70px;
+    top: 120px;
     font-size: 1em;
     padding: 5px 10px;
   }
