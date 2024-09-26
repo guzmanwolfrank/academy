@@ -271,11 +271,11 @@ height: auto;
 /*****services desktop******/
 .servicescontainer{
   width: 100%;
-  background-image: url("/img/laptopman.jpeg");
-  background-size: cover;
+  /*background-image: url("/img/bluelaptop.jpg");*/
   height: 100%; /* Adjust height as needed */
   width: 100%; /* Adjust width as needed */
-  background-color: #000000;
+  /*background-color: #000000;*/
+  margin: auto 0;
 }
 .servicescontainer img{
   padding-top: 100px;
@@ -299,14 +299,14 @@ font-size: 3em;
 }
 .services2{
   margin: auto 0;
-  width: 480px;
-  height: auto;
+  width: 100%;
+  height: 100%;
   padding: 20px;
   text-align: center;
   padding-top: 60px;
   color: #fff;
-  background-color: #0000005d;
-  display: inline-block;
+  background-color: #20242c;
+  /*display: inline-block;*/
 }
 .services2 h1{
 font-size: 3em;
@@ -460,7 +460,7 @@ li {
   ul {
     list-style-type: none;
     padding: 0;
-    width: 33%;
+    width: 100%;
   }
   
   li {
@@ -1021,6 +1021,7 @@ background-color: inherit;
     font-size: 14px;
     margin-right: 10px;
   }
+/* Mobile-friendly styles */
 
   .top {
     top: 60px;
@@ -1031,6 +1032,7 @@ background-color: inherit;
     padding: 40px 20px;
     padding-top: 15vh;
   }
+/* Mobile-friendly styles */
 
   .hero-column h1 {
     font-size: 2em;
@@ -1043,6 +1045,7 @@ background-color: inherit;
   .heroimage-column {
     width: 100%;
   }
+/* Mobile-friendly styles */
 
   .heroimage-column img {
     width: 100%;
@@ -1065,6 +1068,7 @@ background-color: inherit;
     font-size: 1.5em;
     width: 100%;
   }
+/* Mobile-friendly styles */
 
   .text-column h2 {
     font-size: 1em;
@@ -1075,9 +1079,10 @@ background-color: inherit;
     width: 100%;
     height: auto;
   }
+/* Mobile-friendly styles */
 
   .servicescontainer {
-    height: auto;
+    width: 100%;
   }
 
   .services h1 {
@@ -1089,8 +1094,9 @@ background-color: inherit;
   }
 
   .services2 {
-    width: 90%;
+    width: 100%;
   }
+/* Mobile-friendly styles */
 
   .classescontainer {
     flex-direction: column;
@@ -1108,6 +1114,7 @@ background-color: inherit;
     max-width: 250px;
     padding-top: 20px;
   }
+/* Mobile-friendly styles */
 
   .ribbon {
     flex-direction: column;
@@ -1127,11 +1134,13 @@ background-color: inherit;
     border-right: none;
   }
 
+/* Mobile-friendly styles */
 
 
   .classlist ul {
     width: 100%;
   }
+/* Mobile-friendly styles */
 
   .cardcontainer {
     flex-direction: column;
@@ -1147,6 +1156,7 @@ background-color: inherit;
     flex-direction: column;
     padding-top: 40px;
   }
+/* Mobile-friendly styles */
 
   .left-column,
   .right-column {
@@ -1164,6 +1174,7 @@ background-color: inherit;
     width: 100%;
     height: auto;
   }
+/* Mobile-friendly styles */
 
   .testimonials {
     height: auto;
@@ -1176,20 +1187,23 @@ background-color: inherit;
   .faq {
     padding: 20px;
   }
+/* Mobile-friendly styles */
 
   .cacontainer {
     flex-direction: column;
     padding-top: 30px;
+    border-radius: none;
   }
 
   .contact,
-  .about {
+  .about, .about h1 {
     width: 100%;
-    padding: 40px 20px;
+    border-radius: none;
   }
-
+/* Mobile-friendly styles */
   .footer {
-    padding: 30px;
+    padding: 20px;
+    width: 100%;
   }
 
   .bottomfooter,
@@ -1237,5 +1251,41 @@ background-color: inherit;
 
   .quote-box {
     width: 45%;
+  }
+  .social-icons {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    color: #fff;
+    text-decoration: none;
+    float: left;
+    justify-self: left;  
+    background-color: inherit;
+    width: 100%;
+  }
+  .social-icons li {
+    display: inline-block;
+    margin-right: rem;
+    background-color: inherit;
+  }
+  .social-icons li img {
+    display: inline-block;
+    margin-right: 1rem;
+    width: 24px; /* Adjust width as needed */
+    height: 24px; /* Adjust height as needed */
+  }
+  .social-icons img {
+        width: 24px; /* Adjust width as needed */
+        height: 24px; /* Adjust height as needed */
+        background-color: inherit;
+  }  
+  .social-icons a {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    color: inherit;
+    color: inherit;
+    text-decoration: none;
+    background-color: inherit;
   }
 }
