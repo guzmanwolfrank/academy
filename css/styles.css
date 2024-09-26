@@ -409,7 +409,7 @@ li {
 .ribbon {
   width: 100%;
   background-color: #0e8cbe;
-  color: #fff;
+  color: #000;
   display: flex;
   flex-wrap: wrap;
 }
