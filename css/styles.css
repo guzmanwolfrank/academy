@@ -1114,13 +1114,20 @@ background-color: inherit;
   }
 
   .ribbon h1,
-  .columnribbon h1,
-  .columnribbon h2 {
+  .columnribbon h1
+ {
     font-size: 0.9em;
     padding: 20px;
     border-right: none;
     border-bottom: 1px solid white;
   }
+  .columnribbon h2  {
+    font-size: 0.9em;
+    padding: 20px;
+    border-right: none;
+  }
+
+
 
   .classlist ul {
     width: 100%;
