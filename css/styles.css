@@ -1001,76 +1001,54 @@ background-color: inherit;
     font-size: inherit;
 }
 /*****MOBILE********************************************************************************************************************************************************************************************/
+/* Base styles remain the same */
+
+/* Mobile-friendly styles */
 @media screen and (max-width: 768px) {
-  /* General styles */
   body {
     margin-top: 60px;
   }
 
-  .container {
-    overflow: hidden;
-  }
-
-  /* Navigation mobile*/
   .navbar {
     padding: 10px;
-    position:fixed;
-    z-index: 9999;
-    padding-bottom: 20px;
   }
 
   .logo {
-    font-size: 18px;
-    padding: 05px;
+    font-size: 16px;
   }
 
   .login {
     font-size: 14px;
-    padding: 5px;
-    margin-right: 0px;
+    margin-right: 10px;
   }
 
-  /* Top */
   .top {
     top: 60px;
-    z-index: 9998;
   }
 
-  /* Top ticker */
-  .topticker {
-    z-index: 9999;
-    top: 80px;
-  }
-  /* Hero section */
   .hero {
     flex-direction: column;
-    padding: 20px;
-    height: auto;
-    padding-top: 120px;
-    padding-bottom: 40px;
+    padding: 40px 20px;
+    padding-top: 15vh;
   }
 
   .hero-column h1 {
     font-size: 2em;
-    width: 100%;
   }
 
-  .hero-column h2,
-  .hero-column p {
-    width: 100%;
+  .hero-column h2 {
+    font-size: 1.2em;
   }
 
   .heroimage-column {
     width: 100%;
-    /*margin-top: 10px;*/
   }
 
   .heroimage-column img {
     width: 100%;
-    height: auto;
+    max-width: 300px;
   }
 
-  /* Section containers */
   .sectioncontainer,
   .section2container {
     flex-direction: column;
@@ -1083,14 +1061,71 @@ background-color: inherit;
     padding: 10px;
   }
 
-  .text-column h1,
-  .text-column h2,
-  .text-column h3,
-  .text-column h4 {
+  .text-column h1 {
+    font-size: 1.5em;
     width: 100%;
   }
 
-  /* Services */
+  .text-column h2 {
+    font-size: 1em;
+    width: 100%;
+  }
+
+  .image-column img {
+    width: 100%;
+    height: auto;
+  }
+
+  .servicescontainer {
+    height: auto;
+  }
+
+  .services h1 {
+    font-size: 2em;
+  }
+
+  .services h2 {
+    font-size: 1.5em;
+  }
+
+  .services2 {
+    width: 90%;
+  }
+
+  .classescontainer {
+    flex-direction: column;
+  }
+
+  .classesleft-column,
+  .classesright-column {
+    width: 100%;
+    font-size: 1em;
+    padding: 10px;
+  }
+
+  .classesright-column img {
+    width: 100%;
+    max-width: 250px;
+    padding-top: 20px;
+  }
+
+  .ribbon {
+    flex-direction: column;
+  }
+
+  .ribbon h1,
+  .columnribbon h1,
+  .columnribbon h2 {
+    font-size: 0.9em;
+    padding: 20px;
+    border-right: none;
+    border-bottom: 1px solid white;
+  }
+
+  .classlist ul {
+    width: 100%;
+  }
+
   .cardcontainer {
     flex-direction: column;
     margin: 20px;
@@ -1098,10 +1133,9 @@ background-color: inherit;
 
   .card {
     width: 100%;
-    margin-bottom: 20px;
+    margin: 10px 0;
   }
 
-  /* Consult container */
   .consultcontainer {
     flex-direction: column;
     padding-top: 40px;
@@ -1111,6 +1145,7 @@ background-color: inherit;
   .right-column {
     width: 100%;
     padding: 20px;
+    font-size: 1.5em;
   }
 
   .left-column h1,
@@ -1118,201 +1153,82 @@ background-color: inherit;
     padding-left: 0;
   }
 
-  /* Fix for overlapping sections */
-  .faq,
-  .containertestimonials,
-  .cacontainer {
-    position: relative;
-    z-index: auto;
-    margin-bottom: 20px;
-  }
-
-  /* FAQ section */
-  .faq {
-    background-color: #fff;
-    padding: 20px 0;
-  }
-
-  .faqcontainer {
-    overflow-x: hidden;
-    word-wrap: break-word;
-  }
-
-  /* Testimonials section */
-  .containertestimonials {
-    background-color: #fff;
-    padding: 20px 0;
-    overflow: hidden;
+  .right-column img {
+    width: 100%;
+    height: auto;
   }
 
   .testimonials {
-    width: 100%;
     height: auto;
-    padding: 20px;
-    box-sizing: border-box;
-    overflow-x: hidden;
-    word-wrap: break-word;
-  }
-
-  .testimonials h1 {
-    font-size: 1.5em;
-    margin-bottom: 15px;
-  }
-
-  .testimonials h2 {
-    font-size: 1em;
-    margin-bottom: 20px;
-  }
-
-  .quotecontainer {
-    display: flex;
-    flex-direction: column;
   }
 
   .quote-box {
     width: 100%;
-    margin-bottom: 20px;
   }
 
-  .quote {
-    font-size: 0.9em;
+  .faq {
+    padding: 20px;
   }
 
-  .name {
-    font-size: 0.8em;
-  }
-
-  /* Contact and About section - mobile */
   .cacontainer {
     flex-direction: column;
-    background-color: #fff;
-    padding: 20px 0;
+    padding-top: 30px;
   }
 
   .contact,
   .about {
     width: 100%;
-    padding: 10px;
-    padding-bottom: 40px;
-    margin: auto 0;
-    overflow-x: hidden;
-    word-wrap: break-word;
+    padding: 40px 20px;
   }
-  .contact h2 {
-    text-align: center;
-    margin: auto 0;
-    width: 100%;
-    align-content: center;
-  }
-/*mobile*/
-  .about {
-    background-color: #0e8cbe;
-    border-radius: 0px; 
-    height: 100%;
-    margin-bottom: -60px;
-    padding-bottom: 100px;
-    padding-top: 40px;
-}
-.about h1 {
-  font-size: 1.2em;
-}
 
-  /* Footer mobile*/
   .footer {
-    padding: 20;
-    margin: 0;
-    position: absolute;
-    width: 100%;
-    box-sizing: border-box;
+    padding: 30px;
   }
 
   .bottomfooter,
   .disclaimer {
     width: 100%;
-    float: none;)
-    margin-bottom: 20px;
+    float: none;
   }
 
-  /* Floating badge mobile */
   .floating-badge {
     right: 10px;
-    top: 130px;
-    font-size: small;
-    /*padding: 5px 10px;*/}
-
-    .floating-badge a {
-      text-decoration: none;
-      color: #fff;
-      background-color: inherit;
-      font-size: small;
-  }
-  
-  .floating-badge a:visited {
-      text-decoration: none;
-      color: #fff;
-      background-color: inherit;
-      font-size: inherit;
-  }
-  
-  .floating-badge a:active {
-      text-decoration: none;
-      background-color: inherit;
-      color: #fff;
-      font-size: small;/** make sure to keep changing all mobile div classes to small font size so the pc doesn't inherit desktop instead!!!**/
+    top: 70px;
+    font-size: 1.2em;
+    padding: 8px 16px;
   }
 }
 
-/* Additional styles for very small screens (e.g., iPhone 12 Pro Max) */
-@media screen and (max-width: 428px) {
+/* Tablet-specific adjustments */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .hero {
+    padding: 60px 40px;
+  }
+
   .hero-column h1 {
-    font-size: 1.5em;
+    font-size: 2.5em;
   }
 
-  .hero-column h2 {
-    font-size: 1.2em;
+  .heroimage-column img {
+    width: 100%;
+    max-width: 350px;
   }
 
-  .card h1 {
-    font-size: 1.2em;
+  .classesleft-column,
+  .classesright-column {
+    font-size: 1.1em;
   }
 
-  .faq-question {
-    font-size: 0.9em;
+  .card {
+    width: 45%;
   }
 
-  .faq-answer {
-    font-size: 0.8em;
+  .left-column,
+  .right-column {
+    font-size: 1.8em;
   }
 
-  .testimonials h1 {
-    font-size: 1.3em;
+  .quote-box {
+    width: 45%;
   }
-
-  .testimonials h2 {
-    font-size: 0.9em;
-  }
-
-  .quote {
-    font-size: 0.8em;
-  }
-
-  .name {
-    font-size: 0.7em;
-  }
-
-  .social-icons li {
-    margin-right: 0.5rem;
-  }
-
-  .social-icons img {
-    width: 20px;
-    height: 20px;
-  }
-
-  .faq,
-  .containertestimonials,
-  .cacontainer {
-    padding: 15px 0;
-  }
-
 }
