@@ -22,9 +22,7 @@ ____  _               _    ___  _                  _ _ _
   max-width: 100%;
   box-sizing: border-box;
   font-family: 'Roboto';
-  overflow-y, overflow-x: hidden;
-
-
+  overflow-x: hidden;
 }
 
 
@@ -36,7 +34,6 @@ body {
   max-width: 100%;
   box-sizing: border-box;
   margin-top: 40px;
-  overflow-x: hidden;
 }
 
 
@@ -79,11 +76,11 @@ html {
   }
 .logo :active, .logo :hover, .logo:visited, .logo a {
   background-color: #0e8cbe;
-
-
+  
 }
 .login,.login a {
   font-size: 16px;
+  font-weight: 400;
   text-decoration: none;
   padding: 8px;
   border-radius: 5px;
@@ -227,6 +224,20 @@ height: auto;
   background-repeat: no-repeat;
 }
 
+.sectioncontainer2 {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  /*background-image: url(/img/student.jpg);*/
+  background-size: cover;
+  background-color: #000; /* Adjust the alpha channel value */
+  text-align: left;
+  background-position: 0;
+  background-repeat: no-repeat;
+}
 .text-column {
   flex: 1;
   padding: 20px;
