@@ -231,6 +231,66 @@ nav a {
     height: auto;
 }
 
+  /* Content2 Section styles */
+  .content2-section {
+    padding: 80px 0;
+}
+
+.content2-section .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+.content2 {
+    flex: 1;
+    order: 2; /* This moves the content to the right */
+}
+
+.content2 h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.content2 ul {
+    list-style: none;
+    padding: 0;
+}
+
+.content2 li {
+    margin-bottom: 15px;
+    padding-left: 28px;
+    position: relative;
+}
+
+.content2 li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    background-color: #0066FF;
+    border-radius: 50%;
+    opacity: 0.1;
+}
+
+.content2-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    order: 1; /* This moves the image to the left */
+}
+
+.content2-image img {
+    max-width: 100%;
+    height: auto;
+}
+
 /* Testimonials */
 .testimonials {
     display: flex;
@@ -349,5 +409,22 @@ footer {
 
     .content-image {
         order: -1; /* This moves the image above the content on mobile */
+    }
+    .content2-section .container {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .content2, .content2-image {
+        width: 100%;
+        order: 0; /* Reset the order on mobile */
+    }
+
+    .content2 h2 {
+        font-size: 2rem;
+    }
+
+    .content2-image {
+        order: -1; /* This keeps the image above the content on mobile */
     }
 }
