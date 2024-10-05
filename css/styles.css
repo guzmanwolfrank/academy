@@ -518,7 +518,7 @@ li {
   margin: 10px;
 }
 
-.card h1{
+.card h1, .card h1 a{
   font-size: 1.4em;
   color: #fff;
   font-weight: 400 ;
@@ -531,14 +531,8 @@ li {
   background-color: transparent;
   display: block;
 }
-.button {
-  color: #fff;
-  background-color: #20242c;
-  display: inline-block;
-  padding: 05px;
-  border-radius: 10px;
-}
-.button,.button a, .button :visited , .button:hover{
+
+.button,.button a, .button :visited , .button a:hover{
   text-decoration: none;
   color: #fff;
   background-color: #20242c;
@@ -980,8 +974,8 @@ background-color: inherit;
     cursor: pointer;
 }
 
-.floating-badge:hover {
-    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+.floating-badge:hover, a{
+    /*box-shadow: 0 4px 8px rgba(0,0,0,0.3);*/
     font-size: 1em;
     cursor: pointer;
     text-decoration: none;
