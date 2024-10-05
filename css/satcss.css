@@ -301,7 +301,7 @@ nav a {
 .testimonial {
     flex: 1;
     margin: 0 15px;
-    background-color: #f5f7ff;
+    background-color: #a7ccdb;
     padding: 20px;
     border-radius: 5px;
 }
@@ -340,7 +340,7 @@ nav a {
   }
   .faq-question:hover {
    /* background-color: #b3c6d1;*/
-   background-color: #0e8cbe;
+   background-color: #a7ccdb;
    color: #fff;
   }
   .faq-question::after {
@@ -379,7 +379,7 @@ nav a {
 
 /* Footer */
 footer {
-    background-color: #f5f7ff;
+    background-color: #d0d5dd;
     padding: 40px 0;
 }
 
