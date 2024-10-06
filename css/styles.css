@@ -387,6 +387,41 @@ nav a {
     padding: 20px;
     border-radius: 5px;
 }
+/*** card ****des */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: auto 0;
+    align-content: center;
+  }
+  
+  .card {
+    flex: 1 0 23.33%; /* Divide the container into 3 equal columns */
+    padding: 20px;
+    border: 1px solid rgb(146, 178, 247);
+    border-radius: 10px;
+    width: 80px;
+    flex: 1;
+    margin: 10px;
+}
+  
+  .card-content {
+    text-align: center;
+  }
+  
+  .card-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .card-icon img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+  }
 
 /* FAQ section */
 /*****FAQ*****/
@@ -607,5 +642,11 @@ footer, footer li,footer li a {
         /*font-family: Arial, sans-serif;*/
         background-color: inherit;
       }
+      /* Media query for smaller screens */
+@media (max-width: 768px) {
+    .card {
+      flex: 1 0 100%; /* Make each card occupy the full width */
+    }
+  }
       
 }
