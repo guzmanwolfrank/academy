@@ -173,6 +173,31 @@ nav a {
   color: #000;
   line-height: 1.6;
 }
+/*** Accordion desktop section ****/
+.accordion {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+  }
+  
+  .accordion-header {
+    background-color: #f4f4f4;
+    padding: 15px;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    user-select: none;
+  }
+  
+  .expansion {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    border: 1px solid #ddd;
+    border-top: none;
+    border-radius: 0 0 4px 4px;
+  }
+
 
 /* Second content section */
 .content-section {
@@ -493,4 +518,5 @@ footer, footer li,footer li a {
     .content2-image {
         order: -1; /* This keeps the image above the content on mobile */
     }
+    
 }
