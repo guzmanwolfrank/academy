@@ -204,7 +204,9 @@ nav a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-weight: 500;
+    font-weight: 600;
+    font-style: bold;
+    font-size: 1.1em;
   }
   
   .accordion-trigger:hover {
@@ -543,6 +545,9 @@ footer, footer li,footer li a {
     .feature {
         margin-bottom: 30px;
     }
+    .feature-content{
+        display: none;
+    }
     .content-section .container {
         flex-direction: column;
         gap: 40px;
@@ -588,6 +593,19 @@ footer, footer li,footer li a {
         .content-column {
           margin-bottom: 10px;
         }
+        .features {display: none;}
+      }
+      .faq{
+        width: 100%;
+        background-color: #fff;
+        padding: 50px;
+        padding-bottom: 80px;
+      }
+      .faqcontainer {
+        max-width: 90%;
+        margin: 0 auto;
+        /*font-family: Arial, sans-serif;*/
+        background-color: inherit;
       }
       
 }
