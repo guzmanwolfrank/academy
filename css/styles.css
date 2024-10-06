@@ -4,12 +4,14 @@
     padding: 0;
     box-sizing: border-box;
     overflow-x: hidden;
+    text-decoration: none;
 }
 
 body {
     font-family: 'Roboto';
     line-height: 1.6;
     color: #000;
+    text-decoration: none;
 }
 
 /* Layout */
@@ -75,8 +77,8 @@ nav a {
     min-height: 500px; /* Match the height of your image */
     /*background-color: #0000004f;/* background overlay */
     padding: 10px;
-
 }
+
 
 .hero-image {
     width: 50%;
@@ -97,7 +99,7 @@ nav a {
     color: #000;
     font: "Helvetica";
     font-weight: 500;
-    line-height: 1.3em;
+    line-height: 1.2em;
 }
 
 .hero h2 {
@@ -340,6 +342,11 @@ nav a {
     color: #000;
     line-height: 1.2em;
 }
+.content2 li:hover {
+  color: #fff;
+  background-color: #0066FF;
+
+}
 
 .content2 ul {
     list-style: none;
@@ -377,20 +384,6 @@ nav a {
     height: auto;
 }
 
-/* Testimonials */
-.testimonials {
-    display: flex;
-    justify-content: space-between;.0
-    margin: 60px 0;
-}
-
-.testimonial {
-    flex: 1;
-    margin: 0 15px;
-    background-color: #a7ccdb;
-    padding: 20px;
-    border-radius: 5px;
-}
 /*** card ****des */
 .card-container {
     display: flex;
@@ -403,15 +396,19 @@ nav a {
   .card {
     flex: 1 0 23.33%; /* Divide the container into 3 equal columns */
     padding: 20px;
-    border: 1px solid rgb(146, 178, 247);
+    border: 1px solid rgb(207, 210, 214);
     border-radius: 10px;
-    width: 80px;
     flex: 1;
     margin: 10px;
+    background-color: #fff;
 }
   
   .card-content {
     text-align: center;
+  }
+  .card-content p {
+    color: #000;
+    font-weight: 400;
   }
   ul {
     color: #000; /* Sets the text color to blue */
@@ -470,7 +467,7 @@ nav a {
   }
   .faq-question:hover {
    /* background-color: #b3c6d1;*/
-   background-color: #a7ccdb;
+   background-color: #000;
    color: #fff;
   }
   .faq-question::after {
@@ -555,7 +552,7 @@ footer, footer li,footer li a {
     nav a {
         margin: 5px 10px 5px 0;
     }
-    .hero, .features, .content-section, .testimonials, .footer-content {
+    .hero, .features, .content-section, .footer-content {
         flex-direction: column;
     }
     .hero .container {
@@ -574,7 +571,7 @@ footer, footer li,footer li a {
         width: 100%;
         justify-content: center;
     }
-    .hero-content, .hero-image, .feature, .testimonial, .footer-section {
+    .hero-content, .hero-image, .feature, .footer-section {
         margin: 20px 0;
     }
 
@@ -627,7 +624,7 @@ footer, footer li,footer li a {
     .content2 h2 {
         font-size: 2rem;
     }
-
+.
     .content2-image {
         order: -1; /* This keeps the image above the content on mobile */
     }
@@ -660,7 +657,7 @@ footer, footer li,footer li a {
       /* Media query for smaller screens */
 @media (max-width: 768px) {
     .card {
-      flex: 1 0 100%; /* Make each card occupy the full width */
+      flex: 1 0 90%; /* Make each card occupy the full width */
     }
   }
       
