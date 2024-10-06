@@ -87,8 +87,103 @@
                 </div>
             </div>
         </section>
-<!--- Content ---->
-
+<!--- New Accordion ---->
+<div class="flex-container">
+    <div class="flex-column">
+      <div class="accordion">
+        <button class="accordion-trigger" onclick="toggleAccordion(this)">
+          Bootcamp
+        </button>
+        <div class="accordion-content">
+          <div class="content-inner">
+            <div class="content-row">
+              Learn to trade futures with our comprehensive bootcamp.
+            </div>
+            <div class="content-columns">
+              <div class="content-column">
+                <h4>Course Structure</h4>
+                <p>6-week intensive program</p>
+              </div>
+              <div class="content-column">
+                <h4>What You'll Learn</h4>
+                <p>Trading strategies & risk management</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="flex-column">
+      <div class="accordion">
+        <button class="accordion-trigger" onclick="toggleAccordion(this)">
+          Chat Room
+        </button>
+        <div class="accordion-content">
+          <div class="content-inner">
+            <div class="content-row">
+              Join our community of traders in our live chat room.
+            </div>
+            <div class="content-columns">
+              <div class="content-column">
+                <h4>Features</h4>
+                <p>Real-time discussions & alerts</p>
+              </div>
+              <div class="content-column">
+                <h4>Availability</h4>
+                <p>Market hours, Mon-Fri</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="flex-column">
+      <div class="accordion">
+        <button class="accordion-trigger" onclick="toggleAccordion(this)">
+          Market Call
+        </button>
+        <div class="accordion-content">
+          <div class="content-inner">
+            <div class="content-row">
+              Daily market analysis and trading ideas.
+            </div>
+            <div class="content-columns">
+              <div class="content-column">
+                <h4>Schedule</h4>
+                <p>Every morning at 8:30 AM ET</p>
+              </div>
+              <div class="content-column">
+                <h4>Coverage</h4>
+                <p>Major futures markets</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script>
+  function toggleAccordion(trigger) {
+    const content = trigger.nextElementSibling;
+    const isOpen = trigger.classList.contains('active');
+    
+    // Close all accordions
+    document.querySelectorAll('.accordion-trigger').forEach(t => {
+      t.classList.remove('active');
+      t.nextElementSibling.classList.remove('show');
+    });
+    
+    // If the clicked accordion wasn't open, open it
+    if (!isOpen) {
+      trigger.classList.add('active');
+      content.classList.add('show');
+    }
+  }
+  </script>
+  
 <!--- Content2-->
 <section class="content-section">
     <div class="container">

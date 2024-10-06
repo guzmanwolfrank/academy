@@ -174,30 +174,83 @@ nav a {
   line-height: 1.6;
 }
 /*** Accordion desktop section ****/
-.accordion {
-    width: 100%;
-    max-width: 600px;
-    margin: 20px auto;
+.flex-container {
+    display: flex;
+    gap: 20px;
+    max-width: 70%;
+    margin: 0 auto;
   }
   
-  .accordion-header {
-    background-color: #f4f4f4;
-    padding: 15px;
-    cursor: pointer;
+  .flex-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .accordion {
+    width: 100%;
     border: 1px solid #ddd;
     border-radius: 4px;
-    user-select: none;
+    overflow: hidden;
   }
   
-  .expansion {
+  .accordion-trigger {
+    width: 100%;
+    padding: 15px;
+    background-color: #fff;
+    border: none;
+    text-align: left;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 500;
+  }
+  
+  .accordion-trigger:hover {
+    background-color: #fff;
+  }
+  
+  .accordion-trigger::after {
+    content: '+';
+    font-size: 18px;
+    transition: transform 0.3s ease;
+  }
+  
+  .accordion-trigger.active::after {
+    content: '-';
+  }
+  
+  .accordion-content {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease-out;
-    border: 1px solid #ddd;
-    border-top: none;
-    border-radius: 0 0 4px 4px;
   }
-
+  
+  .accordion-content.show {
+    max-height: 500px;
+  }
+  
+  .content-inner {
+    padding: 15px;
+    background-color: white;
+  }
+  
+  .content-row {
+    margin-bottom: 10px;
+  }
+  
+  .content-columns {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .content-column {
+    flex: 1;
+    padding: 10px;
+    background-color: #f9f9f9;
+  }
+  
 
 /* Second content section */
 .content-section {
@@ -432,7 +485,12 @@ footer, footer li,footer li a {
 .footer-section ul li, a:active, a:hover, a:visited {
   text-decoration: inherit;
 }
-/* Mobile responsive */
+/* Mobile responsive ***************************************************************************************************/
+/* Mobile responsive ***************************************************************************************************/
+/* Mobile responsive ***************************************************************************************************/
+/* Mobile responsive ***************************************************************************************************/
+/* Mobile responsive ***************************************************************************************************/
+
 @media (max-width: 768px) {
     header .container {
         flex-direction: column;
@@ -518,5 +576,18 @@ footer, footer li,footer li a {
     .content2-image {
         order: -1; /* This keeps the image above the content on mobile */
     }
-    
+    @media (max-width: 768px) {
+        .flex-container {
+          flex-direction: column;
+        }
+        
+        .content-columns {
+          flex-direction: column;
+        }
+        
+        .content-column {
+          margin-bottom: 10px;
+        }
+      }
+      
 }
