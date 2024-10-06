@@ -4,12 +4,14 @@
     padding: 0;
     box-sizing: border-box;
     overflow-x: hidden;
+    text-decoration: none;
 }
 
 body {
     font-family: 'Roboto';
     line-height: 1.6;
     color: #000;
+    text-decoration: none;
 }
 
 /* Layout */
@@ -77,6 +79,7 @@ nav a {
     padding: 10px;
 }
 
+
 .hero-image {
     width: 50%;
     display: flex;
@@ -96,12 +99,15 @@ nav a {
     color: #000;
     font: "Helvetica";
     font-weight: 500;
+    line-height: 1.2em;
 }
 
 .hero h2 {
     font-size: 1.5rem;
     margin-bottom: 20px;
-    color: #000;
+    color: #1298f1;
+    line-height: 1.2em;
+
 }
 
 .hero p {
@@ -230,12 +236,12 @@ nav a {
   }
   
   .accordion-content.show {
-    max-height: 500px;
+    max-height: 1500px;
   }
   
   .content-inner {
     padding: 15px;
-    background-color: white;
+   /* background-color: white;*/
   }
   
   .content-row {
@@ -250,7 +256,7 @@ nav a {
   .content-column {
     flex: 1;
     padding: 10px;
-    background-color: #f9f9f9;
+    background-color: transparent;
   }
   
 
@@ -334,6 +340,11 @@ nav a {
     font-size: 2.5rem;
     margin-bottom: 30px;
     color: #000;
+    line-height: 1.2em;
+}
+.content2 li:hover {
+  color: #fff;
+  background-color: #0066FF;
 }
 
 .content2 ul {
@@ -355,7 +366,6 @@ nav a {
     transform: translateY(-50%);
     width: 20px;
     height: 20px;
-    background-color: #0066FF;
     border-radius: 50%;
     opacity: 0.1;
 }
@@ -373,20 +383,54 @@ nav a {
     height: auto;
 }
 
-/* Testimonials */
-.testimonials {
+/*** card ****des */
+.card-container {
     display: flex;
-    justify-content: space-between;
-    margin: 60px 0;
-}
-
-.testimonial {
-    flex: 1;
-    margin: 0 15px;
-    background-color: #a7ccdb;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: auto 0;
+    align-content: center;
+  }
+  
+  .card {
+    flex: 1 0 23.33%; /* Divide the container into 3 equal columns */
     padding: 20px;
-    border-radius: 5px;
+    border: 1px solid rgb(207, 210, 214);
+    border-radius: 10px;
+    flex: 1;
+    margin: 10px;
+    background-color: #fff;
 }
+  
+  .card-content {
+    text-align: center;
+  }
+  .card-content p {
+    color: #000;
+    font-weight: 400;
+  }
+  ul {
+    color: #000; /* Sets the text color to blue */
+    font-size: 1em; /* Sets the font size */
+  }
+  
+  li {
+    background-color: #fff; /* Sets the background color */
+    padding: 10px; /* Adds padding around the list items */
+    border: 1px solid #ccc; /* Adds a border around the list items */
+  }
+  .card-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .card-icon img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+  }
 
 /* FAQ section */
 /*****FAQ*****/
@@ -422,7 +466,7 @@ nav a {
   }
   .faq-question:hover {
    /* background-color: #b3c6d1;*/
-   background-color: #a7ccdb;
+   background-color: #000;
    color: #fff;
   }
   .faq-question::after {
@@ -507,7 +551,7 @@ footer, footer li,footer li a {
     nav a {
         margin: 5px 10px 5px 0;
     }
-    .hero, .features, .content-section, .testimonials, .footer-content {
+    .hero, .features, .content-section, .footer-content {
         flex-direction: column;
     }
     .hero .container {
@@ -526,13 +570,14 @@ footer, footer li,footer li a {
         width: 100%;
         justify-content: center;
     }
-    .hero-content, .hero-image, .feature, .testimonial, .footer-section {
+    .hero-content, .hero-image, .feature, .footer-section {
         margin: 20px 0;
     }
 
-
     .hero h1 {
         font-size: 2rem;
+        line-height: 1.2em; /* Sets the line height to 1.2 times the font size */
+      
     }
 
     nav {
@@ -559,6 +604,7 @@ footer, footer li,footer li a {
 
     .content h2 {
         font-size: 2rem;
+        line-height: 1.2em;
     }
 
     .content-image {
@@ -577,7 +623,7 @@ footer, footer li,footer li a {
     .content2 h2 {
         font-size: 2rem;
     }
-
+.
     .content2-image {
         order: -1; /* This keeps the image above the content on mobile */
     }
@@ -607,5 +653,11 @@ footer, footer li,footer li a {
         /*font-family: Arial, sans-serif;*/
         background-color: inherit;
       }
+      /* Media query for smaller screens */
+@media (max-width: 768px) {
+    .card {
+      flex: 1 0 90%; /* Make each card occupy the full width */
+    }
+  }
       
 }
