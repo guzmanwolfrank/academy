@@ -75,6 +75,7 @@ nav a {
     min-height: 500px; /* Match the height of your image */
     /*background-color: #0000004f;/* background overlay */
     padding: 10px;
+
 }
 
 .hero-image {
@@ -96,12 +97,15 @@ nav a {
     color: #000;
     font: "Helvetica";
     font-weight: 500;
+    line-height: 1.3em;
 }
 
 .hero h2 {
     font-size: 1.5rem;
     margin-bottom: 20px;
-    color: #000;
+    color: #1298f1;
+    line-height: 1.2em;
+
 }
 
 .hero p {
@@ -230,12 +234,12 @@ nav a {
   }
   
   .accordion-content.show {
-    max-height: 500px;
+    max-height: 1500px;
   }
   
   .content-inner {
     padding: 15px;
-    background-color: white;
+   /* background-color: white;*/
   }
   
   .content-row {
@@ -250,7 +254,7 @@ nav a {
   .content-column {
     flex: 1;
     padding: 10px;
-    background-color: #f9f9f9;
+    background-color: transparent;
   }
   
 
@@ -334,6 +338,7 @@ nav a {
     font-size: 2.5rem;
     margin-bottom: 30px;
     color: #000;
+    line-height: 1.2em;
 }
 
 .content2 ul {
@@ -355,7 +360,6 @@ nav a {
     transform: translateY(-50%);
     width: 20px;
     height: 20px;
-    background-color: #0066FF;
     border-radius: 50%;
     opacity: 0.1;
 }
@@ -376,7 +380,7 @@ nav a {
 /* Testimonials */
 .testimonials {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between;.0
     margin: 60px 0;
 }
 
@@ -409,7 +413,16 @@ nav a {
   .card-content {
     text-align: center;
   }
+  ul {
+    color: #000; /* Sets the text color to blue */
+    font-size: 1em; /* Sets the font size */
+  }
   
+  li {
+    background-color: #fff; /* Sets the background color */
+    padding: 10px; /* Adds padding around the list items */
+    border: 1px solid #ccc; /* Adds a border around the list items */
+  }
   .card-icon {
     display: flex;
     align-items: center;
@@ -565,9 +578,10 @@ footer, footer li,footer li a {
         margin: 20px 0;
     }
 
-
     .hero h1 {
         font-size: 2rem;
+        line-height: 1.2em; /* Sets the line height to 1.2 times the font size */
+      
     }
 
     nav {
@@ -594,6 +608,7 @@ footer, footer li,footer li a {
 
     .content h2 {
         font-size: 2rem;
+        line-height: 1.2em;
     }
 
     .content-image {
