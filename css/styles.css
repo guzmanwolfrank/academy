@@ -445,6 +445,7 @@ background-color: #fff;
   padding-bottom: 40px;
   color: #fff;
   width: 100%;
+  font-size: 1em; /* Sets the font size */
 }
 
 .content3 li {
@@ -453,6 +454,8 @@ background-color: #fff;
   position: relative;
   background-color: #000;
   font-size:1.5em;
+  padding: 10px; /* Adds padding around the list items */
+  border: 1px solid #ccc; /* Adds a border around the list items */
 }
 
 
@@ -482,16 +485,7 @@ background-color: #fff;
     color: #000;
     font-weight: 400;
   }
-  ul {
-    color: #000; /* Sets the text color to blue */
-    font-size: 1em; /* Sets the font size */
-  }
-  
-  li {
-    background-color: #fff; /* Sets the background color */
-    padding: 10px; /* Adds padding around the list items */
-    border: 1px solid #ccc; /* Adds a border around the list items */
-  }
+
   .card-icon {
     display: flex;
     align-items: center;
