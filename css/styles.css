@@ -413,7 +413,7 @@ nav a {
   color: #fff;
 }
 .black {
-  background-color: #000;
+  background-color: black;
 }
 .content3 {
   flex: 1;
@@ -480,6 +480,9 @@ background-color: #fff;
   
   .card-content {
     text-align: center;
+  }
+  .card-content h4{
+    font-size: 2em;
   }
   .card-content p {
     color: #000;
