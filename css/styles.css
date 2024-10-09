@@ -704,6 +704,57 @@ footer, footer li,footer li a {
     .content2-image {
         order: -1; /* This keeps the image above the content on mobile */
     }
+    .contentcontainer2{
+      background-color: #000;
+      max-width: 100%;
+      margin: 0 auto;
+      padding: 20px;
+      display: flex;
+      color: #fff;
+    }
+    .black {
+      background-color: #000;
+    }
+    .content3 {
+      flex: 1;
+      order: 2; /* This moves the content to the right */
+    }
+    
+    .content3 h2 {
+      font-size: 2.5rem;
+      margin-bottom: 30px;
+      line-height: 1.2em;
+    }
+    
+    .content3 h3 {
+    font-size: 5.5rem;
+    margin-bottom: 30px;
+    line-height: 1.2em;
+    padding: 20px;
+    color: #fff;
+    }
+    
+    .content3 li:hover {
+    color: #000;
+    background-color: #fff;
+    }
+    
+    .content3 ul {
+      list-style: none;
+      padding: 10px;
+      padding-bottom: 40px;
+      color: #fff;
+      width: 100%;
+    }
+    
+    .content3 li {
+      margin-bottom: 15px;
+      padding-left: 28px;
+      position: relative;
+      background-color: #000;
+      font-size:1.5em;
+    }
+    
     @media (max-width: 768px) {
         .flex-container {
           flex-direction: column;
