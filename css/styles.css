@@ -481,6 +481,9 @@ background-color: #fff;
   .card-content {
     text-align: center;
   }
+  .card-content h4{
+    font-size: 2em;
+  }
   .card-content p {
     color: #000;
     font-weight: 400;
