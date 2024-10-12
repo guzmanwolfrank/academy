@@ -197,7 +197,7 @@ nav a {
     width: 100%;
     border: 1px solid #ddd;
     border-radius: 4px;
-    overflow: hidden;
+    overflow: hidden;  
   }
   
   .accordion-trigger {
@@ -213,6 +213,7 @@ nav a {
     font-weight: 600;
     font-style: bold;
     font-size: 1.1em;
+    color: #000;
   }
   
   .accordion-trigger:hover {
@@ -604,6 +605,62 @@ footer, footer li,footer li a {
 }
 .footer-section ul li, a:active, a:hover, a:visited {
   text-decoration: inherit;
+}
+
+
+/* Form styles */
+form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+fieldset {
+  border: none;
+  padding: 0;
+}
+
+legend {
+  font-weight: bold;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+  width: 100%;
+  height: 40px;
+  padding:   
+8px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+button {
+  display: block;
+  margin: 10px 0;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;   
+
+}
+
+/* Mobile responsiveness */
+@media only screen and (max-width: 600px) {
+  form {
+      padding: 10px;
+  }
+}
+
 }
 /* Mobile responsive ***************************************************************************************************/
 /* Mobile responsive ***************************************************************************************************/
