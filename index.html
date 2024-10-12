@@ -339,9 +339,29 @@ Fundamental analysis: Economic indicators Supply and demand factors News and eve
         <div class="content">
             <h2>Join our Free Class!</h2> <br> <h3>Accelerate your learning with our free preview of our Bootcamp course.</h3>Accelerate your learning with this preview of our Bootcamp Course.
     <br><br>
-            <a href="#" class="btn">Join Free</a>
-
-        </div>
+          
+              <form action="process.php"
+       method="post">
+                  <label for="name">Name:</label>
+                  <input type="text" id="name" name="name" required><br><br>
+      
+                  <label for="email">Email:</label>
+                  <input type="email"
+       id="email" name="email" required><br><br>
+      
+                  <label for="phone">Phone:</label>
+                  <input type="tel" id="phone" name="phone"><br><br>
+      
+                  <label for="occupation">Occupation:</label>
+      
+                  <input type="text" id="occupation" name="occupation"><br><br>
+      
+                  <label for="trading_experience">Trading Experience:</label>
+                  <textarea id="trading_experience" name="trading_experience"></textarea><br><br>
+      
+                  <input type="submit" value="Join Free">
+              </form>
+          </div>
        
     </div>
 </section>
@@ -371,7 +391,15 @@ Fundamental analysis: Economic indicators Supply and demand factors News and eve
                 <div class="footer-section">
                     <h3>Subscribe</h3>
                     <p>Join our newsletter to stay up to date on features and releases.</p>
-                </div>
+                    <br>
+                    <form id="newsletter-form">
+                      <div class="form-group">
+                          <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                      </div>
+                      <br>
+                      <input type="submit" value="Subscribe">
+                    </form>
+                  </div>
             </div>
         </div>
 <div class="container">
