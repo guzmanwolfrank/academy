@@ -458,16 +458,21 @@ background-color: #fff;
   padding: 10px; /* Adds padding around the list items */
   border: 1px solid #ccc; /* Adds a border around the list items */
 }
-.content3 h4 {
-  color: #fff;
-  background-color: #0066FF;
+.content3 h4, .content3 h4 a{
+  color: #000;
+  background-color: #fff;
   display: inline-block;
-  padding: 2px;
-
   line-height: 1em;
   font-size: .8em;
+  padding: 2px;
 }
-
+.content3 h5{
+  color: #000;
+  background-color: #fff;
+  padding: 2px;
+  display: inline-block;
+  font-size: .8em;
+}
 
 
 /*** card ****des */
