@@ -428,7 +428,7 @@ nav a {
 }
 
 .content3 h3 {
-font-size: 5.5rem;
+font-size: 5rem;
 margin-bottom: 30px;
 line-height: 1.2em;
 padding: 20px;
@@ -458,6 +458,16 @@ background-color: #fff;
   padding: 10px; /* Adds padding around the list items */
   border: 1px solid #ccc; /* Adds a border around the list items */
 }
+.content3 h4 {
+  color: #fff;
+  background-color: #0066FF;
+  display: inline-block;
+  padding: 2px;
+
+  line-height: 1em;
+  font-size: .8em;
+}
+
 
 
 /*** card ****des */
