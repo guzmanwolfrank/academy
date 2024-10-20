@@ -386,7 +386,8 @@ nav a {
 
 .content2 li:hover {
   color: #fff;
-  background-color: #0066FF;
+  background-color: #12e4c8;
+  cursor: pointer;
 }
 
 .content2 ul {
