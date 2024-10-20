@@ -5,6 +5,7 @@
     box-sizing: border-box;
     overflow-x: hidden;
     text-decoration: none;
+    
 }
 
 body {
@@ -20,6 +21,7 @@ body {
     margin: 0 auto;
     padding: 20px;
 }
+
 
 header {
   background-color: #000;     background-image: cover;
@@ -279,7 +281,24 @@ nav a {
 
 /* Second content section */
 .content-section {
-    padding: 80px 0;
+    padding: 0px 0;
+    
+}
+.joincontent-section {
+  padding: 0px 0;
+  background-color: #000;
+  
+}
+.joincontainer {
+  max-width: 70%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #000;
+}
+/* Second content section */
+.joincontent-section {
+  padding: 80px 0;
+  background-color: #000;
 }
 
 .content-section .container {
@@ -287,6 +306,7 @@ nav a {
     justify-content: space-between;
     align-items: center;
     gap: 60px;
+
 }
 
 .tradingview-widget-container{
@@ -298,7 +318,14 @@ nav a {
 .content {
     flex: 1;
 }
-
+.joincontent {
+  flex: 1;
+  color: #fff;
+  background-color: #000;
+}
+.joincontent-form{
+  background-color: #000;
+}
 .content h2 {
     font-size: 2.5rem;
     margin-bottom: 30px;
@@ -353,6 +380,7 @@ nav a {
   
   .content2-section {
     padding: 80px 0;
+
 }
 
 
@@ -366,7 +394,8 @@ nav a {
 .content2 {
     flex: 1;
     order: 2; /* This moves the content to the right */
-}
+    padding: 80px;
+  }
 
 .content2 h2 {
     font-size: 2.5rem;
@@ -386,7 +415,8 @@ nav a {
 
 .content2 li:hover {
   color: #fff;
-  background-color: #0066FF;
+  background-color: #12e4c8;
+  cursor: pointer;
 }
 
 .content2 ul {
