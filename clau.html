@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        }
+
+        body {
+            background-color: #0a1929;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            background-color: #0a1929;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .logo {
+            color: white;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+
+        .right-nav {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .language-selector {
+            color: white;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 0.5rem;
+            border-radius: 4px;
+        }
+
+        .cta-button {
+            background-color: #0066cc;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            text-decoration: none;
+        }
+
+        .ticker-bar {
+            display: flex;
+            gap: 1rem;
+            padding: 0.5rem 2rem;
+            background-color: rgba(0, 102, 204, 0.1);
+            overflow-x: auto;
+        }
+
+        .ticker-item {
+            background-color: rgba(0, 102, 204, 0.2);
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            color: #00ffff;
+            min-width: 200px;
+        }
+
+        .ticker-symbol {
+            color: white;
+            font-weight: bold;
+        }
+
+        .ticker-value {
+            color: #00ffff;
+        }
+
+        .hero {
+            padding: 4rem 2rem;
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero h1 span {
+            color: #00ffff;
+        }
+
+        .hero p {
+            color: rgba(255, 255, 255, 0.7);
+            max-width: 600px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">LIGHTNING TRADES</div>
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Meetup</a>
+            <a href="#">API On News</a>
+            <a href="#">Blogs</a>
+        </div>
+        <div class="right-nav">
+            <div class="language-selector">🌐 EN</div>
+            <a href="#" class="cta-button">Book a Call</a>
+        </div>
+    </nav>
+
+    <div class="ticker-bar">
+        <div class="ticker-item">
+            <div class="ticker-symbol">US30</div>
+            <div class="ticker-value">43,108.00 +0.11% (46.00)</div>
+        </div>
+        <div class="ticker-item">
+            <div class="ticker-symbol">SPX500</div>
+            <div class="ticker-value">63,108.00 +0.16% (46.00)</div>
+        </div>
+        <div class="ticker-item">
+            <div class="ticker-symbol">IXIC</div>
+            <div class="ticker-value">83,108.00 +0.16% (46.00)</div>
+        </div>
+        <div class="ticker-item">
+            <div class="ticker-symbol">BTCUSD</div>
+            <div class="ticker-value">43,108.00 +0.11% (46.00)</div>
+        </div>
+    </div>
+
+    <div class="hero">
+        <h1>Buy, trade and<br>grow your <span>bussiness</span></h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna alique. Quis ipsum suspendisse ultrices gravida.</p>
+    </div>
+</body>
+</html>
