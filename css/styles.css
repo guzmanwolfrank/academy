@@ -395,6 +395,7 @@ nav a {
     flex: 1;
     order: 2; /* This moves the content to the right */
     padding: 80px;
+    width: 100%;
   }
 
 .content2 h2 {
@@ -756,7 +757,12 @@ input[type="submit"] {
         margin-top: 10px;
         flex-wrap: wrap;
     }
-
+    .logo {
+      font-weight: bold;
+      color: #fff;
+      text-decoration: none;
+      font-size: 1.5em;
+  }
     nav a {
         margin: 5px 10px 5px 0;
     }
@@ -806,7 +812,9 @@ input[type="submit"] {
         flex-direction: column;
         gap: 40px;
     }
-
+    .content-section {
+      width: 100%;
+    }
     .content, .content-image {
         width: 100%;
     }
@@ -890,6 +898,7 @@ input[type="submit"] {
     @media (max-width: 768px) {
         .flex-container {
           flex-direction: column;
+          padding: 40px;
         }
         
         .content-columns {
