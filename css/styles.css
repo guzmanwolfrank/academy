@@ -5,14 +5,15 @@
     box-sizing: border-box;
     overflow-x: hidden;
     text-decoration: none;
-    
 }
 
 body {
     font-family: 'Roboto';
     line-height: 1.6;
-    color: #000;
+    color: #fff;
     text-decoration: none;
+    background-color: #000;
+
 }
 
 /* Layout */
@@ -21,7 +22,15 @@ body {
     margin: 0 auto;
     padding: 20px;
 }
-
+/* Layout */
+.containerblack {
+  max-width: 70%;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #000;
+}
 
 header {
   background-color: #000;     background-image: cover;
@@ -193,7 +202,7 @@ nav a {
 }
 
 .feature-content p {
-  color: #000;
+  color: #fff;
   line-height: 1.6;
 }
 /*** Accordion desktop section ****/
@@ -260,13 +269,16 @@ nav a {
   
   .content-inner {
     padding: 15px;
-   /* background-color: white;*/
+    background-color: white;*/
   }
   
   .content-row {
     margin-bottom: 10px;
+    color: #000;
   }
-  
+  .content-row p, h4{
+    color: #000;
+  }
   .content-columns {
     display: flex;
     gap: 10px;
@@ -277,13 +289,15 @@ nav a {
     flex: 1;
     padding: 10px;
     background-color: transparent;
-    
+    color: #000;
   }
   
 
 /* Second content section */
 .content-section {
     padding: 0px 0;
+    background-color: transparent;
+    background: transparent;
     
 }
 .joincontent-section {
@@ -408,6 +422,8 @@ nav a {
     margin-bottom: 30px;
     color: #fff;
     line-height: 1.2em;
+    /*text-shadow: 1.5px 1.5px 0px #cccc;*/
+
 }
 
 .content2 h3 {
@@ -486,11 +502,10 @@ nav a {
   color: #000;
 }
 .black {
-  background-color: #000;
   background-image: url("/img/student.jpg");
   background-size: cover;
   margin-top: 0;
-
+  z-index: 99;
 }
 .black2 {
   background-color: #000;
@@ -499,6 +514,7 @@ nav a {
 .content3 {
   flex: 1;
   order: 2; /* This moves the content to the right */
+  background: transparent;
 }
 
 .content3 li:hover {
@@ -526,8 +542,8 @@ background-color: #9fa5a4;
 }
 .content3 h3 {
   color: #fff;
-  font-size: 7em;
-  /*text-shadow: 5px 5px 0px #000;*/
+  font-size: 5em;
+  text-shadow: 3.5px 3.5px 0px #12e4c8;*/
 
 
 
@@ -550,9 +566,9 @@ background-color: #9fa5a4;
   }
   
   .card {
-    flex: 1 0 23.33%; /* Divide the container into 3 equal columns */
+    flex: 1 0 20%; /* Divide the container into 3 equal columns */
     padding: 30px;
-    border: 1px solid rgb(207, 210, 214);
+    border: 1px solid #12e4c8;
     border-radius: 10px;
     flex: 1;
     margin: 10px;
@@ -614,16 +630,15 @@ background-color: #9fa5a4;
     justify-content: space-between;
     align-items: center;
     padding: 15px;
-    background-color: #fff;
+    background-color: #000;
     cursor: pointer;
     font-weight:600;
-    color: #000;
+    color: #fff;
   }
   .faq-question:hover {
    /* background-color: #b3c6d1;*/
    background-color: #000;
    border: 4px solid #12e4c8;
-
    color: #fff;
   }
   .faq-question::after {
@@ -635,17 +650,17 @@ background-color: #9fa5a4;
   }
   .faq-question.active::after {
     content: '-';
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 200;
   }
   .faq-answer {
     display: none;
-    padding: 15px;
     border-top: 1px solid #ddd;
-    background-color: #fff
+    background-color: #fff;
+    color: #000;
+    padding: 10px;
   }
   .faq-answer h1 {
-  font-size: ;
   color: #000;
   font-weight: 400;
   background-color: #fff;
@@ -653,6 +668,7 @@ background-color: #9fa5a4;
   .faq-answer p {
     color: #000;
     font-weight: 300;
+    padding: 10px;
     
   }
   
@@ -867,7 +883,6 @@ input[type="submit"] {
     }
     /*********/
     .black {
-      background-color: #000;
       background-image: none;
     }
 
