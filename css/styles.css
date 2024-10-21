@@ -5,14 +5,15 @@
     box-sizing: border-box;
     overflow-x: hidden;
     text-decoration: none;
-    
 }
 
 body {
     font-family: 'Roboto';
     line-height: 1.6;
-    color: #000;
+    color: #fff;
     text-decoration: none;
+    background-color: #000;
+
 }
 
 /* Layout */
@@ -21,7 +22,15 @@ body {
     margin: 0 auto;
     padding: 20px;
 }
-
+/* Layout */
+.containerblack {
+  max-width: 70%;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #000;
+}
 
 header {
   background-color: #000;     background-image: cover;
@@ -193,7 +202,7 @@ nav a {
 }
 
 .feature-content p {
-  color: #000;
+  color: #fff;
   line-height: 1.6;
 }
 /*** Accordion desktop section ****/
@@ -215,7 +224,7 @@ nav a {
     width: 100%;
     border: 1px solid #ddd;
     border-radius: 4px;
-    overflow: hidden;  
+    overflow: hidden;     
   }
   
   .accordion-trigger {
@@ -260,28 +269,35 @@ nav a {
   
   .content-inner {
     padding: 15px;
-   /* background-color: white;*/
+    background-color: white;*/
   }
   
   .content-row {
     margin-bottom: 10px;
+    color: #000;
   }
-  
+  .content-row p, h4{
+    color: #000;
+  }
   .content-columns {
     display: flex;
     gap: 10px;
+    
   }
   
   .content-column {
     flex: 1;
     padding: 10px;
     background-color: transparent;
+    color: #000;
   }
   
 
 /* Second content section */
 .content-section {
     padding: 0px 0;
+    background-color: transparent;
+    background: transparent;
     
 }
 .joincontent-section {
@@ -395,14 +411,19 @@ nav a {
     flex: 1;
     order: 2; /* This moves the content to the right */
     padding: 80px;
-    width: 100%;
+    width: 80%;
+    align-items: center;
+    align-content: center;
+
   }
 
 .content2 h2 {
     font-size: 2.5rem;
     margin-bottom: 30px;
-    color: #000;
+    color: #fff;
     line-height: 1.2em;
+    /*text-shadow: 1.5px 1.5px 0px #cccc;*/
+
 }
 
 .content2 h3 {
@@ -418,18 +439,25 @@ nav a {
   color: #fff;
   background-color: #12e4c8;
   cursor: pointer;
+  display: inline-block;
+  padding: 20px;
+  padding-left: 28px;
+
 }
 
 .content2 ul {
     list-style: none;
-    padding: 0;
+    padding: 20px;
     padding-bottom: 40px;
 }
 
 .content2 li {
     margin-bottom: 15px;
     padding-left: 28px;
+    padding: 20px;
     position: relative;
+    font-size: 1.5em;
+    color:#fff;
 }
 
 .content2 li::before {
@@ -465,35 +493,33 @@ nav a {
   display: flex;
   color: #fff;
 }
-.black {
+.contentcontainer3{
   background-color: #000;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  color: #000;
+}
+.black {
   background-image: url("/img/student.jpg");
   background-size: cover;
   margin-top: 0;
+  z-index: 99;
+}
+.black2 {
+  background-color: #000;
 
 }
 .content3 {
   flex: 1;
   order: 2; /* This moves the content to the right */
-}
-
-.content3 h2 {
-  font-size: 2.5rem;
-  margin-bottom: 30px;
-  line-height: 1.2em;
-}
-
-.content3 h3 {
-font-size: 5rem;
-margin-bottom: 30px;
-line-height: 1.2em;
-padding: 20px;
-color: #fff;
+  background: transparent;
 }
 
 .content3 li:hover {
 color: #000;
-background-color: #fff;
+background-color: #9fa5a4;
 }
 
 .content3 ul {
@@ -514,22 +540,19 @@ background-color: #fff;
   padding: 10px; /* Adds padding around the list items */
   /*border: 1px solid #ccc; /* Adds a border around the list items */
 }
-.content3 h4, .content3 h4 a{
-  color: #000;
-  background-color: #fff;
-  display: inline-block;
-  line-height: 1em;
-  font-size: .8em;
-  padding: 2px;
-}
-.content3 h5{
-  color: #000;
-  background-color: #fff;
-  padding: 2px;
-  display: inline-block;
-  font-size: .8em;
-}
+.content3 h3 {
+  color: #fff;
+  font-size: 5em;
+  text-shadow: 3.5px 3.5px 0px #12e4c8;*/
 
+
+
+}
+.content3 h4, .content3 h4 a{
+  color: #12e4c8;
+  display: inline;
+
+}
 
 /*** card ****des */
 .card-container {
@@ -538,13 +561,14 @@ background-color: #fff;
     width: 100%;
     margin: auto 0;
     align-content: center;
-    margin-bottom: 80px;
+    margin-bottom: 0px;
+    background-color: #000;
   }
   
   .card {
-    flex: 1 0 23.33%; /* Divide the container into 3 equal columns */
+    flex: 1 0 20%; /* Divide the container into 3 equal columns */
     padding: 30px;
-    border: 1px solid rgb(207, 210, 214);
+    border: 1px solid #12e4c8;
     border-radius: 10px;
     flex: 1;
     margin: 10px;
@@ -583,7 +607,7 @@ background-color: #fff;
 /*****FAQ*****/
 .faq{
     width: 100%;
-    background-color: #fff;
+    background-color: #000;
     padding: 50px;
     padding-bottom: 80px;
   }
@@ -594,7 +618,7 @@ background-color: #fff;
     background-color: inherit;
   }
   .faqcontainer h1 {
-    text-align: center;
+    text-align: center;color: #fff;
   }
   .faq-item {
     margin-bottom: 10px;
@@ -606,14 +630,15 @@ background-color: #fff;
     justify-content: space-between;
     align-items: center;
     padding: 15px;
-    background-color: #fff;
+    background-color: #000;
     cursor: pointer;
     font-weight:600;
-    color: #000;
+    color: #fff;
   }
   .faq-question:hover {
    /* background-color: #b3c6d1;*/
    background-color: #000;
+   border: 4px solid #12e4c8;
    color: #fff;
   }
   .faq-question::after {
@@ -625,17 +650,17 @@ background-color: #fff;
   }
   .faq-question.active::after {
     content: '-';
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 200;
   }
   .faq-answer {
     display: none;
-    padding: 15px;
     border-top: 1px solid #ddd;
-    background-color: #fff
+    background-color: #fff;
+    color: #000;
+    padding: 10px;
   }
   .faq-answer h1 {
-  font-size: ;
   color: #000;
   font-weight: 400;
   background-color: #fff;
@@ -643,6 +668,7 @@ background-color: #fff;
   .faq-answer p {
     color: #000;
     font-weight: 300;
+    padding: 10px;
     
   }
   
@@ -751,8 +777,11 @@ input[type="submit"] {
     header .container {
         flex-direction: column;
         align-items: flex-start;
+        width: 100%;
     }
-
+    .container{
+      width: 100%;
+    }
     nav {
         margin-top: 10px;
         flex-wrap: wrap;
@@ -852,27 +881,31 @@ input[type="submit"] {
       display: flex;
       color: #fff;
     }
+    /*********/
     .black {
+      background-image: none;
+    }
+
+    /******/
+    .contentcontainer3{
       background-color: #000;
+      max-width: 100%;
+      margin: 0 auto;
+      padding: 20px;
+      display: none;
+      color: #000;
     }
     .content3 {
       flex: 1;
       order: 2; /* This moves the content to the right */
     }
     
-    .content3 h2 {
-      font-size: 2.5rem;
-      margin-bottom: 30px;
-      line-height: 1.2em;
-    }
-    
+
     .content3 h3 {
-    font-size: 2.5rem;
-    margin-bottom: 30px;
-    line-height: 1.2em;
-    padding: 20px;
-    color: #fff;
+      font-size: 2.5em;
+
     }
+
     
     .content3 li:hover {
     color: #000;
@@ -912,7 +945,7 @@ input[type="submit"] {
       }
       .faq{
         width: 100%;
-        background-color: #fff;
+        background-color: #000;
         padding: 50px;
         padding-bottom: 80px;
       }
