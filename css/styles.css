@@ -22,6 +22,12 @@ body {
     margin: 0 auto;
     padding: 20px;
 }
+.connycontainer {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #000;
+}
 /* Layout */
 .containerblack {
   max-width: 70%;
@@ -536,7 +542,7 @@ background-color: #9fa5a4;
   padding-left: 28px;
   position: relative;
   background-color: #000;
-  font-size:1.5em;
+  font: size 1.2em;
   padding: 10px; /* Adds padding around the list items */
   /*border: 1px solid #ccc; /* Adds a border around the list items */
 }
@@ -898,6 +904,7 @@ input[type="submit"] {
     .content3 {
       flex: 1;
       order: 2; /* This moves the content to the right */
+      width: 100%;
     }
     
 
@@ -925,7 +932,8 @@ input[type="submit"] {
       padding-left: 28px;
       position: relative;
       background-color: #000;
-      font-size:1.5em;
+      font-size:1.2em;
+      width: 100%;
     }
     
     @media (max-width: 768px) {
@@ -959,6 +967,12 @@ input[type="submit"] {
 @media (max-width: 768px) {
     .card {
       flex: 1 0 90%; /* Make each card occupy the full width */
+    }
+    .connycontainer {
+      max-width: 100%;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #000;
     }
   }
       
