@@ -10,9 +10,9 @@
 body {
     font-family: 'Roboto';
     line-height: 1.6;
-    color: #fff;
+    color: #000;
     text-decoration: none;
-    background-color: #000;
+    background-color: #fff;
 
 }
 
@@ -29,11 +29,11 @@ body {
   padding: 20px;
   display: flex;
   flex-wrap: wrap;
-  background-color: #000;
+  background-color: #fff;
 }
 
 header {
-  background-color: #000;     background-image: cover;
+  background-color: #fff;     background-image: cover;
   background-image: url("/img/.jpg");*/
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
 }
@@ -46,16 +46,16 @@ header {
 }
 
 .logo {
-    font-weight: bold;
     color: #fff;
     text-decoration: none;
-    font-size: 2.5em;
+    font-size: 1.4em;
+
 }
 .login {
-  color: #000;
+  color: #fff;
  /* border: .5px solid black;*/
     border-radius: 10px;
-    padding: 4px;
+    padding: 5px;
     display: inline-block;
 }
 
@@ -83,7 +83,7 @@ nav a {
 .hero{
     background-color: #000;
     background-image: cover;
-    background-image: url("/img/");*/
+    background-image: url("/img/hero-bg2.jpg");*/
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
     padding-bottom: 20px;
 
@@ -202,7 +202,7 @@ nav a {
 }
 
 .feature-content p {
-  color: #fff;
+  color: #000;
   line-height: 1.6;
 }
 /*** Accordion desktop section ****/
@@ -302,19 +302,19 @@ nav a {
 }
 .joincontent-section {
   padding: 0px 0;
-  background-color: #000;
+  background-color: #ccc;
   
 }
 .joincontainer {
   max-width: 70%;
   margin: 0 auto;
   padding: 20px;
-  background-color: #000;
+  background-color: #ccc;
 }
 /* Second content section */
 .joincontent-section {
   padding: 80px 0;
-  background-color: #000;
+  background-color: #ccc;
 }
 
 .content-section .container {
@@ -336,8 +336,8 @@ nav a {
 }
 .joincontent {
   flex: 1;
-  color: #fff;
-  background-color: #000;
+  color: #000;
+  background-color: #ccc;
 }
 .joincontent-form{
   background-color: #000;
@@ -420,7 +420,7 @@ nav a {
 .content2 h2 {
     font-size: 2.5rem;
     margin-bottom: 30px;
-    color: #fff;
+    color: #000;
     line-height: 1.2em;
     /*text-shadow: 1.5px 1.5px 0px #cccc;*/
 
@@ -457,7 +457,7 @@ nav a {
     padding: 20px;
     position: relative;
     font-size: 1.5em;
-    color:#fff;
+    color:#000;
 }
 
 .content2 li::before {
@@ -494,7 +494,7 @@ nav a {
   color: #fff;
 }
 .contentcontainer3{
-  background-color: #000;
+  background-color: #fff;
   max-width: 100%;
   margin: 0 auto;
   padding: 20px;
@@ -502,7 +502,7 @@ nav a {
   color: #000;
 }
 .black {
-  background-image: url("/img/student.jpg");
+ /* background-image: url("/img/student.jpg");*/
   background-size: cover;
   margin-top: 0;
   z-index: 99;
@@ -526,7 +526,7 @@ background-color: #9fa5a4;
   list-style: none;
   padding: 10px;
   padding-bottom: 40px;
-  color: #fff;
+  color: #000;
   width: 100%;
   font-size: 1em; /* Sets the font size */
 }
@@ -535,15 +535,15 @@ background-color: #9fa5a4;
   margin-bottom: 15px;
   padding-left: 28px;
   position: relative;
-  background-color: #000;
+  background-color: #fff;
   font-size:1.5em;
   padding: 10px; /* Adds padding around the list items */
   /*border: 1px solid #ccc; /* Adds a border around the list items */
 }
 .content3 h3 {
-  color: #fff;
+  color: #12e4c8;
   font-size: 5em;
-  text-shadow: 3.5px 3.5px 0px #12e4c8;*/
+ /* text-shadow: 3.5px 3.5px 0px #12e4c8;*/
 
 
 
@@ -562,7 +562,7 @@ background-color: #9fa5a4;
     margin: auto 0;
     align-content: center;
     margin-bottom: 0px;
-    background-color: #000;
+    background-color: #fff;
   }
   
   .card {
@@ -572,7 +572,7 @@ background-color: #9fa5a4;
     border-radius: 10px;
     flex: 1;
     margin: 10px;
-    background-color: #000;
+    background-color: #ccc;
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
     
 }
@@ -584,7 +584,7 @@ background-color: #9fa5a4;
     font-size: 2em;
   }
   .card-content p {
-    color: #fff;
+    color: #333;
     font-weight: 400;
   }
 
@@ -607,7 +607,7 @@ background-color: #9fa5a4;
 /*****FAQ*****/
 .faq{
     width: 100%;
-    background-color: #000;
+    background-color: #fff;
     padding: 50px;
     padding-bottom: 80px;
   }
@@ -618,7 +618,7 @@ background-color: #9fa5a4;
     background-color: inherit;
   }
   .faqcontainer h1 {
-    text-align: center;color: #fff;
+    text-align: center;color: #000;
   }
   .faq-item {
     margin-bottom: 10px;
@@ -630,14 +630,14 @@ background-color: #9fa5a4;
     justify-content: space-between;
     align-items: center;
     padding: 15px;
-    background-color: #000;
+    background-color: #ccc;
     cursor: pointer;
     font-weight:600;
     color: #fff;
   }
   .faq-question:hover {
    /* background-color: #b3c6d1;*/
-   background-color: #000;
+   background-color: #aaaaaa;
    border: 4px solid #12e4c8;
    color: #fff;
   }
@@ -679,7 +679,7 @@ background-color: #9fa5a4;
 .calendly-widget {
   width: 100%;
   height: 960px;
-  background-color: #000;
+  background-color: #fff;
 }
 /* Footer */
 footer, footer li,footer li a , a:visited, a:active, footer a{
@@ -778,6 +778,7 @@ input[type="submit"] {
         flex-direction: column;
         align-items: flex-start;
         width: 100%;
+        color: #000;
     }
     .container{
       width: 100%;
@@ -788,12 +789,12 @@ input[type="submit"] {
     }
     .logo {
       font-weight: bold;
-      color: #fff;
+      color: #666;
       text-decoration: none;
       font-size: 1.5em;
   }
     nav a {
-        margin: 5px 10px 5px 0;
+        margin: 5px 10px 5px 0;color: #000;
     }
     .hero, .features, .content-section, .footer-content {
         flex-direction: column;
@@ -916,7 +917,7 @@ input[type="submit"] {
       list-style: none;
       padding: 10px;
       padding-bottom: 40px;
-      color: #fff;
+      color: #666;
       width: 100%;
     }
     
@@ -924,7 +925,7 @@ input[type="submit"] {
       margin-bottom: 15px;
       padding-left: 28px;
       position: relative;
-      background-color: #000;
+      background-color: #fff;
       font-size:1.5em;
     }
     
@@ -945,7 +946,7 @@ input[type="submit"] {
       }
       .faq{
         width: 100%;
-        background-color: #000;
+        background-color: #fff;
         padding: 50px;
         padding-bottom: 80px;
       }
