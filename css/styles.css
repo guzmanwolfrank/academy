@@ -418,6 +418,28 @@ nav a {
     align-content: center;
 
   }
+  .content4 {
+    flex: 1;
+    order: 2; /* This moves the content to the right */
+    padding: 80px;
+    width: 50%;
+    align-items: center;
+    align-content: center;
+
+  }
+  .content5 {
+    flex: 1;
+    order: 2; /* This moves the content to the right */
+    padding: 80px;
+    width: 80%;
+    align-items: center;
+    align-content: center;
+
+  }
+  .content2 img{
+    max-width: 100%;
+    height: auto;
+  }
 
 .content2 h2 {
     font-size: 2.5rem;
@@ -455,7 +477,6 @@ nav a {
 
 .content2 li {
     margin-bottom: 15px;
-    padding-left: 28px;
     padding: 20px;
     position: relative;
     font-size: 1.5em;
