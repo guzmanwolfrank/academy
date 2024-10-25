@@ -812,15 +812,20 @@ input[type="submit"] {
     }
     .logo {
       font-weight: bold;
-      color: #666;
+      color: #fff;
       text-decoration: none;
       font-size: 1.5em;
+      
   }
     nav a {
         margin: 5px 10px 5px 0;color: #000;
     }
     .hero, .features, .content-section, .footer-content {
         flex-direction: column;
+    }
+    .hero{
+      background-color: #333;
+      background-image: none;
     }
     .hero .container {
         flex-direction: column;
@@ -859,7 +864,7 @@ input[type="submit"] {
         margin-bottom: 30px;
     }
     .feature-content{
-        display: none;
+      /* display: none;*/
     }
     .content-section .container {
         flex-direction: column;
@@ -912,11 +917,10 @@ input[type="submit"] {
 
     /******/
     .contentcontainer3{
-      background-color: #000;
+      background-color: #fff;
       max-width: 100%;
       margin: 0 auto;
       padding: 20px;
-      display: none;
       color: #000;
     }
     .content3 {
@@ -965,7 +969,9 @@ input[type="submit"] {
         .content-column {
           margin-bottom: 10px;
         }
-        .features {display: none;}
+        .features {
+          /*display: none;*/
+        }
       }
       .faq{
         width: 100%;

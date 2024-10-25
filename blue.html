@@ -1,0 +1,1195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Futures Classes -- Trading Course for beginners.</title>
+    <style>
+        /* Reset and base styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-color: #0066ff;
+            --text-color: #333;
+            --bg-light: #f8f9fa;
+            --spacing-unit: 1rem;
+            --max-width: 1200px;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+
+        /* Container */
+        .container {
+            width: 70%;
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 0 var(--spacing-unit);
+        }
+
+        /* Header */
+        .header {
+            position: sticky;
+            top: 0;
+            background: white;
+            z-index: 1000;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+            width: 100%;
+            max-width: var(--max-width);
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--primary-color);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            margin-left: auto; /* Push links to the right */
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text-color);
+            transition: color 0.3s;
+        }
+
+        /* Main content sections */
+        main {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        section {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            padding: 4rem 0;
+        }
+
+        /* Hero Section */
+        .hero {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            background: var(--bg-light);
+            background-image: url("/img/student.jpg");
+            background-size: 100%;
+            background: cover;
+            background-repeat: no-repeat;
+            background-position: 30%;
+        }
+
+        .hero-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 2rem;
+            max-width: var(--max-width);
+            width: 70%;
+        }
+
+        .hero-content {
+            flex: 1;
+            max-width: 600px;
+        }
+        
+        .hero-content h1{
+            font-size: 2.5em;
+            line-height: 1.1;
+            color: #0066ff;
+        }
+        .hero-content h2{
+            font-size: 1.5em;
+            line-height: 1.1;
+            color: white;
+        }
+        .hero-content p{
+            font-size: 1.1em;
+            line-height: 1.2;
+            padding: 10px;
+        }
+
+        .hero-image {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .hero-image img{
+            width: 70%;
+            height: auto;
+        }
+
+        /* Features Grid */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            width: 100%;
+        }
+
+        .feature-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 2rem;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        /* Content Sections */
+        .content-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 4rem;
+            width: 100%;
+        }
+
+
+        /* Telir */
+        .telir {
+            display: flex;
+        }
+        
+        .text-column {
+            flex: 1;
+            padding: 20px;
+        }
+        
+        .text-column h1{font-size: 1.2em; }
+        
+        .text-column p{font-size: 1em; }
+
+        .image-column {
+            flex: 1;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Ilrit */
+        .ilrit {
+            display: flex;
+        }
+        
+        .image-column,
+        .text-column {
+            flex: 1;
+            padding: 20px;
+        }
+/*  How it Works / Get Started */
+.howstarted {
+    display: flex;
+}
+
+.howitworks, .getstarted {
+    flex: 1;
+    padding: 20px;
+}
+/**** course ************/
+.coursecontainer {
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.coursesection {
+    display: flex;
+    max-width: 1200px; /* Adjust max-width as needed */
+    margin: 0 auto;
+    border: 1px solid #ccc;*/
+    background-color: #ecedee;
+}
+.courseleft, .courseright {
+    flex: 1;
+    padding: 20px;
+}
+.courseleft{width: 35%;}
+.courseleft h2{ font-size: 1.1em;color: #fff;background-color: #ccc;padding: 5px;}
+.courseright{width: 60%;}
+.courseleft ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.courseleft li {
+    margin-bottom: 10px;
+    padding-left: 40px;
+    position: relative;
+    font-size: .9em;
+    list-style-type: none;
+    
+}
+
+.courseleft li::before {
+    content: "\2022"; /* Bullet point character */
+    color: black;
+    font-size: 16px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.courseright li {
+    margin-bottom: 10px;
+    padding-left: 40px;
+    position: relative;
+    font-size: .9em;
+    list-style-type: none;   
+}
+.courseright li::before {
+    content: "\2022"; /* Bullet point character */
+    color: black;
+    font-size: 16px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.courseright h2 { font-size: 1em;}
+
+
+/* Testimonials */
+        .testimonial3row {
+            /* Overall container styles */
+        }
+
+        .row1, .row2, .row3 {
+            /* Styles for each row */
+            color: #333; font-weight: 400;
+        }
+        
+        .row3 {
+            display: flex;
+        }
+        .row1 p{padding-bottom: 30px;}
+        .row1 p,.row2 p{ font-size: .8em;text-align:left;}
+        .row2 p{font-weight: 600;}
+
+        .row3 p{text-align: left; font-size: .8em;}
+        .row3 img{
+            width: 20px;
+            height: 20px;
+            margin-left: 4px;
+            padding-left: 4px;
+        }
+        
+        .row3 .text-column, .row3 .image-column {
+            flex: 1;
+        }
+        
+        .row3 .image-column {
+            text-align: right; /* Align images to the right */
+        }
+        .testimonialtext-column {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .testimonialimage-column {
+            flex: 1;
+            text-align: center;
+            padding: 20px;
+        }
+        .testimonialimage-column img{
+            width: 40px;
+            height: 40px;
+        }
+
+        .testimonialsfeature-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 2rem;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(2, 81, 252, 0.281);
+        }
+/* FAQ section */
+/*****FAQ*****/
+.faq{
+    width: 50%;
+    background-color: #fff;
+    padding: 50px;
+    padding-bottom: 80px;
+  }
+  .faqcontainer {
+    max-width: 70%;
+    margin: 0 auto;
+    /*font-family: Arial, sans-serif;*/
+    background-color: inherit;
+  }
+  .faqcontainer h1 {
+    text-align: center;color: #555; font-size: 1.4em;
+  }
+  .faq-item {
+    margin-bottom: 10px;
+   border: 1px solid #ddd;
+    border-radius: 5px;*/
+  }
+  .faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #fff;
+    cursor: pointer;
+    font-weight:400;
+    color: #555;
+  }
+  .faq-question:hover {
+   /* background-color: #b3c6d1;*/
+   background-color: #ccc;
+   border: 2px solid #ccc;
+   color: #fff;
+  }
+  .faq-question::after {
+    content: '+';
+    font-size: 14px;
+    font-weight: 200;
+    transition: transform 0.3s ease;
+    color: #000;
+  }
+  .faq-question.active::after {
+    content: '-';
+    font-size: 14px;
+    font-weight: 200;
+  }
+  .faq-answer {
+    display: none;
+    border-top: 1px solid #ddd;
+    background-color: #fff;
+    color: #000;
+    padding: 10px;
+  }
+  .faq-answer h1 {
+  color: #000;
+  font-weight: 400;
+  background-color: #fff;
+  }
+  .faq-answer p {
+    color: #000;
+    font-weight: 300;
+    padding: 10px;
+    
+  }
+  
+  .faq-answer.show {
+    display: block;
+  }
+
+/** Calendly **/
+.calendly-widget {
+    width: 100%;
+    height: 960px;
+    background-color: #fff;
+  }
+/* Footer */
+     /* Footer */
+footer, footer li,footer li a , a:visited, a:active, footer a{
+    background-color: #555;
+    padding: 40px 0;
+    text-decoration: none;
+    color: #fff;
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+    font-size: .9em;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 0 15px;
+    height: auto;
+    margin-bottom: 20px;
+}
+.footer-section2 {
+  flex: 1;
+  margin: 0 15px;
+  width: 50%;
+}
+
+.footer-section h3 {
+    margin-bottom: 15px;
+}
+.footer-section ul li, a:active, a:hover, a:visited {
+  text-decoration: inherit;
+}
+/**forms**/
+label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;5px;
+  }
+  
+  textarea {
+    height: 100px;
+    width: 100%;
+  }
+  
+  input[type="submit"] {
+    background-color: #0066ff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+  }
+  
+  .social-links {
+    position: absolute;
+    right: 2rem;
+    top: 30%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    z-index: 99;  padding-bottom: 40px;
+  
+  }
+  
+  .social-links a {
+    width: 40px;
+    height: 40px;
+    background: rgba(212, 221, 228, 0.712);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color:#000;
+    text-decoration: none;
+    z-index: 99;
+  }
+  .joincontent {
+    flex: 1;
+    color: #555;
+    background-color: #ccc;
+  }
+  .joincontent-form{
+    background-color: #000;
+  }
+  .joincontent-section {
+    padding: 0px 0;
+    background-color: #ccc;
+    
+  }
+  .joincontainer {
+    max-width: 70%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ccc;
+  }
+  /* Second content section */
+  .joincontent-section {
+    padding: 80px 0;
+    background-color: #ccc;
+  }
+   
+/* Responsive Design ***********************************/
+/* Responsive Design ***********************************/
+/* Responsive Design ***********************************/
+
+@media screen and (max-width: 1024px) {
+            .hero-container {
+                flex-direction: column;
+                text-align: center;
+                padding: 0 var(--spacing-unit);
+            }
+            .hero {
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                background: var(--bg-light);
+                background-size: 100%;
+                background: fill;
+                background-repeat: no-repeat;
+                background-position: 30%;
+            }
+            .hero h2 {color: #333;}
+
+            .features-grid {
+                grid-template-columns: repeat(2, 1fr);
+                padding: 0 var(--spacing-unit);
+            }
+
+            .footer-content {
+                grid-template-columns: repeat(3, 1fr);
+            }
+            .faq{
+                width: 100%;
+                background-color: #fff;
+                padding: 50px;
+                padding-bottom: 80px;
+              }
+              .faqcontainer {
+                max-width: 90%;
+                margin: 0 auto;
+                /*font-family: Arial, sans-serif;*/
+                background-color: inherit;
+              }
+        }
+
+@media screen and (max-width: 768px) {
+            .nav {
+                padding: 1rem var(--spacing-unit);
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            .menu-toggle {
+                display: block;
+            }
+
+            .content-section {
+                flex-direction: column;
+                padding: 0 var(--spacing-unit);
+            }
+
+            .testimonials-grid {
+                grid-template-columns: repeat(2, 1fr);
+                padding: 0 var(--spacing-unit);
+            }
+        }
+
+@media screen and (max-width: 480px) {
+            .features-grid,
+            .testimonials-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+                padding: 0 var(--spacing-unit);
+            }
+        }
+@media (max-width: 768px) {
+            .telir {
+              flex-direction: column; /* Stack columns vertically on mobile */
+            }
+          
+            .text-column,
+            .image-column {
+              flex: 0 0 auto; /* Remove flex-grow and flex-shrink on mobile */
+              width: 100%; /* Make each column full width */
+            }
+          
+            .image-column img {
+              width: 100%; /* Make image responsive on mobile */
+              height: auto;
+            }
+@media (max-width: 768px) {
+                .ilrit {
+                  flex-direction: column;
+                }
+              
+                .image-column,
+                .text-column {
+                  flex: 0 0 auto;
+                  width: 100%;
+                  padding: 10px;
+                }
+              
+                .image-column img {
+                  width: 100%;
+                  height: auto;
+                }
+              }
+          }
+@media (max-width: 768px) {
+            .testimonial3row .row3 {
+              flex-direction: column; /* Stack columns vertically on mobile */
+            }
+          
+            .testimonial3row .text-column, .testimonial3row .image-column {
+              flex: 0 0 auto; /* Remove flex-grow and flex-shrink on mobile */
+              width: 100%; /* Make each column full width */
+            }
+          
+            .testimonial3row .image-column {
+              text-align: left; /* Align images to the left on mobile */
+            }
+            .testimonialimage-column img{
+                width: 20px;
+                height: 20px;
+                float: left;
+            }
+            .row3 img{
+                width: 15px;
+                height: 15px;
+                float: right;
+                display: block;
+                margin-left: 4px;
+                padding-left: 4px;
+                }
+
+            .row1 p,.row2 p{ font-size: .8em;text-align: justify;}
+            .row2 p{font-weight: 600;}
+
+            }
+          
+        /* Mobile Menu Toggle */
+        .menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        /* Navigation when active on mobile */
+        .nav-links.active {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            background: white;
+            padding: 1rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        /* Buttons */
+        .btn {
+            display: inline-block;
+            padding: 10px;
+            background: var(--primary-color);
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #0052cc;
+            color: white;
+        }
+        button {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+        }
+        /* Mobile-friendly CSS */
+@media (max-width: 768px) {
+    .courseleft ul {
+        font-size: 14px; /* Adjust font size for smaller screens */
+    }
+}
+
+/* Mobile-friendly CSS */
+@media (max-width: 768px) {
+    .howstarted {
+        flex-direction: column;
+    }
+}
+@media (max-width: 768px) {
+    .coursesection {
+        flex-direction: column; border: none;
+    }
+    .coursecontainer{width: 90%;}
+    .courseleft{width: 100%;}
+    .courseright{width: 100%;}
+}
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="logo">Futures Classes</div>
+           
+            <button class="menu-toggle">☰</button>
+            <div class="nav-links">
+                <a href="#first">Join Our Free Class</a>
+                <a href="#second">FAQ</a>
+                <a href="#third">Contact</a>
+                <a href="#fourth">Login</a>
+            </div>
+            
+        </nav>
+        
+    </header>
+    <div class="social-links">
+        <a href="#">✕</a>
+        <a href="#">f</a>
+        <a href="#">in</a>
+        <a href="#">ig</a>
+      </div>
+    <main>
+        <section class="hero">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <h1>Learn to Trade Futures</h1>
+                    <h2>Start Your Own Business</h2>
+                    <p>We specialize in training beginners and help them pass evaluations so they can trade without risking their own capital.</p>
+                    <a href="#" class="btn">Get Started</a>
+                </div>
+                <div class="hero-image">
+                    <img src="/img/quantower.png" alt="Hero illustration" />
+                </div>
+            </div>
+        </section>
+<!------------------------------------------------------->
+        <section class="features">
+            <div class="container">
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <img src="/img/icons/bootcamp.png"/>
+                        <h3>Bootcamp</h3>
+                        <p>All base UI elements are made using Nested Symbols and shared styles.</p>
+                    </div>
+                    <div class="feature-card">
+                        <img src="/img/icons/chat.png"/>
+                        <h3>Chat Room</h3>
+                        <p>All base UI elements are made using Nested Symbols and shared styles.</p>
+                    </div>
+                    <div class="feature-card">
+                        <img src="/img/icons/call.png"/>
+                        <h3>Market Call</h3>
+                        <p>All base UI elements are made using Nested Symbols and shared styles.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+<!------------------------------------------------------->
+
+
+
+
+<!-- Additional sections following the same pattern... -->
+
+        <div class="telir">
+            <div class="text-column">
+                <h1>Long healdine on two lines to turn your visitors into users and achieve more.</h1>
+                <p>This is some text content for the left column.</p>
+                <p>You can add more paragraphs or other elements as needed.</p>
+            </div>
+            <div class="image-column">
+                <img src="/img/platform.jpg" alt="Image description" width="300" height="auto">
+            </div>
+        </div>
+
+        <!------------------------- text --------------------------  -->
+        <div class="ilrit">
+            <div class="image-column">
+                <img src="img/whitecellphone.png" alt="Image description" width="300" height="auto">
+            </div>
+            <div class="text-column">
+                <h1>Ilrit Long healdine on two lines to turn your visitors into users and achieve more.</h1>
+
+                <p>This is some text content for the right column.</p>
+                <p>You can add more paragraphs or other elements as needed.</p>
+            </div>
+        </div>
+<!-------------------------------------------------------------------->
+
+<div class="howstarted">
+    <div class="howitworks">
+        <h2>How It Works</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+    <div class="getstarted">
+        <h2>Get Started</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+</div>
+
+<!-------------------------------------------------------------------->
+<div class="coursecontainer">
+    <div class="coursesection">
+        <div class="courseleft">
+            <h2>Bootcamp</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <ul>
+                <li>Course Title: Web Development Bootcamp</li>
+                <li>Duration: 12 Weeks</li>
+                <li>Instructor: John Doe</li>
+                <li>Prerequisites: Basic HTML, CSS, and JavaScript knowledge</li>
+                <li>Learning Outcomes: Full-stack web development skills</li>
+            </ul>       
+        </div>
+        <div class="courseright">
+            <h2>Curriculum & Feautures</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <ul>
+                <li>feautre 1: learn to trade options with ocnfidcen</li>
+                <li>feautre 1: learn to trade options with ocnfidcen</li>
+                <li>feautre 1: learn to trade options with ocnfidcen</li>
+                <li>feautre 1: learn to trade options with ocnfidcen</li>
+                <li>feautre 1: learn to trade options with ocnfidcen</li>
+
+                <li>feautre 1</li>
+
+            </ul>
+            <button>Explore Courses</button>
+        </div>
+    </div>
+</div>
+<!----Chat room  -->
+<div class="coursecontainer">
+    <div class="coursesection">
+        <div class="courseleft">
+            <h2>Chat Room</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <ul>
+                <li>Course Title: Web Development Bootcamp</li>
+                <li>Duration: 12 Weeks</li>
+                <li>Instructor: John Doe</li>
+                <li>Prerequisites: Basic HTML, CSS, and JavaScript knowledge</li>
+                <li>Learning Outcomes: Full-stack web development skills</li>
+            </ul>       
+        </div>
+        <div class="courseright">
+            <h2>Curriculum & Feautures</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <ul>
+                <li>feautre 1: learn to trade options with ocnfidcen</li>
+                <li>feautre 1: learn to trade options with ocnfidcen</li>
+                <li>feautre 1: learn to trade options with ocnfidcen</li>
+                <li>feautre 1: learn to trade options with ocnfidcen</li>
+                <li>feautre 1: learn to trade options with ocnfidcen</li>
+
+                <li>feautre 1</li>
+
+            </ul>
+            <button>Explore Courses</button>
+        </div>
+    </div>
+</div>
+<!----Market Call-->
+<div class="coursecontainer">
+    <div class="coursesection">
+        <div class="courseleft">
+            <h2>Market Call</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <ul>
+                <li>Course Title: Web Development Bootcamp</li>
+                <li>Duration: 12 Weeks</li>
+                <li>Instructor: John Doe</li>
+                <li>Prerequisites: Basic HTML, CSS, and JavaScript knowledge</li>
+                <li>Learning Outcomes: Full-stack web development skills</li>
+            </ul>       
+        </div>
+        <div class="courseright">
+            <h2>Curriculum & Feautures</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <ul>
+                <li>feautre 1: learn to trade options with ocnfidcen</li>
+                <li>feautre 1: learn to trade options with ocnfidcen</li>
+                <li>feautre 1: learn to trade options with ocnfidcen</li>
+                <li>feautre 1: learn to trade options with ocnfidcen</li>
+                <li>feautre 1: learn to trade options with ocnfidcen</li>
+
+                <li>feautre 1</li>
+
+            </ul>
+            <button>Explore Courses</button>
+        </div>
+    </div>
+</div>
+
+<!------------------------- testimonials --------------------------  -->
+        <section class="features">
+            <div class="container">
+                <div class="features-grid">
+<!---- Begin Feauture Card -->
+                    <div class="testimonialsfeature-card">
+        <!---injection into features for 3col reviews section-->
+<div class="testimonial3row">
+    <div class="row1"><p>"*ROW1 P* All base belong to us.  This is the 4th Quadrant. Wecan also quick brown fox jumps over the lazydog."</p>
+    
+    </div>
+
+    <div class="row2"><p>Row2 P Harry Miller</p>        
+    </div>
+
+    <div class="row3">
+            <p>*Row 3*  Fall</p>     
+            <img src="/img/icons/bootcamp.png" alt="Image 1" width="20" height="20">
+            <img src="/img/icons/bootcamp.png" alt="Image 2" width="20" height="20">
+    </div>
+    
+</div>
+        <!---END injection into features for 3col reviews section-->
+
+                    </div>
+<!------------------------- End of Feauture Card -->
+<!---- Begin Feauture Card -->
+<div class="testimonialsfeature-card">
+        <!---injection into features for 3col reviews section-->
+    <div class="testimonial3row">
+        <div class="row1"><p>"*ROW1 P* All base belong to us.  This is the 4th Quadrant. Wecan also quick brown fox jumps over the lazydog."</p>
+        
+        </div>
+    
+        <div class="row2"><p>Row2 P Harry Miller</p>        
+        </div>
+    
+        <div class="row3">
+                <p>*Row 3*  Fall</p>     
+                <img src="/img/icons/bootcamp.png" alt="Image 1" width="20" height="20">
+                <img src="/img/icons/bootcamp.png" alt="Image 2" width="20" height="20">
+        </div>
+        
+    </div>   
+        <!---injection into features for 3col reviews section-->
+                            </div>
+<!------------------------- End of Feauture Card -->
+<!---- Begin Feauture Card -->
+                        <div class="testimonialsfeature-card">
+            <!---injection into features for 3col reviews section-->
+                            <div class="testimonial3row">
+                                <div class="row1"><p>"*ROW1 P* All base belong to us.  This is the 4th Quadrant. Wecan also quick brown fox jumps over the lazydog."</p>
+                                
+                                </div>
+                            
+                                <div class="row2"><p>Row2 P Harry Miller</p>        
+                                </div>
+                            
+                                <div class="row3">
+                                        <p>*Row 3*  Fall</p>     
+                                        <img src="/img/icons/bootcamp.png" alt="Image 1" width="20" height="20">
+                                        <img src="/img/icons/bootcamp.png" alt="Image 2" width="20" height="20">
+                                </div>                   
+                            </div>
+                            
+            <!---injection into features for 3col reviews section-->                      
+                        </div>
+    <!--- End of Feature Card-->
+                    <!---end container-----></div>
+            <!--- end grid ---></div>
+        </section>
+       <!---end of section-->
+       <!---- End of Testimonials -->
+
+        <!------------------------- text --------------------------  -->
+<!---FAQ-->
+<div class="faq">
+
+    <div class="faqcontainer">
+      <h1>Frequently Asked Questions</h1>
+      <div class="faq-item">
+          <div class="faq-question">Bootcamp</div>
+          <div class="faq-answer">Futures trading involves buying or selling contracts for the future delivery of commodities, financial instruments, or other assets at predetermined prices. It's a way to speculate on price movements or hedge against potential risks.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">Chat Room</div>
+        <div class="faq-answer">Futures trading involves buying or selling contracts for the future delivery of commodities, financial instruments, or other assets at predetermined prices. It's a way to speculate on price movements or hedge against potential risks.</div>
+    </div>  <div class="faq-item">
+      <div class="faq-question">Market Call</div>
+      <div class="faq-answer">Futures trading involves buying or selling contracts for the future delivery of commodities, financial instruments, or other assets at predetermined prices. It's a way to speculate on price movements or hedge against potential risks.</div>
+  </div>
+      <div class="faq-item">
+          <div class="faq-question">Who should take a futures trading course?</div>
+          <div class="faq-answer">Our futures trading courses are suitable for beginners looking to enter the market, as well as experienced traders wanting to enhance their skills. Anyone interested in financial markets and willing to learn about risk management can benefit from these courses.</div>
+      </div>
+      <div class="faq-item">
+          <div class="faq-question">What topics are covered in your courses?</div>
+          <div class="faq-answer">Our courses cover a wide range of topics including market analysis, trading strategies, risk management, technical analysis, fundamental analysis, and the use of trading platforms. We also discuss regulatory aspects and ethical considerations in futures trading.</div>
+      </div>
+      <div class="faq-item">
+          <div class="faq-question">How long does it take to complete a course?</div>
+          <div class="faq-answer">The duration of our courses varies depending on the level and depth of content. Typically, our introductory courses take 4-6 weeks to complete, while more advanced courses may take 8-12 weeks. All courses are self-paced, allowing you to learn at your own speed.</div>
+      </div>
+      <div class="faq-item">
+          <div class="faq-question">Do I need any special software or equipment?</div>
+          <div class="faq-answer">For most of our courses, you'll only need a computer with a stable internet connection. Some advanced courses may require specific trading software, which we'll provide access to or guide you on how to obtain.</div>
+      </div>
+      <div class="faq-item">
+          <div class="faq-question">Are there any prerequisites for taking your courses?</div>
+          <div class="faq-answer">Our beginner courses have no prerequisites. For intermediate and advanced courses, we recommend having a basic understanding of financial markets and some trading experience. Each course description will list any specific prerequisites.</div>
+      </div>
+      <div class="faq-item">
+          <div class="faq-question">Do you offer practice trading accounts?</div>
+          <div class="faq-answer">Yes, we provide access to simulated trading environments where you can practice strategies without risking real money. These paper trading accounts are an essential part of our practical learning approach.</div>
+      </div>
+      <div class="faq-item">
+          <div class="faq-question">What kind of support do you offer during the course?</div>
+          <div class="faq-answer">We offer various support options including email support, discussion forums, and scheduled Q&A sessions with instructors. Some courses also include one-on-one mentoring sessions for personalized guidance.</div>
+      </div>
+      <div class="faq-item">
+          <div class="faq-question">Is certification provided upon course completion?</div>
+          <div class="faq-answer">Yes, upon successful completion of a course, you'll receive a certificate of completion. However, please note that this is not a professional license and additional requirements may be needed to trade professionally.</div>
+      </div>
+      <div class="faq-item">
+          <div class="faq-question">What is your refund policy?</div>
+          <div class="faq-answer">All sales are final. No refunds will be issued under any circumstances, including but not limited to: Change of mind: If you decide you no longer want the product or service. Technical difficulties: If you experience technical issues with the product or service. Dissatisfaction: If you are not satisfied with the product or service. If you have any questions or concerns about your purchase, please contact us before making a purchase.</div>
+      </div>
+  </div>
+  
+  <script>
+    document.querySelectorAll('.faq-question').forEach(question => {
+        question.addEventListener('click', () => {
+            const answer = question.nextElementSibling;
+            const isOpen = answer.classList.contains('show');
+            
+            // Close all other answers
+            document.querySelectorAll('.faq-answer').forEach(item => item.classList.remove('show'));
+            document.querySelectorAll('.faq-question').forEach(item => item.classList.remove('active'));
+            
+            // Toggle the clicked answer
+            if (!isOpen) {
+                answer.classList.add('show');
+                question.classList.add('active');
+            }
+        });
+    });
+  </script>
+  </div>
+  
+   <!--- Calendly-->
+<div class="calendly-widget">
+
+    <div id="calendly-embed"></div>
+  
+    <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
+    
+    <script>
+    Calendly.initInlineWidget({
+    url: 'https://calendly.com/futuresclasses-info/30min',
+    parentElement: document.getElementById('calendly-embed')
+    });
+    var calendlyEmbed = document.getElementById('calendly-embed');
+    calendlyEmbed.setAttribute("style", "background-color: ##d2d7db;min-width:100%;height:960px;");
+    </script>
+  </div>
+  <!--- Join Content ---->
+
+      <section class="joincontent-section">
+        <div class="joincontainer">
+
+        <div class="joincontent">
+            <h2>Join our Free Class!</h2> <br> <h3>Accelerate your learning with our free preview of our Bootcamp course.</h3>Accelerate your learning with this preview of our Bootcamp Course.
+    <br><br>
+          
+              <form action="process.php"
+       method="post">
+                  <label for="name">Name:</label>
+                  <input type="text" id="name" name="name" required><br><br>
+      
+                  <label for="email">Email:</label>
+                  <input type="email"
+       id="email" name="email" required><br><br>
+      
+                  <label for="phone">Phone:</label>
+                  <input type="tel" id="phone" name="phone"><br><br>
+      
+                  <label for="occupation">Occupation:</label>
+      
+                  <input type="text" id="occupation" name="occupation"><br><br>
+      
+                  <label for="trading_experience">Trading Experience:</label>
+                  <textarea id="trading_experience" name="trading_experience"></textarea><br><br>
+      
+                  <input type="submit" value="Join Free">
+              </form>
+          
+       
+    </div>
+</section>
+
+    </div>
+
+<!--- Footer ----->
+<footer>
+    
+    <div class="container">
+        <div class="footer-content">
+        
+     
+        
+            <div class="footer-section">
+                <h3>Subscribe</h3>
+                <p>Join our newsletter to stay up to date on features and releases.</p>
+                <br>
+                <form id="newsletter-form">
+                  <div class="form-group">
+                      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                  </div>
+                  <br>
+                  <input type="submit" value="Subscribe">
+                </form>
+              </div>
+        </div>
+    </div>
+<div class="container">
+<h3>Disclaimer</h3>
+<p> All content, trading ideas, and setups presented in Futures Classes are for educational purposes only. Futures trading involves significant risks, and a high percentage of traders lose money. Any decision to follow these setups is entirely at your own risk, and you are responsible for your actions. None of the information should be considered as financial advice or a recommendation to trade specific futures contracts. Please be aware that past performance is not indicative of future results. Futures Classes, its employees, and associates are not liable for your trading outcomes. Always conduct your research and consider your risk tolerance.</p>
+<br> <br>
+<h3>Refund Policy</h3>
+<p>
+
+All sales are final. No refunds will be issued under any circumstances, including but not limited to:
+
+Change of mind: If you decide you no longer want the product or service.
+Technical difficulties: If you experience technical issues with the product or service.
+Dissatisfaction: If you are not satisfied with the product or service.
+If you have any questions or concerns about your purchase, please contact us before making a purchase.</p>
+</div>
+
+       </footer>
+    </main>
+
+    <script>
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
