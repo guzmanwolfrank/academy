@@ -44,7 +44,7 @@
             top: 0;
             background: white;
             z-index: 1000;
-            width: 70%;
+            width: 100%;
             display: flex;
             justify-content: center;
         }
@@ -97,6 +97,11 @@
             justify-content: center;
             width: 100%;
             background: var(--bg-light);
+            background-image: url("/img/student.jpg");
+            background-size: 100%;
+            background: cover;
+            background-repeat: no-repeat;
+            background-position: 30%;
         }
 
         .hero-container {
@@ -116,6 +121,12 @@
         .hero-content h1{
             font-size: 2.5em;
             line-height: 1.1;
+            color: #0066ff;
+        }
+        .hero-content h2{
+            font-size: 1.5em;
+            line-height: 1.1;
+            color: white;
         }
         .hero-content p{
             font-size: 1.1em;
@@ -483,12 +494,12 @@ label {
   .social-links a {
     width: 40px;
     height: 40px;
-    background: rgba(255, 255, 255, 0.171);
+    background: rgba(212, 221, 228, 0.712);
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    color:#fff;
+    color:#000;
     text-decoration: none;
     z-index: 99;
   }
@@ -527,6 +538,17 @@ label {
                 text-align: center;
                 padding: 0 var(--spacing-unit);
             }
+            .hero {
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                background: var(--bg-light);
+                background-size: 100%;
+                background: fill;
+                background-repeat: no-repeat;
+                background-position: 30%;
+            }
+            .hero h2 {color: #333;}
 
             .features-grid {
                 grid-template-columns: repeat(2, 1fr);
@@ -723,6 +745,7 @@ label {
     <header class="header">
         <nav class="nav">
             <div class="logo">Futures Classes</div>
+           
             <button class="menu-toggle">☰</button>
             <div class="nav-links">
                 <a href="#first">Join Our Free Class</a>
@@ -730,9 +753,16 @@ label {
                 <a href="#third">Contact</a>
                 <a href="#fourth">Login</a>
             </div>
+            
         </nav>
+        
     </header>
-
+    <div class="social-links">
+        <a href="#">✕</a>
+        <a href="#">f</a>
+        <a href="#">in</a>
+        <a href="#">ig</a>
+      </div>
     <main>
         <section class="hero">
             <div class="hero-container">
@@ -783,14 +813,14 @@ label {
                 <p>You can add more paragraphs or other elements as needed.</p>
             </div>
             <div class="image-column">
-                <img src="/img/filler.jpg" alt="Image description" width="300" height="auto">
+                <img src="/img/platform.jpg" alt="Image description" width="300" height="auto">
             </div>
         </div>
 
         <!------------------------- text --------------------------  -->
         <div class="ilrit">
             <div class="image-column">
-                <img src="img/filler2.jpg" alt="Image description" width="300" height="auto">
+                <img src="img/whitecellphone.png" alt="Image description" width="300" height="auto">
             </div>
             <div class="text-column">
                 <h1>Ilrit Long healdine on two lines to turn your visitors into users and achieve more.</h1>
