@@ -11,30 +11,29 @@
             padding: 0;
             box-sizing: border-box;
         }
-
+a, a:active, {color: #333;}
         :root {
-            --primary-color: #0066ff;
             --text-color: #333;
-            --bg-light: #f8f9fa;
             --spacing-unit: 1rem;
             --max-width: 1200px;
         }
 
-        body {
+
+body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
             line-height: 1.6;
-            color: var(--text-color);
+            color:#333;
             display: flex;
             flex-direction: column;
             align-items: center;
             width: 100%;
         }
-        li {text-decoration: none;}
-     .coursesection   ul, li {
+li {text-decoration: none;}
+.coursesection   ul, li {
             list-style-type: none;
         }
         /* Container */
-        .container {
+.container {
             width: 70%;
             max-width: var(--max-width);
             margin: 0 auto;
@@ -42,7 +41,7 @@
         }
 
         /* Header */
-        .header {
+.header {
             position: sticky;
             top: 0;
             background: white;
@@ -52,49 +51,55 @@
             justify-content: center;
         }
 
-        .nav {
+.nav {
             display: flex;
             justify-content: space-between;
             align-items: center;
             padding: 1rem 0;
             width: 100%;
             max-width: var(--max-width);
+            color: #333;
         }
+.nav a :active, .nav a:visited, {color: #666}
         @media (orientation: portrait) and (min-width: 768px) {
             /* Styles for portrait orientation on desktop devices */
-            .nav{
-                width: 90%; /* Adjust the width as needed */
+.nav{
+                width: 90%;
+                color: #333; /* Adjust the width as needed */
             }
         }
 
-        .logo, .logo a {
+.logo, .logo, .logo a {
             font-size: 1.3rem;
             font-weight: 600;
             color:#0066ff;
             padding: 4px;
             text-decoration: none;
         }
-        .nav-links {
+.nav-links {
             display: flex;
             gap: 2rem;
             margin-left: auto; /* Push links to the right */
         }
 
-        .nav-links a {
+.nav-links a {
             text-decoration: none;
             color:#333;
             transition: color 0.3s;
         }
-        .nav-linksmobile {display: none}
+.nav-links a:hover{
+            color:#333;
+        }
+.nav-linksmobile {display: none}
         /* Main content sections */
-        main {
+main {
             width: 100%;
             display: flex;
             flex-direction: column;
             align-items: center;
         }
 
-        section {
+section {
             width: 100%;
             display: flex;
             justify-content: center;
@@ -102,18 +107,17 @@
         }
 
         /* Hero Section */
-        .hero {
+.hero {
             display: flex;
             justify-content: center;
             min-width: 100%;
             background: cover;
             background-position: 30%;
-            background-color: #66666677;
             background-image: url("/img/student.jpg");
             background-size: 140%;
         }
 
-        .hero-container {
+.hero-container {
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -122,36 +126,36 @@
             width: 70%;
         }
 
-        .hero-content {
+.hero-content {
             flex: 1;
             max-width: 600px;
             width: 70%;
         }
         
-        .hero-content h1{
+.hero-content h1{
             font-size: 2.5em;
             line-height: 1.1;
             color: #fff;
         }
-        .hero-content h2{
+.hero-content h2{
             font-size: 1.5em;
             line-height: 1.1;
             color: white;
         }
-        .hero-content p{
+.hero-content p{
             font-size: 1.1em;
             line-height: 1.2;
             padding: 10px;
             color: #fff;
         }
 
-        .hero-image {
+.hero-image {
             flex: 1;
             display: flex;
             justify-content: center;
             align-items: center;
         }
-        .hero-image img{
+.hero-image img{
             width: 70%;
             height: auto;
         }
@@ -426,7 +430,7 @@
   }
 /* Footer */
      /* Footer */
-footer, footer li,footer li a , a:visited, a:active, footer a{
+footer, footer li,footer li a , footer a{
     background-color: #555;
     padding: 40px 0;
     text-decoration: none;
@@ -541,13 +545,13 @@ input[type="submit"] {
                 display: flex;
                 justify-content: center;
                 width: 100%;
-                background: var(--bg-light);
-                background-size: 100%;
+                background-color: #030303;                
                 background: fill;
                 background-repeat: no-repeat;
                 background-position: 30%;
+                background-image: none;
             }
-.hero h1 {color: #0066ff ;}
+.hero h1 {color: #666 ;}
 .hero h2 {color: #555;}
 .hero p{ color: #666;}
 .features-grid {
@@ -597,6 +601,8 @@ input[type="submit"] {
 .testimonials-grid {
                 grid-template-columns: 1fr;
             }
+.features{display: none;}
+
 
 .footer-content {
                 grid-template-columns: 1fr;
@@ -696,14 +702,13 @@ input[type="submit"] {
         }
 
         /* Buttons */
-.btn {
+.btn, .btn a {
             display: inline-block;
             padding: 10px;
             background-color:#333;
             color: white;
             text-decoration: none;
             border-radius: 4px;
-            transition: background-color 0.3s;
         }
 
 .btn:hover {
@@ -722,16 +727,6 @@ button {
 .courseleft ul {
         font-size: 14px; /* Adjust font size for smaller screens */
     }
-        /* Hero Section */
-.hero {
-            display: flex;
-            justify-content: center;
-            min-width: 100%;
-            background: cover;
-            background-position: 30%;
-            background-color: #333;
-            background-size: 140%;
-        }
 
 .hero-container {
             display: flex;
@@ -761,8 +756,10 @@ button {
                 line-height: 1.2;
                 padding: 10px;
                 color: #fff;
-            }    
+            }  
+.hero-content .btn {background-color: #555;color: #fff;}  
 }
+.hero-content .btn:hover, .hero-content .btn :active {background-color: #0066ff;}  
 
 /* Mobile-friendly CSS */
 @media (max-width: 768px) {
@@ -779,6 +776,7 @@ button {
     .courseright{width: 100%;}
 }
 
+
     </style>
 </head>
 <body>
@@ -786,16 +784,16 @@ button {
         <nav class="nav">
             <div class="logo"><a href="#">Futures Classes</a></div>
                 <div class="nav-links">
-                <a href="#first">Join Our Free Class</a>
-                <a href="#second">FAQ</a>
-                <a href="#third">Contact</a>
-                <a href="#fourth">Login</a>
+                <a href="#join">Join Our Free Class</a>
+                <a href="#faq">FAQ</a>
+                <a href="#contact">Contact</a>
+                <a href="#login">Login</a>
             </div>
             <div class="nav-linksmobile">
                 <a href="#first"></a>
                 <a href="#second"></a>
                 <a href="#third"></a>
-                <a href="#fourth">Login</a>
+                <a href="#login">Login</a>
             </div>
         </nav>
         
@@ -807,7 +805,7 @@ button {
                     <h1>Learn to Trade Futures</h1>
                     <h2>Start Your Own Business</h2>
                     <p>We specialize in training beginners and help them pass evaluations so they can trade without risking their own capital.</p>
-                    <a href="#" class="btn">Get Started</a>
+                    <a href="#getstarted" class="btn">Get Started</a>
                 </div>
                 <div class="hero-image">
                     <img src="/img/quantower.png" alt="Hero illustration" />
@@ -845,7 +843,7 @@ button {
 
         <div class="telir">
             <div class="text-column">
-                <h1>Long healdine on two lines to turn your visitors into users and achieve more.</h1>
+                <h1>Features Long healdine on two lines to turn your visitors into users and achieve more.</h1>
                 <p>This is some text content for the left column.</p>
                 <p>You can add more paragraphs or other elements as needed.</p>
             </div>
@@ -860,7 +858,7 @@ button {
                 <img src="img/dom.gif" alt="Image description" width="300" height="auto">
             </div>
             <div class="text-column">
-                <h1>Ilrit Long healdine on two lines to turn your visitors into users and achieve more.</h1>
+                <h1>Benefits Long healdine on two lines to turn your visitors into users and achieve more.</h1>
 
                 <p>This is some text content for the right column.</p>
                 <p>You can add more paragraphs or other elements as needed.</p>
@@ -875,7 +873,7 @@ button {
         <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
     </div>
     <div class="getstarted">
-        <h2>Get Started</h2>
+        <h2 id="getstarted">Get Started</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
     </div>
@@ -1056,7 +1054,7 @@ button {
 <div class="faq">
 
     <div class="faqcontainer">
-      <h1>Frequently Asked Questions</h1>
+      <h1 id="faq ">Frequently Asked Questions</h1>
       <div class="faq-item">
           <div class="faq-question">Bootcamp</div>
           <div class="faq-answer">Futures trading involves buying or selling contracts for the future delivery of commodities, financial instruments, or other assets at predetermined prices. It's a way to speculate on price movements or hedge against potential risks.</div>
@@ -1148,7 +1146,7 @@ button {
         <div class="joincontainer">
 
         <div class="joincontent">
-            <h2>Join our Free Class!</h2> <br> <h3>Accelerate your learning with our free preview of our Bootcamp course.</h3>Accelerate your learning with this preview of our Bootcamp Course.
+            <h2 id="join">Join our Free Class!</h2> <br> <h3>Accelerate your learning with our free preview of our Bootcamp course.</h3>Accelerate your learning with this preview of our Bootcamp Course.
     <br><br>
           
               <form action="process.php"
