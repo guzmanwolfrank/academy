@@ -34,7 +34,7 @@ li {text-decoration: none;}
         }
         /* Container */
 .container {
-            width: 70%;
+            width: 80%;
             max-width: var(--max-width);
             margin: 0 auto;
             padding: 0 var(--spacing-unit);
@@ -123,13 +123,13 @@ section {
             align-items: center;
             gap: 2rem;
             max-width: var(--max-width);
-            width: 70%;
+            width: 80%;
         }
 
 .hero-content {
             flex: 1;
             max-width: 600px;
-            width: 70%;
+            width: 80%;
         }
         
 .hero-content h1{
@@ -156,7 +156,7 @@ section {
             align-items: center;
         }
 .hero-image img{
-            width: 70%;
+            width: 80%;
             height: auto;
         }
 
@@ -178,7 +178,8 @@ section {
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
-
+        .feature-card a {text-decoration: none;}
+        .feature-card a:visited, .feature-card a:hover, .feature-card a:active {color:#000 ;}
         /* Content Sections */
         .content-section {
             display: flex;
@@ -359,7 +360,7 @@ section {
     padding-bottom: 80px;
   }
 .faqcontainer {
-    max-width: 70%;
+    max-width: 80%;
     margin: 0 auto;
     /*font-family: Arial, sans-serif;*/
     background-color: inherit;
@@ -818,89 +819,152 @@ button {
             <div class="container">
                 <div class="features-grid">
                     <div class="feature-card">
-                        <img src="/img/icons/bootcamp.png"/>
-                        <h3>Bootcamp</h3>
-                        <p>All base UI elements are made using Nested Symbols and shared styles.</p>
+                        <a href="#Bootcamp">
+                            <img src="/img/icons/bootcamp.png"/>
+                        </a>
+                        <a href="#Bootcamp"><h3>Bootcamp</h3></a>                        <p>A comprehensive training program designed to equip individuals with the knowledge and skills necessary to trade futures contracts successfully.</p>
                     </div>
                     <div class="feature-card">
-                        <img src="/img/icons/chat.png"/>
-                        <h3>Chat Room</h3>
-                        <p>All base UI elements are made using Nested Symbols and shared styles.</p>
+                        <a href="#Chat Room">
+                            <img src="/img/icons/chat.png"/>
+                        </a>
+                        <a href="#Chat Room"><h3>Chat Room</h3></a>                        <p> Learn more about our Chat Room, where traders gather to discuss market trends, share trading ideas, and analyze charts.</p>
                     </div>
                     <div class="feature-card">
-                        <img src="/img/icons/call.png"/>
-                        <h3>Market Call</h3>
-                        <p>All base UI elements are made using Nested Symbols and shared styles.</p>
+                        <a href="#Market Call">
+                            <img src="/img/icons/call.png"/>
+                        </a>
+                        <a href="#Market Call"><h3>Market Call</h3></a>                        <p>Market Call offers personalized trading consultations with experienced analysts via Zoom or phone.</p>
                     </div>
                 </div>
             </div>
         </section>
 <!------------------------------------------------------->
 
-
-
+<div class="container">
+    <div class="howstarted">
+        <div class="howitworks">
+            <h2>How It Works</h2>
+            <p>1. Enroll in Our Online Bootcamp:
+                Dive deep into 24 hours of comprehensive trading education, accessible at your own pace.</p>
+            <p>2. Join our Vibrant Community:  Connect with fellow tradiers in our active chat room.  Share insights, ask questions, and learn from others.</p>
+            <p>3. Get Personalized Guidance: Free Consultation: Schedule a free consultation with one of our experts to discuss your specific goals and needs.  Private Sessions:  Book hourly private sessions for tailored coaching and mentorship. </p>
+        </div>
+        <div class="getstarted">
+            <h2 id="getstarted">Get Started</h2>
+            <p>Ready to elevate your trading game? Enroll in our comprehensive online bootcamp and unlock your full potential.</p><br>
+            <a href="#getstarted" class="btn">Get Started</a>
+        </div>
+    </div>
+    </div>
+<!--------------------------------------------------------------------------------------------------------------------------->
+<!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+    <div class="tradingview-widget-container__widget"></div>
+    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-market-overview.js" async>
+    {
+    "colorTheme": "light",
+    "dateRange": "12M",
+    "showChart": true,
+    "locale": "en",
+    "width": "70%",
+    "height": "800",
+    "largeChartUrl": "",
+    "isTransparent": false,
+    "showSymbolLogo": true,
+    "showFloatingTooltip": false,
+    "plotLineColorGrowing": "rgba(17, 85, 204, 1)",
+    "plotLineColorFalling": "rgba(41, 98, 255, 1)",
+    "gridLineColor": "rgba(42, 46, 57, 0)",
+    "scaleFontColor": "rgba(19, 23, 34, 1)",
+    "belowLineFillColorGrowing": "rgba(147, 196, 125, 0.12)",
+    "belowLineFillColorFalling": "rgba(41, 98, 255, 0.12)",
+    "belowLineFillColorGrowingBottom": "rgba(41, 98, 255, 0)",
+    "belowLineFillColorFallingBottom": "rgba(41, 98, 255, 0)",
+    "symbolActiveColor": "rgba(41, 98, 255, 0.12)",
+    "tabs": [
+      {
+        "title": "Futures",
+        "symbols": [
+          {
+            "s": "CME_MINI:ES1!",
+            "d": "S&P 500"
+          },
+          {
+            "s": "CME:6E1!",
+            "d": "Euro"
+          },
+          {
+            "s": "COMEX:GC1!",
+            "d": "Gold"
+          },
+          {
+            "s": "NYMEX:CL1!",
+            "d": "WTI Crude Oil"
+          },
+          {
+            "s": "NYMEX:NG1!",
+            "d": "Gas"
+          },
+          {
+            "s": "CBOT:ZC1!",
+            "d": "Corn"
+          }
+        ],
+        "originalTitle": "Futures"
+      }
+    ]
+  }
+    </script>
+  </div>
+  <!-- TradingView Widget END -->
 
 <!-- Additional sections following the same pattern... -->
-
-        <div class="telir">
-            <div class="text-column">
-                <h1>Features of our course inlcude an overview of futures, commodities, stocks and forex markets:</h1>
-                <p>Online, self paced learning.</p>
-                <p>Hundreds of Quiz questions to help you learn.</p>
-                <p>Online support: Students can ask questions and receive responses 24/7.</p>
-                <p>Discounted Market Call:  Call in for one on one consultation at rebated price.</p>
-                <p>Simplified Software:  We break down how to use software in combinations that keep things simple while showing all pending orders and easy market entry.</p>
-                <p>Minimize Losses: Learn about Prop Firms, Prop Firm Accounts and how to use them to limit risk and enhance upside.</p>
-                <p>Trading Psychology:  Emotional control and discipline.</p>
-                <p>Unit sizing and Risk: Account Replication, 10x your profits using prop firm accounts and replicators.</p>
-                <p>Order entry: Market, Stop, Stop Market, Limit.</p>
-                <p>Risk Management: What is a drawdown? How to avoid or limit drawdowns.</p>
-                <p>Practice trading with virtual funds before going live or on a PA account.</p>
-                <p>Economic Reports and Analysis:  Orders around the news.</p>
-                <p>Learn how to turn trading into a business: journals, statistical measures and performance analysis.</p>
-                <p>Basic economics lessons.</p>
-            </div>
-            <div class="image-column">
-                <img src="/img/platform.jpg" alt="Image description" width="300" height="auto">
-            </div>
+<div class="container">
+    <div class="telir">
+        <div class="text-column">
+            <h1>Features of our course inlcude an overview of futures, commodities, stocks and forex markets:</h1>
+            <p>Online, self paced learning.</p>
+            <p>Simplified Software:  We break down how to use software in combinations that keep things simple while showing all pending orders and easy market entry.</p>
+            <p>Minimize Losses: Learn about Prop Firms, Prop Firm Accounts and how to use them to limit risk and enhance upside.</p>
+            <p>Trading Psychology:  Emotional control and discipline.</p>
+            <p>Unit sizing and Risk: Account Replication, 10x your profits using prop firm accounts and replicators.</p>
+            <p>Order entry: Market, Stop, Stop Market, Limit.</p>
+            <p>Risk Management: What is a drawdown? How to avoid or limit drawdowns.</p>
+            <p>Economic Reports and Analysis:  Orders around the news.</p>
         </div>
-
-        <!------------------------- text --------------------------  -->
-        <div class="ilrit">
-            <div class="image-column">
-                <img src="img/dom.gif" alt="Image description" width="300" height="auto">
-            </div>
-            <div class="text-column">
-                <h1>Benefits of using our course include market knowledge and time flexibility: </h1>
-                <p>Learn how to never risk your own capital, pass evaluations and use prop firm money.</p>
-                <p>Leverage:  Futures trading allows traders to control a larger position with a smaller initial investment, potentially leading to larger profits and losses.</p>
-                <p>Liquidity: Futures markets are highly liquid, making it easier to enter and exit positions quickly.</p>
-                <p>Futures provide a wide range of diverse assets, including commodities, currencies, indices and interest rates.</p>
-                <p>Hedging Strategies:  Learn how to use futures to hedge a portfolio or profit from downward trends.</p>
-                <p>Time and Flexibility: Futures and Forex afford 24 Hour trading, and trade 6 days a week. This provides ample opportunities for traders to capitalize on global events and market trends.</p>
-                <p>Work from anywhere, on your own time.  Work remote and pick your sessions.</p>
-            </div>
+        <div class="image-column">
+            <img src="/img/platform.jpg" alt="Image description" width="300" height="auto">
         </div>
+    </div>
+
+    <!------------------------- text --------------------------  -->
+    <div class="ilrit">
+        <div class="image-column">
+            <img src="img/dom.gif" alt="Image description" width="300" height="auto">
+        </div>
+        <div class="text-column">
+            <h1>Benefits of using our course include market knowledge and time flexibility: </h1>
+            <p>Learn how to never risk your own capital, pass evaluations and use prop firm money.</p>
+            <p>Leverage:  Futures trading allows traders to control a larger position with a smaller initial investment, potentially leading to larger profits and losses.</p>
+            <p>Liquidity: Futures markets are highly liquid, making it easier to enter and exit positions quickly.</p>
+            <p>Futures provide a wide range of diverse assets, including commodities, currencies, indices and interest rates.</p>
+            <p>Hedging Strategies:  Learn how to use futures to hedge a portfolio or profit from downward trends.</p>
+            <p>Time and Flexibility: Futures and Forex afford 24 Hour trading, and trade 6 days a week. This provides ample opportunities for traders to capitalize on global events and market trends.</p>
+            <p>Work from anywhere, on your own time.  Work remote and pick your sessions.</p>
+        </div>
+    </div>
+
+</div>
+       
 <!-------------------------------------------------------------------->
 
-<div class="howstarted">
-    <div class="howitworks">
-        <h2>How It Works</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-    </div>
-    <div class="getstarted">
-        <h2 id="getstarted">Get Started</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-    </div>
-</div>
 
 <!-------------------------------------------------------------------->
 <div class="coursecontainer">
     <div class="coursesection">
         <div class="courseleft">
-            <h2>Bootcamp</h2>
+            <h2 id="Bootcamp">Bootcamp</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             <ul>
@@ -932,7 +996,7 @@ button {
 <div class="coursecontainer">
     <div class="coursesection">
         <div class="courseleft">
-            <h2>Chat Room</h2>
+            <h2 id="Chat Room">Chat Room</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             <ul>
@@ -965,7 +1029,7 @@ button {
 <div class="coursecontainer">
     <div class="coursesection">
         <div class="courseleft">
-            <h2>Market Call</h2>
+            <h2 id="Market Call">Market Call</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             <ul>
@@ -1142,21 +1206,22 @@ button {
   </div>
   
    <!--- Calendly-->
-<div class="calendly-widget">
+    <div class="calendly-widget">
 
-    <div id="calendly-embed"></div>
-  
-    <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
-    
-    <script>
-    Calendly.initInlineWidget({
-    url: 'https://calendly.com/futuresclasses-info/30min',
-    parentElement: document.getElementById('calendly-embed')
-    });
-    var calendlyEmbed = document.getElementById('calendly-embed');
-    calendlyEmbed.setAttribute("style", "background-color: ##d2d7db;min-width:100%;height:960px;");
-    </script>
-  </div>
+        <div id="calendly-embed"></div>
+      
+        <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
+        
+        <script>
+        Calendly.initInlineWidget({
+        url: 'https://calendly.com/futuresclasses-info/30min',
+        parentElement: document.getElementById('calendly-embed')
+        });
+        var calendlyEmbed = document.getElementById('calendly-embed');
+        calendlyEmbed.setAttribute("style", "background-color: ##d2d7db;min-width:100%;height:960px;");
+        </script>
+      </div>
+
   <!--- Join Content ---->
 
       <section class="joincontent-section">
