@@ -72,7 +72,7 @@ li {text-decoration: none;}
 .logo, .logo, .logo a {
             font-size: 1.3rem;
             font-weight: 600;
-            color:#0066ff;
+            color:#333;
             padding: 4px;
             text-decoration: none;
         }
@@ -85,11 +85,9 @@ li {text-decoration: none;}
 .nav-links a {
             text-decoration: none;
             color:#333;
-            transition: color 0.3s;
+            transition: color 0.3s;padding: 5px;
         }
-.nav-links a:hover{
-            color:#333;
-        }
+.nav-links a:hover{color:#fff;background-color: #000;padding: 5px;}
 .nav-linksmobile {display: none}
         /* Main content sections */
 main {
@@ -230,6 +228,9 @@ section {
     flex: 1;
     padding: 20px;
 }
+.getstarted p{padding: 20px;}
+.howitworks p:hover{color: #fff;background-color: #000; cursor: pointer; }
+.howitworks p{  padding: 10px; /* Adjust the value as needed */}
 /**** course ************/
 .coursecontainer {
     display: flex;
