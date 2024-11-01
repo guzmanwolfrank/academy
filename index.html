@@ -176,7 +176,7 @@ section {
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
-        .feature-card a {text-decoration: none;}
+        .feature-card a {color:#000 ;text-decoration: none;}
         .feature-card a:visited, .feature-card a:hover, .feature-card a:active {color:#000 ;}
         /* Content Sections */
         .content-section {
@@ -237,6 +237,7 @@ section {
     justify-content: center; /* Center the content horizontally */
     margin-top: 40px;
     margin-bottom: 20px;
+    width: 70%;
 
 }
 
@@ -769,12 +770,18 @@ button {
     .howstarted {
         flex-direction: column;
     }
+    .getstarted{display: none;}
 }
+@media (orientation: portrait) {
+    .getstarted {
+      display: none;
+    }
+  }
 @media (max-width: 768px) {
     .coursesection {
         flex-direction: column;border: 1px solid #ccc;*/
         ;}
-    .coursecontainer{width: 90%;}
+    .coursecontainer{width: 80%;}
     .courseleft{width: 100%;}
     .courseright{width: 100%;}
 }
@@ -850,10 +857,14 @@ button {
                 Dive deep into 24 hours of comprehensive trading education, accessible at your own pace.</p>
             <p>2. Join our Vibrant Community:  Connect with fellow tradiers in our active chat room.  Share insights, ask questions, and learn from others.</p>
             <p>3. Get Personalized Guidance: Free Consultation: Schedule a free consultation with one of our experts to discuss your specific goals and needs.  Private Sessions:  Book hourly private sessions for tailored coaching and mentorship. </p>
+            <p>4. Start Trading on Demo. Find your product to trade, tinker and test the markets with the information we taught you. </p>
+            <p>5. Begin Prop Firm Evaluations and Pass.  We provide the training and discount codes for you to try your skills on an evaluation.   Risk none of your own capital after earning a funded account from one of our Prop Firm Partners.  They provide from $25,000 to $300,000 in virtual funds with strict rules that pay you on profits.</p>
         </div>
         <div class="getstarted">
             <h2 id="getstarted">Get Started</h2>
             <p>Ready to elevate your trading game? Enroll in our comprehensive online bootcamp and unlock your full potential.</p><br>
+            <img src="/img/getstarted1.jpg" alt="Image description" width="600" height="auto">
+
             <a href="#getstarted" class="btn">Get Started</a>
         </div>
     </div>
@@ -998,12 +1009,11 @@ button {
     <div class="coursesection">
         <div class="courseleft">
             <h2 id="Chat Room">Chat Room</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p>Engage in instant discussions about market trends, strategies, and specific trades.</p>
             <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             <ul>
-                <li>Course Title: Web Development Bootcamp</li>
-                <li>Duration: 12 Weeks</li>
-                <li>Instructor: John Doe</li>
+                <li>Chat Room Software: Whatsapp, Discord</li>
+                <li>Duration: 1 Year Access</li>
                 <li>Prerequisites: Basic HTML, CSS, and JavaScript knowledge</li>
                 <li>Learning Outcomes: Full-stack web development skills</li>
             </ul>       
