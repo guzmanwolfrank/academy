@@ -72,7 +72,7 @@ li {text-decoration: none;}
 .logo, .logo, .logo a {
             font-size: 1.3rem;
             font-weight: 600;
-            color:#0066ff;
+            color:#333;
             padding: 4px;
             text-decoration: none;
         }
@@ -85,11 +85,9 @@ li {text-decoration: none;}
 .nav-links a {
             text-decoration: none;
             color:#333;
-            transition: color 0.3s;
+            transition: color 0.3s;padding: 5px;
         }
-.nav-links a:hover{
-            color:#333;
-        }
+.nav-links a:hover{color:#fff;background-color: #000;padding: 5px;}
 .nav-linksmobile {display: none}
         /* Main content sections */
 main {
@@ -178,7 +176,7 @@ section {
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
-        .feature-card a {text-decoration: none;}
+        .feature-card a {color:#000 ;text-decoration: none;}
         .feature-card a:visited, .feature-card a:hover, .feature-card a:active {color:#000 ;}
         /* Content Sections */
         .content-section {
@@ -230,12 +228,16 @@ section {
     flex: 1;
     padding: 20px;
 }
+.getstarted p{padding: 20px;}
+.howitworks p:hover{color: #fff;background-color: #000; cursor: pointer; }
+.howitworks p{  padding: 10px; /* Adjust the value as needed */}
 /**** course ************/
 .coursecontainer {
     display: flex;
     justify-content: center; /* Center the content horizontally */
     margin-top: 40px;
     margin-bottom: 20px;
+    width: 70%;
 
 }
 
@@ -768,12 +770,18 @@ button {
     .howstarted {
         flex-direction: column;
     }
+    .getstarted{display: none;}
 }
+@media (orientation: portrait) {
+    .getstarted {
+      display: none;
+    }
+  }
 @media (max-width: 768px) {
     .coursesection {
         flex-direction: column;border: 1px solid #ccc;*/
         ;}
-    .coursecontainer{width: 90%;}
+    .coursecontainer{width: 80%;}
     .courseleft{width: 100%;}
     .courseright{width: 100%;}
 }
@@ -849,10 +857,14 @@ button {
                 Dive deep into 24 hours of comprehensive trading education, accessible at your own pace.</p>
             <p>2. Join our Vibrant Community:  Connect with fellow tradiers in our active chat room.  Share insights, ask questions, and learn from others.</p>
             <p>3. Get Personalized Guidance: Free Consultation: Schedule a free consultation with one of our experts to discuss your specific goals and needs.  Private Sessions:  Book hourly private sessions for tailored coaching and mentorship. </p>
+            <p>4. Start Trading on Demo. Find your product to trade, tinker and test the markets with the information we taught you. </p>
+            <p>5. Begin Prop Firm Evaluations and Pass.  We provide the training and discount codes for you to try your skills on an evaluation.   Risk none of your own capital after earning a funded account from one of our Prop Firm Partners.  They provide from $25,000 to $300,000 in virtual funds with strict rules that pay you on profits.</p>
         </div>
         <div class="getstarted">
             <h2 id="getstarted">Get Started</h2>
             <p>Ready to elevate your trading game? Enroll in our comprehensive online bootcamp and unlock your full potential.</p><br>
+            <img src="/img/getstarted1.jpg" alt="Image description" width="600" height="auto">
+
             <a href="#getstarted" class="btn">Get Started</a>
         </div>
     </div>
@@ -965,30 +977,31 @@ button {
     <div class="coursesection">
         <div class="courseleft">
             <h2 id="Bootcamp">Bootcamp</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    
             <ul>
-                <li>Course Title: Web Development Bootcamp</li>
-                <li>Duration: 12 Weeks</li>
-                <li>Instructor: John Doe</li>
-                <li>Prerequisites: Basic HTML, CSS, and JavaScript knowledge</li>
-                <li>Learning Outcomes: Full-stack web development skills</li>
+                <li>Course Title: Intraday Futures For Beginners Bootcamp</li>
+                <li>Duration: 24 Hours</li>
+                <li>Instructor: Mark G.</li>
+                <li>Prerequisites: None.</li>
+                <li>Learning Outcomes: Learn proven strategies for consistent profits.
+                    Gain a deep understanding of market analysis.
+                    Develop risk management skills to protect your capital.
+                    Attain a basic understanding of intraday futures trading, prop firm trading and entry level market analysis. </li>
             </ul>       
         </div>
         <div class="courseright">
-            <h2>Curriculum & Feautures</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <h2>Curriculum</h2>
+            <p>Our bootcamp offers a comprehensive curriculum covering:</p>
             <ul>
-                <li>feautre 1: learn to trade options with ocnfidcen</li>
-                <li>feautre 1: learn to trade options with ocnfidcen</li>
-                <li>feautre 1: learn to trade options with ocnfidcen</li>
-                <li>feautre 1: learn to trade options with ocnfidcen</li>
-                <li>feautre 1: learn to trade options with ocnfidcen</li>
-
+                <li>Technical Analysis: Chart patterns, trend identification, support and resistance levels, and advanced charting techniques.</li>
+                <li>Fundamental Analysis:  Economic indicators, geopolitical events, news analysis, and market sentiment.</li>
+                <li>Risk Management: Position sizing, stop-loss orders, take-profit targets, and risk-reward ratios.</li>
+                <li>Trading Psychology: Emotional control, mindset development, and disciplined trading habits.</li>
+                <li>Trading Strategies:  Day trading, swing trading, and breakout strategies.</li>
+                <li>Trading Software: We will walk you through installation, usage and software options and alternatives.</li>
 
             </ul>
-            <button>Explore Courses</button>
+            <button>Bootcamp: $####</button>
         </div>
     </div>
 </div>
@@ -997,31 +1010,26 @@ button {
     <div class="coursesection">
         <div class="courseleft">
             <h2 id="Chat Room">Chat Room</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p>Engage in instant discussions about market trends, strategies, and specific trades.</p>
             <ul>
-                <li>Course Title: Web Development Bootcamp</li>
-                <li>Duration: 12 Weeks</li>
-                <li>Instructor: John Doe</li>
-                <li>Prerequisites: Basic HTML, CSS, and JavaScript knowledge</li>
-                <li>Learning Outcomes: Full-stack web development skills</li>
+                <li>Chat Room Software: Whatsapp, Discord</li>
+                <li>Duration: 1 Year Access</li>
+                <li>Prerequisites: None</li>
+                <li>Learning Outcomes: Gain new information and insights on various topics from other participants.  Analyze and evaluate information shared in the chat room.</li>
             </ul>       
         </div>
         <div class="courseright">
-            <h2>Curriculum & Feautures</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <h2> Features</h2>
+            <p>Join the Conversation.  Talk to other traders and ask questions throughout the trading day.</p>
+
             <ul>
-                <li>feautre 1: learn to trade options with ocnfidcen</li>
-                <li>feautre 1: learn to trade options with ocnfidcen</li>
-                <li>feautre 1: learn to trade options with ocnfidcen</li>
-                <li>feautre 1: learn to trade options with ocnfidcen</li>
-                <li>feautre 1: learn to trade options with ocnfidcen</li>
-
-                <li>feautre 1</li>
-
+                <li>Real-time Chat: Instant messaging with other users.</li>
+                <li>Public and Private Chats: Engage in open discussions or private conversations. </li>
+                <li>File Sharing: Share documents, images, and other files.</li>
+                <li>Knowledge Sharing: Learn from experts and share your own insights.</li>
+                <li>Ask questions and engage with fellow students.</li>
             </ul>
-            <button>Explore Courses</button>
+            <button>Chat Room:  $99/mo or $700 Yearly Subscription</button>
         </div>
     </div>
 </div>
@@ -1030,31 +1038,23 @@ button {
     <div class="coursesection">
         <div class="courseleft">
             <h2 id="Market Call">Market Call</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p>Book a one-on-one consultation with our seasoned traders. Get personalized insights and actionable strategies tailored to your needs.</p>
             <ul>
-                <li>Course Title: Web Development Bootcamp</li>
-                <li>Duration: 12 Weeks</li>
-                <li>Instructor: John Doe</li>
-                <li>Prerequisites: Basic HTML, CSS, and JavaScript knowledge</li>
-                <li>Learning Outcomes: Full-stack web development skills</li>
+                <li>Private Consultation Call</li>
+                <li>Duration: 1 hr</li>
+                <li>Prerequisites:None</li>
+                <li>Learning Outcomes: Learn to assess and manage risk effectively.  Analyze your strategy statistically and learn to make adjustments.</li>
             </ul>       
         </div>
         <div class="courseright">
-            <h2>Curriculum & Feautures</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <h2>Features</h2>Here are some key features of booking a market call consultation: 
             <ul>
-                <li>feautre 1: learn to trade options with ocnfidcen</li>
-                <li>feautre 1: learn to trade options with ocnfidcen</li>
-                <li>feautre 1: learn to trade options with ocnfidcen</li>
-                <li>feautre 1: learn to trade options with ocnfidcen</li>
-                <li>feautre 1: learn to trade options with ocnfidcen</li>
-
-                <li>feautre 1</li>
-
+                <li>Personalized Consultation: One-on-one session with an experienced analyst.</li>
+                <li>Customizable Agenda: Discuss specific topics or questions you have.</li>
+                <li>Screen Sharing: Share charts, documents, and other relevant materials during the call.</li>
+                <li>Flexible Scheduling: Choose a time slot that suits your schedule.</li>
             </ul>
-            <button>Explore Courses</button>
+            <button>Market Call : $999 (10 hrs)</button>
         </div>
     </div>
 </div>
