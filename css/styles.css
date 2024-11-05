@@ -308,7 +308,7 @@ nav a {
   
 }
 .joincontainer {
-  max-width: 70%;
+  max-width: 90%;
   margin: 0 auto;
   padding: 20px;
   background-color: #ccc;
@@ -319,23 +319,6 @@ nav a {
   background-color: #ccc;
 }
 
-.content-section .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 60px;
-
-}
-
-.tradingview-widget-container{
-  width: auto;
-  margin-bottom: 0;
-  background-color: #000;
-}
-
-.content {
-    flex: 1;
-}
 .joincontent {
   flex: 1;
   color: #000;
@@ -374,6 +357,23 @@ nav a {
     opacity: 0.1;
 }
 
+.content-section .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+
+}
+
+.tradingview-widget-container{
+width: auto;
+margin-bottom: 0;
+background-color: #000;
+}
+
+.content {
+  flex: 1;
+}
 .content-image {
     flex: 1;
     display: flex;
@@ -971,6 +971,34 @@ input[type="submit"] {
         }
         .features {
           /*display: none;*/
+        }
+        .joincontent-section {
+          padding: 0px 0;
+          background-color: #666;
+          width: 100%;
+          
+        }
+        .joincontainer {
+          width: 100%;
+          margin: 0 auto;
+          padding: 20px;
+          background-color: #666;
+        }
+        /* Second content section */
+        .joincontent-section {
+          padding: 80px 0;
+          background-color: #666; 
+          width: 100%;
+        }
+        
+        .joincontent {
+          flex: 1;
+          color: #000;
+          background-color: #666;
+          width: 100%;
+        }
+        .joincontent-form{
+          width: 100%;
         }
       }
       .faq{
