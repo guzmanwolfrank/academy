@@ -13,7 +13,6 @@
         }
 a, a:active, {color: #333;}
         :root {
-            --text-color: #333;
             --spacing-unit: 1rem;
             --max-width: 1200px;
         }
@@ -111,8 +110,9 @@ section {
             min-width: 100%;
             background: cover;
             background-position: 30%;
-            background-image: url("/img/student.jpg");
+            background-image: url("/img/student.jpg")
             background-size: 140%;
+            background-color: #ccc;
         }
 
 .hero-container {
@@ -142,9 +142,11 @@ section {
         }
 .hero-content p{
             font-size: 1.1em;
+            font-weight: 200;
             line-height: 1.2;
             padding: 10px;
-            color: #fff;
+            color: #000;
+            display: inline-block;
         }
 
 .hero-image {
@@ -549,15 +551,15 @@ input[type="submit"] {
                 display: flex;
                 justify-content: center;
                 width: 100%;
-                background-color: #030303;                
+                background-color: #ccc;                
                 background: fill;
                 background-repeat: no-repeat;
                 background-position: 30%;
                 background-image: none;
             }
-.hero h1 {color: #666 ;}
-.hero h2 {color: #555;}
-.hero p{ color: #666;}
+.hero h1 {color: #fff ;}
+.hero h2 {color: #fff;}
+.hero p{ color: #000;}
 .features-grid {
                 grid-template-columns: repeat(2, 1fr);
                 padding: 0 var(--spacing-unit);} 
@@ -732,35 +734,7 @@ button {
         font-size: 14px; /* Adjust font size for smaller screens */
     }
 
-.hero-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            gap: 2rem;
-            max-width: var(--max-width);
-            width: 100%;
-            text-justify: left;
-        }
 
-.hero-content {
-            flex: 1;
-            width: 80%;}
-.hero-content h1{
-                font-size: 2.5em;
-                line-height: 1.1;
-                color: #fff;
-            }
-.hero-content h2{
-                font-size: 1.5em;
-                line-height: 1.1;
-                color: #0066ff;
-            }
-.hero-content p{
-                font-size: 1.1em;
-                line-height: 1.2;
-                padding: 10px;
-                color: #fff;
-            }  
 .hero-content .btn {background-color: #555;color: #fff;}  
 }
 .hero-content .btn:hover, .hero-content .btn :active {background-color: #0066ff;}  
@@ -852,21 +826,16 @@ button {
 <div class="container">
     <div class="howstarted">
         <div class="howitworks">
-            <h2>How It Works</h2>
-            <p>1. Enroll in Our Online Bootcamp:
+            <h2>Get Started</h2>
+            <p>1. Enroll in Our Online  <a href="#Bootcamp">Bootcamp :</a>
+                
                 Dive deep into 24 hours of comprehensive trading education, accessible at your own pace.</p>
-            <p>2. Join our Vibrant Community:  Connect with fellow tradiers in our active chat room.  Share insights, ask questions, and learn from others.</p>
-            <p>3. Get Personalized Guidance: Free Consultation: Schedule a free consultation with one of our experts to discuss your specific goals and needs.  Private Sessions:  Book hourly private sessions for tailored coaching and mentorship. </p>
+            <p>2. Join our <a href="#Chat Room">Chatroom </a>:  Connect with fellow tradiers in our active chat room.  Share insights, ask questions, and learn from others.</p>
+            <p>3.Call us for a <a href="#Free Consultation"> Free Consultation</a> : Schedule a free consultation with one of our experts to discuss your specific goals and needs.  Private Sessions:  Book hourly private sessions for tailored coaching and mentorship. </p>
             <p>4. Start Trading on Demo. Find your product to trade, tinker and test the markets with the information we taught you. </p>
             <p>5. Begin Prop Firm Evaluations and Pass.  We provide the training and discount codes for you to try your skills on an evaluation.   Risk none of your own capital after earning a funded account from one of our Prop Firm Partners.  They provide from $25,000 to $300,000 in virtual funds with strict rules that pay you on profits.</p>
         </div>
-        <div class="getstarted">
-            <h2 id="getstarted">Get Started</h2>
-            <p>Ready to elevate your trading game? Enroll in our comprehensive online bootcamp and unlock your full potential.</p><br>
-            <img src="/img/getstarted1.jpg" alt="Image description" width="600" height="auto">
-
-            <a href="#getstarted" class="btn">Get Started</a>
-        </div>
+        
     </div>
     </div>
 <!--------------------------------------------------------------------------------------------------------------------------->
@@ -1067,7 +1036,7 @@ button {
                     <div class="testimonialsfeature-card">
         <!---injection into features for 3col reviews section-->
 <div class="testimonial3row">
-    <div class="row1"><p>"All base belong to us.  This is the 4th Quadrant. Wecan also quick brown fox jumps over the lazydog."</p>
+    <div class="row1"><p>"This course taught me proper futures trading systems and risk management that actually work. Within three months, I was finally trading profitably and consistently."</p>
     
     </div>
 
@@ -1088,7 +1057,7 @@ button {
 <div class="testimonialsfeature-card">
     <!---injection into features for 3col reviews section-->
 <div class="testimonial3row">
-<div class="row1"><p>"All base belong to us.  This is the 4th Quadrant. Wecan also quick brown fox jumps over the lazydog."</p>
+<div class="row1"><p>"The live trading sessions and mentor feedback transformed my approach to futures trading. Having guidance to develop my own strategy, rather than copying trades, made all the difference."</p>
 
 </div>
 
@@ -1207,6 +1176,9 @@ button {
   
    <!--- Calendly-->
     <div class="calendly-widget">
+        <div class="container">
+            <h2 id="Free Consultation">Free Consultation</h2>
+        </div>
 
         <div id="calendly-embed"></div>
       
@@ -1228,12 +1200,10 @@ button {
         <div class="joincontainer">
 
       
-            <h2 id="join">Join our Free Class!</h2> <br> <h3>Accelerate your learning with our free preview of our Bootcamp course.</h3>Accelerate your learning with this preview of our Bootcamp Course.
+            <h2 id="join">Join our Free Class!</h2> <br> <h3>Accelerate your learning with our free preview of our Bootcamp course.  Sign up below so we can contact you about our Free Class.</h3>Accelerate your learning with this preview of our Bootcamp Course.
     <br><br>
           
     <script type="text/javascript" src="https://form.jotform.com/jsform/242195774607061"></script>
-       
-  
 </section>
 
     </div>
