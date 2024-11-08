@@ -79,6 +79,7 @@ li {text-decoration: none;}
             display: flex;
             gap: 2rem;
             margin-left: auto; /* Push links to the right */
+            padding: 5px;
         }
 
 .nav-links a {
@@ -86,7 +87,11 @@ li {text-decoration: none;}
             color:#333;
             transition: color 0.3s;padding: 5px;
         }
-.nav-links a:hover{color:#fff;background-color: #000;padding: 5px;}
+.nav-links a:hover{color:#fff;background-color: #000; border-radius: 5px;}
+
+.nav-links a h5,.nav-links a h5:hover {font-weight:400; font-size:1em;background-color: #000;color: #fff;padding: 5px; border-radius: 5px;}
+
+
 .nav-linksmobile {display: none}
         /* Main content sections */
 main {
@@ -110,7 +115,7 @@ section {
             min-width: 100%;
             background: cover;
             background-position: 30%;
-            background-image: url("/img/student.jpg")
+            background-image: url("/img/student.jpg");
             background-size: 140%;
             background-color: #ccc;
         }
@@ -141,11 +146,11 @@ section {
             color: white;
         }
 .hero-content p{
-            font-size: 1.1em;
-            font-weight: 200;
+            font-size: 1.2em;
+            font-weight: 400;
             line-height: 1.2;
             padding: 10px;
-            color: #000;
+            color: #fff;
             display: inline-block;
         }
 
@@ -233,6 +238,9 @@ section {
 .getstarted p{padding: 20px;}
 .howitworks p:hover{color: #fff;background-color: #000; cursor: pointer; }
 .howitworks p{  padding: 10px; /* Adjust the value as needed */}
+.howitworks a:hover{color: #fff;background-color: #0dbb33; cursor: pointer;padding: 5px; }
+.howitworks a {color: #fff;background-color: #000; cursor: pointer; text-decoration: none;padding: 5px;}
+
 /**** course ************/
 .coursecontainer {
     display: flex;
@@ -711,23 +719,28 @@ input[type="submit"] {
 .btn, .btn a {
             display: inline-block;
             padding: 10px;
-            background-color:#333;
+            background-color:#0dbb33;
             color: white;
             text-decoration: none;
             border-radius: 4px;
         }
 
-.btn:hover {
-            background-color: #0052cc;
+.btn a:hover {
+            background-color: #535252;
             color: white;
         }
 button {
-            background-color: #333;
+            background-color: #535252;
             color: white;
             padding: 10px;
             border: none;
             border-radius: 4px;
         }
+button a {
+            text-decoration: none;
+            color: #fff; padding: 10px;
+}
+/*button a:hover{ background-color: #0dbb33; color: #fff;}*/
         /* Mobile-friendly CSS */
 @media (max-width: 768px) {
 .courseleft ul {
@@ -737,7 +750,7 @@ button {
 
 .hero-content .btn {background-color: #555;color: #fff;}  
 }
-.hero-content .btn:hover, .hero-content .btn :active {background-color: #0066ff;}  
+.hero-content .btn:hover, .hero-content .btn :active {background-color: #000;}  
 
 /* Mobile-friendly CSS */
 @media (max-width: 768px) {
@@ -768,7 +781,7 @@ button {
         <nav class="nav">
             <div class="logo"><a href="#">Futures Classes</a></div>
                 <div class="nav-links">
-                <a href="#join">Join Our Free Class</a>
+                <a href="#join"><h5>Join Our Free Class</h5></a>
                 <a href="#faq">FAQ</a>
                 <a href="#contact">Contact</a>
                 <a href="#login">Login</a>
@@ -827,7 +840,7 @@ button {
     <div class="howstarted">
         <div class="howitworks">
             <h2 id="getstarted">Get Started</h2>
-            <p>1. Enroll in Our Online  <a href="#Bootcamp">Bootcamp :</a>
+            <p>1. Enroll in Our Online  <a href="#Bootcamp">Bootcamp </a>:
                 
                 Dive deep into 24 hours of comprehensive trading education, accessible at your own pace.</p>
             <p>2. Join our <a href="#Chat Room">Chatroom </a>:  Connect with fellow tradiers in our active chat room.  Share insights, ask questions, and learn from others.</p>
@@ -952,7 +965,7 @@ button {
                 <li>Duration: 24 Hours</li>
                 <li>Instructor: Mark G.</li>
                 <li>Prerequisites: None.</li>
-                <li>Learning Outcomes: Learn proven strategies for consistent profits.
+                <li>Learning Outcomes: Learn proven strategies for consistent profits. Learn how to start your own business in Futures Trading.  Learn how to raise money, or trade prop firm money.  
                     Gain a deep understanding of market analysis.
                     Develop risk management skills to protect your capital.
                     Attain a basic understanding of intraday futures trading, prop firm trading and entry level market analysis. </li>
@@ -970,7 +983,7 @@ button {
                 <li>Trading Software: We will walk you through installation, usage and software options and alternatives.</li>
 
             </ul>
-            <button>Bootcamp: $####</button>
+            <button><a href="#">Bootcamp: $2500</a></button>
         </div>
     </div>
 </div>
@@ -998,7 +1011,7 @@ button {
                 <li>Knowledge Sharing: Learn from experts and share your own insights.</li>
                 <li>Ask questions and engage with fellow students.</li>
             </ul>
-            <button>Chat Room:  $99/mo or $700 Yearly Subscription</button>
+            <button><a href="#">Chat Room : $99 monthly</a></button>
         </div>
     </div>
 </div>
@@ -1023,7 +1036,7 @@ button {
                 <li>Screen Sharing: Share charts, documents, and other relevant materials during the call.</li>
                 <li>Flexible Scheduling: Choose a time slot that suits your schedule.</li>
             </ul>
-            <button>Market Call : $999 (10 hrs)</button>
+            <button><a href="#">Market Call : $99  (1 hr)</a></button>
         </div>
     </div>
 </div>
