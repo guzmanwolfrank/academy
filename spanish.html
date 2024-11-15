@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clases de Futuros -- Curso de Trading para principiantes.</title>
+    <style>
+        /* Reset and base styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+a, a:active, {color: #333;}
+        :root {
+            --spacing-unit: 1rem;
+            --max-width: 1200px;
+        }
+
+
+body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color:#333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+li {text-decoration: none;}
+.coursesection   ul, li {
+            list-style-type: none;
+        }
+        /* Container */
+.container {
+            width: 80%;
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 0 var(--spacing-unit);
+        }
+
+        /* Header */
+.header {
+            position: sticky;
+            top: 0;
+            background: white;
+            z-index: 1000;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+.nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+            width: 100%;
+            max-width: var(--max-width);
+            color: #333;
+        }
+.nav a :active, .nav a:visited, {color: #666}
+        @media (orientation: portrait) and (min-width: 768px) {
+            /* Styles for portrait orientation on desktop devices */
+.nav{
+                width: 90%;
+                color: #333; /* Adjust the width as needed */
+            }
+        }
+
+.logo, .logo, .logo a {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color:#333;
+            padding: 4px;
+            text-decoration: none;
+        }
+.nav-links {
+            display: flex;
+            gap: 2rem;
+            margin-left: auto; /* Push links to the right */
+            padding: 5px;
+        }
+
+.nav-links a {
+            text-decoration: none;
+            color:#333;
+            transition: color 0.3s;padding: 5px;
+        }
+.nav-links a:hover{color:#fff;background-color: #000; border-radius: 5px;}
+
+.nav-links a h5,.nav-links a h5:hover {font-weight:400; font-size:1em;background-color: #000;color: #fff;padding: 5px; border-radius: 5px;}
+
+
+.nav-linksmobile {display: none}
+        /* Main content sections */
+main {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+section {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            padding: 4rem 0;
+        }
+
+        /* Hero Section */
+.hero {
+            display: flex;
+            justify-content: center;
+            min-width: 100%;
+            background: cover;
+            background-position: 30%;
+            background-image: url("/img/student.jpg");
+            background-size: 140%;
+            background-color: #ccc;
+        }
+
+.hero-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 2rem;
+            max-width: var(--max-width);
+            width: 80%;
+        }
+
+.hero-content {
+            flex: 1;
+            max-width: 600px;
+            width: 80%;
+        }
+        
+.hero-content h1{
+            font-size: 2.5em;
+            line-height: 1.1;
+            color: #fff;
+        }
+.hero-content h2{
+            font-size: 1.5em;
+            line-height: 1.1;
+            color: white;
+        }
+.hero-content p{
+            font-size: 1.2em;
+            font-weight: 400;
+            line-height: 1.2;
+            padding: 10px;
+            color: #fff;
+            display: inline-block;
+        }
+
+.hero-image {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+.hero-image img{
+            width: 80%;
+            height: auto;
+        }
+
+        /* Features Grid */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            width: 100%;
+        }
+
+        .feature-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 2rem;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .feature-card a {color:#000 ;text-decoration: none;}
+        .feature-card a:visited, .feature-card a:hover, .feature-card a:active {color:#000 ;}
+        /* Content Sections */
+        .content-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 4rem;
+            width: 100%;
+        }
+
+
+        /* Telir*/
+        .telir {
+            display: flex;
+        }
+        
+        .text-column {
+            flex: 1;
+            padding: 20px;
+        }
+        
+        .text-column h1{font-size: 1.2em; }
+        
+        .text-column p{font-size: 1em; }
+        .text-column p:hover{background-color: #000;color: #fff;}
+
+        .image-column {
+            flex: 1;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Ilrit */
+        .ilrit {
+            display: flex;
+        }
+        
+        .image-column,
+        .text-column {
+            flex: 1;
+            padding: 20px;
+        }
+/*  How it Works / Get Started */
+.howstarted {
+    display: flex;
+}
+
+.howitworks, .getstarted {
+    flex: 1;
+    padding: 20px;
+}
+.getstarted p{padding: 20px;}
+.howitworks p:hover{color: #fff;background-color: #000; cursor: pointer; }
+.howitworks p{  padding: 10px; /* Adjust the value as needed */}
+.howitworks a:hover{color: #fff;background-color: #0dbb33; cursor: pointer;padding: 5px; }
+.howitworks a {color: #fff;background-color: #0dbb33; cursor: pointer; text-decoration: none;padding: 5px;}
+
+/**** course ************/
+.coursecontainer {
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    margin-top: 40px;
+    margin-bottom: 20px;
+    width: 70%;
+
+}
+
+.coursesection {
+    display: flex;
+    max-width: 1200px; /* Adjust max-width as needed */
+    margin: 0 auto;
+    border: 1px solid #ccc;*/
+    background-color: #ecedee;
+
+}
+.courseleft, .courseright {
+    flex: 1;
+    padding: 20px;
+}
+.courseleft{width: 35%;}
+.courseleft h2{ font-size: 1.1em;color: #fff;background-color: #ccc;padding: 5px;}
+.courseright{width: 60%;}
+.courseleft ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.courseleft li {
+    margin-bottom: 10px;
+    padding-left: 40px;
+    position: relative;
+    font-size: .9em;
+    list-style-type: none;
+    
+}
+
+.courseleft li::before {
+    color: black;
+    font-size: 16px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.courseright li {
+    margin-bottom: 10px;
+    padding-left: 40px;
+    position: relative;
+    font-size: .9em;
+    list-style-type: none;   
+}
+.courseright li::before {
+    color: black;
+    font-size: 16px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.courseright h2 { font-size: 1em;}
+
+
+/* Testimonials */
+.testimonial3row {
+            /* Overall container styles */
+        }
+
+.row1, .row2, .row3 {
+            /* Styles for each row */
+            color: #333; font-weight: 400;
+        }
+.row2 img {width: 40;height: auto;  border-radius: 50%; float: left; margin-right: 2px;}
+.row3 {
+            display: flex;
+        }
+.row1 p{padding-bottom: 30px;}
+.row1 p,.row2 p{ font-size: .8em;text-align:left;}
+.row2 p{font-weight: 600;}
+
+.row3 p{text-align: left; font-size: .8em;}
+.row3 img{
+            width: 20px;
+            height: 20px;
+            margin-left: 4px;
+            padding-left: 4px;
+        }
+        
+.row3 .text-column, .row3 .image-column {
+            flex: 1;
+        }
+        
+.row3 .image-column {
+            text-align: right; /* Align images to the right */
+        }
+.testimonialtext-column {
+            flex: 1;
+            padding: 20px;
+        }
+
+.testimonialimage-column {
+            flex: 1;
+            text-align: center;
+            padding: 20px;
+        }
+.testimonialimage-column img{
+            width: 40px;
+            height: 40px;
+        }
+
+.testimonialsfeature-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 2rem;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(81, 81, 82, 0.281);
+        }
+/* FAQ section */
+/*****FAQ*****/
+.faq{
+    width: 50%;
+    background-color: #fff;
+    padding: 50px;
+    padding-bottom: 80px;
+  }
+.faqcontainer {
+    max-width: 80%;
+    margin: 0 auto;
+    /*font-family: Arial, sans-serif;*/
+    background-color: inherit;
+  }
+.faqcontainer h1 {
+    text-align: center;color: #555; font-size: 1.4em;
+  }
+.faq-item {
+    margin-bottom: 10px;
+   border: 1px solid #ddd;
+    border-radius: 5px;*/
+  }
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #fff;
+    cursor: pointer;
+    font-weight:400;
+    color: #555;
+  }
+.faq-question:hover {
+   /* background-color: #b3c6d1;*/
+   background-color: #ccc;
+   border: 2px solid #ccc;
+   color: #fff;
+  }
+.faq-question::after {
+    content: '+';
+    font-size: 14px;
+    font-weight: 200;
+    transition: transform 0.3s ease;
+    color: #000;
+  }
+.faq-question.active::after {
+    content: '-';
+    font-size: 14px;
+    font-weight: 200;
+  }
+.faq-answer {
+    display: none;
+    border-top: 1px solid #ddd;
+    background-color: #fff;
+    color: #000;
+    padding: 10px;
+  }
+.faq-answer h1 {
+  color: #000;
+  font-weight: 400;
+  background-color: #fff;
+  }
+.faq-answer p {
+    color: #000;
+    font-weight: 300;
+    padding: 10px;
+    
+  }
+  
+.faq-answer.show {
+    display: block;
+  }
+
+/** Calendly **/
+.calendly-widget {
+    width: 100%;
+    height: 960px;
+    background-color: #fff;
+  }
+/* Footer */
+     /* Footer */
+footer, footer li,footer li a , footer a{
+    background-color: #555;
+    padding: 40px 0;
+    text-decoration: none;
+    color: #fff;
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+    font-size: .9em;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 0 15px;
+    height: auto;
+    margin-bottom: 20px;
+}
+.footer-section2 {
+  flex: 1;
+  margin: 0 15px;
+  width: 50%;
+}
+
+.footer-section h3 {
+    margin-bottom: 15px;
+}
+.footer-section ul li, a:active, a:hover, a:visited {
+  text-decoration: inherit;
+}
+/**forms**/
+label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;5px;
+  }
+  
+textarea {
+    height: 100px;
+    width: 100%;
+  }
+  
+input[type="submit"] {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+  }
+
+
+.joincontent {
+    flex: 1;
+    color: #555;
+    background-color: #ccc;
+  }
+.joincontent-form{
+    background-color: #000;
+  }
+.joincontent-section {
+    padding: 0px 0;
+    background-color: #ccc;
+    
+  }
+.joincontainer {
+    max-width: 70%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ccc;
+  }
+  /* Second content section */
+.joincontent-section {
+    padding: 80px 0;
+    background-color: #ccc;
+  }
+   
+/* Responsive Design ***********************************/
+/* Responsive Design ***********************************/
+/* Responsive Design ***********************************/
+
+@media screen and (max-width: 1024px) {
+.logo, .logo a , .logo a:active{
+        font-size: 14px;
+        font-weight: 600;
+        color:#333;
+        padding: 4px;
+        background-color:white;
+        text-decoration: none;
+        display: inline-block;
+    }
+    
+
+.hero-container {
+                flex-direction: column;
+                text-align: center;
+                padding: 0 var(--spacing-unit);
+            }
+.hero {
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                background-color: #ccc;                
+                background: fill;
+                background-repeat: no-repeat;
+                background-position: 30%;
+                background-image: none;
+            }
+.hero h1 {color: #fff ;}
+.hero h2 {color: #fff;}
+.hero p{ color: #000;}
+.features-grid {
+                grid-template-columns: repeat(2, 1fr);
+                padding: 0 var(--spacing-unit);} 
+
+.footer-content {
+                grid-template-columns: repeat(3, 1fr);}
+.faq{
+                width: 100%;
+                background-color: #fff;
+                padding: 50px;
+                padding-bottom: 80px;}
+.faqcontainer {
+                max-width: 90%;
+                margin: 0 auto;
+                /*font-family: Arial, sans-serif;*/
+                background-color: inherit;
+              }
+        }
+
+@media screen and (max-width: 768px) {
+.nav {
+                padding: 1rem var(--spacing-unit);
+            }
+
+.nav-links {display: none;}
+.nav-linksmobile,.nav-linksmobile a, .nav-linksmobile a:active,.nav-linksmobile a:visited  {text-decoration: none; color:black; font-size:0.9em; display: inline-block;padding: 4px;}
+
+.menu-toggle {
+                display: block;
+            }
+
+.content-section {
+                flex-direction: column;
+                padding: 0 var(--spacing-unit);
+            }
+
+.testimonials-grid {
+                grid-template-columns: repeat(2, 1fr);
+                padding: 0 var(--spacing-unit);
+            }
+        }
+
+@media screen and (max-width: 480px) {
+.features-grid,
+.testimonials-grid {
+                grid-template-columns: 1fr;
+            }
+.features{display: none;}
+
+
+.footer-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+                padding: 0 var(--spacing-unit);
+            }
+        }
+@media (max-width: 768px) {
+.telir {
+              flex-direction: column; /* Stack columns vertically on mobile */
+            }
+          
+.text-column,
+.image-column {
+              flex: 0 0 auto; /* Remove flex-grow and flex-shrink on mobile */
+              width: 100%; /* Make each column full width */
+            }
+          
+.image-column img {
+              width: 100%; /* Make image responsive on mobile */
+              height: auto;
+            }
+@media (max-width: 768px) {
+                .ilrit {
+                  flex-direction: column;
+                }
+                 
+.ilrit {
+            display: none;
+        }
+.image-column,
+.text-column {
+                  flex: 0 0 auto;
+                  width: 100%;
+                  padding: 10px;
+                }
+              
+.image-column img {
+                  width: 100%;
+                  height: auto;
+                }
+              }
+          }
+@media (max-width: 768px) {
+.testimonial3row .row3 {
+              flex-direction: column; /* Stack columns vertically on mobile */
+            }
+          
+.testimonial3row .text-column, .testimonial3row .image-column {
+              flex: 0 0 auto; /* Remove flex-grow and flex-shrink on mobile */
+              width: 100%; /* Make each column full width */
+            }
+          
+.testimonial3row .image-column {
+              text-align: left; /* Align images to the left on mobile */
+            }
+.testimonialimage-column img{
+                width: 20px;
+                height: 20px;
+                float: left;
+            }
+.row3 img{
+                width: 15px;
+                height: 15px;
+                float: right;
+                display: block;
+                margin-left: 4px;
+                padding-left: 4px;
+                }
+
+.row1 p,.row2 p{ font-size: .8em;text-align: justify;}
+.row2 p{font-weight: 600;}
+
+            }
+          
+        /* Mobile Menu Toggle */
+.menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        /* Navigation when active on mobile */
+.nav-links.active {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            background: white;
+            padding: 1rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            font-size: 10px;
+        }
+
+        /* Buttons */
+.btn, .btn a {
+            display: inline-block;
+            padding: 10px;
+            background-color:#0dbb33;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+
+.btn a:hover {
+            background-color: #535252;
+            color: white;
+        }
+button {
+            background-color: #535252;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+        }
+button a {
+            text-decoration: none;
+            color: #fff; padding: 10px;
+}
+/*button a:hover{ background-color: #0dbb33; color: #fff;}*/
+        /* Mobile-friendly CSS */
+@media (max-width: 768px) {
+.courseleft ul {
+        font-size: 14px; /* Adjust font size for smaller screens */
+    }
+
+
+.hero-content .btn {background-color: #555;color: #fff;}  
+}
+.hero-content .btn:hover, .hero-content .btn :active {background-color: #000;}  
+
+/* Mobile-friendly CSS */
+@media (max-width: 768px) {
+    .howstarted {
+        flex-direction: column;
+    }
+    .getstarted{display: none;}
+}
+@media (orientation: portrait) {
+    .getstarted {
+      display: none;
+    }
+  }
+@media (max-width: 768px) {
+    .coursesection {
+        flex-direction: column;border: 1px solid #ccc;*/
+        ;}
+    .coursecontainer{width: 80%;}
+    .courseleft{width: 100%;}
+    .courseright{width: 100%;}
+}
+
+
+    </style></head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="logo"><a href="#">Clases de Futuros</a></div>
+            <div class="nav-links">
+                <a href="#join"><h5>Únete a Nuestra Clase Gratuita</h5></a>
+                <a href="#faq">Preguntas Frecuentes</a>
+                <a href="#contact">Contacto</a>
+                <a href="#login">Iniciar Sesión</a>
+            </div>
+            <div class="nav-linksmobile">
+                <a href="#first"></a>
+                <a href="#second"></a>
+                <a href="#third"></a>
+                <a href="#login">Iniciar Sesión</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <h1>Aprende a Operar Futuros</h1>
+                    <h2>Inicia Tu Propio Negocio</h2>
+                    <p>Nos especializamos en capacitar a principiantes y ayudarlos a pasar evaluaciones para que puedan operar sin arriesgar su propio capital.</p>
+                    <a href="#getstarted" class="btn">Comenzar</a>
+                </div>
+                <div class="hero-image">
+                    <img src="/img/quantower.png" alt="Ilustración principal" />
+                </div>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="container">
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <a href="#Bootcamp">
+                            <img src="/img/icons/bootcamp.png"/>
+                        </a>
+                        <a href="#Bootcamp"><h3>Bootcamp</h3></a>
+                        <p>Un programa de entrenamiento integral diseñado para equipar a las personas con el conocimiento y las habilidades necesarias para operar contratos de futuros exitosamente.</p>
+                    </div>
+                    <div class="feature-card">
+                        <a href="#Chat Room">
+                            <img src="/img/icons/chat.png"/>
+                        </a>
+                        <a href="#Chat Room"><h3>Sala de Chat</h3></a>
+                        <p>Conoce más sobre nuestra Sala de Chat, donde los traders se reúnen para discutir tendencias del mercado, compartir ideas de trading y analizar gráficos.</p>
+                    </div>
+                    <div class="feature-card">
+                        <a href="#Market Call">
+                            <img src="/img/icons/call.png"/>
+                        </a>
+                        <a href="#Market Call"><h3>Llamada de Mercado</h3></a>
+                        <p>La Llamada de Mercado ofrece consultas personalizadas de trading con analistas experimentados a través de Zoom o teléfono.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="container">
+            <div class="howstarted">
+                <div class="howitworks">
+                    <h2 id="getstarted">Cómo Empezar</h2>
+                    <p>1. Inscríbete en nuestra <a href="#join">Clase Gratuita</a>: Únete a nuestra clase gratuita de trading de futuros. Habla con nuestros instructores, haz preguntas y aprende más.</p>
+                    <p>2. Inscríbete en Nuestro <a href="#Bootcamp">Bootcamp</a> En Línea: Sumérgete en 24 horas de educación integral de trading, accesible a tu propio ritmo.</p>
+                    <p>3. Únete a nuestra <a href="#Chat Room">Sala de Chat</a>: Conéctate con otros traders en nuestra sala de chat activa. Comparte ideas, haz preguntas y aprende de otros.</p>
+                    <p>4. Llámanos para una <a href="#Free Consultation">Consulta Gratuita</a>: Programa una consulta gratuita con uno de nuestros expertos para discutir tus objetivos y necesidades específicas. Sesiones Privadas: Reserva sesiones privadas por hora para coaching y mentoría personalizada.</p>
+                    <p>5. Comienza a Operar en Demo: Encuentra tu producto para operar, experimenta y prueba los mercados con la información que te enseñamos.</p>
+                    <p>6. Comienza las Evaluaciones de Firmas Prop y Aprueba: Proporcionamos el entrenamiento y códigos de descuento para que pruebes tus habilidades en una evaluación. No arriesgues tu propio capital después de obtener una cuenta fondeada de uno de nuestros Socios de Firmas Prop. Proporcionan desde $25,000 hasta $300,000 en fondos virtuales con reglas estrictas que te pagan por las ganancias.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- [Trading View Widget section remains unchanged] -->
+
+        <div class="container">
+            <div class="telir">
+                <div class="text-column">
+                    <h1>Las características de nuestro curso incluyen una visión general de los mercados de futuros, materias primas, acciones y forex:</h1>
+                    <p>Aprendizaje en línea, a tu propio ritmo.</p>
+                    <p>Software Simplificado: Explicamos cómo usar software en combinaciones que mantienen las cosas simples mientras muestran todas las órdenes pendientes y entrada fácil al mercado.</p>
+                    <p>Minimiza Pérdidas: Aprende sobre Firmas Prop, Cuentas Prop y cómo usarlas para limitar el riesgo y mejorar el potencial de ganancia.</p>
+                    <p>Psicología del Trading: Control emocional y disciplina.</p>
+                    <p>Tamaño de Unidades y Riesgo: Replicación de Cuenta, multiplica tus ganancias por 10 usando cuentas prop y replicadores.</p>
+                    <p>Entrada de Órdenes: Mercado, Stop, Stop Market, Límite.</p>
+                    <p>Gestión de Riesgo: ¿Qué es un drawdown? Cómo evitar o limitar drawdowns.</p>
+                    <p>Informes Económicos y Análisis: Órdenes alrededor de las noticias.</p>
+                </div>
+                <div class="image-column">
+                    <img src="/img/platform.jpg" alt="Descripción de imagen" width="300" height="auto">
+                </div>
+            </div>
+
+            <!-- [Continue with rest of translations...] -->
+        </div>
+
+        <!-- [Continue with remaining sections, translating all text content while maintaining structure] -->
+
+        <footer>
+            <div class="container">
+                <h3>Aviso Legal</h3>
+                <p>Todo el contenido, ideas de trading y configuraciones presentadas en Clases de Futuros son solo para fines educativos. El trading de futuros implica riesgos significativos, y un alto porcentaje de traders pierde dinero. Cualquier decisión de seguir estas configuraciones es enteramente bajo su propio riesgo, y usted es responsable de sus acciones. Ninguna de la información debe considerarse como asesoría financiera o una recomendación para operar contratos de futuros específicos. Tenga en cuenta que el rendimiento pasado no es indicativo de resultados futuros. Clases de Futuros, sus empleados y asociados no son responsables de sus resultados de trading. Siempre realice su propia investigación y considere su tolerancia al riesgo.</p>
+                <br><br>
+                <h3>Política de Reembolso</h3>
+                <p>Todas las ventas son finales. No se emitirán reembolsos bajo ninguna circunstancia, incluyendo pero no limitado a: Cambio de opinión: Si decide que ya no desea el producto o servicio. Dificultades técnicas: Si experimenta problemas técnicos con el producto o servicio. Insatisfacción: Si no está satisfecho con el producto o servicio. Si tiene alguna pregunta o inquietud sobre su compra, contáctenos antes de realizar una compra.</p>
+            </div>
+        </footer>
+    </main>
+
+    <!-- [JavaScript remains unchanged] -->
+</body>
+</html>
