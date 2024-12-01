@@ -1,1409 +1,867 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Futures Classes -- Trading Course for beginners.</title>
-    <style>
-        /* Reset and base styles */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-a, a:active, {color: #333;}
-        :root {
-            --spacing-unit: 1rem;
-            --max-width: 1200px;
-        }
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Futures Classes</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="img/logo.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
 
-
-body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            line-height: 1.6;
-            color:#333;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: 100%;
-        }
-li {text-decoration: none;}
-.coursesection   ul, li {
-            list-style-type: none;
-        }
-        /* Container */
-.container {
-            width: 80%;
-            max-width: var(--max-width);
-            margin: 0 auto;
-            padding: 0 var(--spacing-unit);
-        }
-
-        /* Header */
-.header {
-            position: sticky;
-            top: 0;
-            background: white;
-            z-index: 1000;
-            width: 100%;
-            display: flex;
-            justify-content: center;
-        }
-
-.nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 1rem 0;
-            width: 100%;
-            max-width: var(--max-width);
-            color: #333;
-        }
-.nav a :active, .nav a:visited, {color: #666}
-        @media (orientation: portrait) and (min-width: 768px) {
-            /* Styles for portrait orientation on desktop devices */
-.nav{
-                width: 90%;
-                color: #333; /* Adjust the width as needed */
-            }
-        }
-
-.logo, .logo, .logo a {
-            font-size: 1.3rem;
-            font-weight: 600;
-            color:#333;
-            padding: 4px;
-            text-decoration: none;
-        }
-.nav-links {
-            display: flex;
-            gap: 2rem;
-            margin-left: auto; /* Push links to the right */
-            padding: 5px;
-        }
-
-.nav-links a {
-            text-decoration: none;
-            color:#333;
-            transition: color 0.3s;padding: 5px;
-        }
-.nav-links a:hover{color:#fff;background-color: #000; border-radius: 5px;}
-
-.nav-links a h5,.nav-links a h5:hover {font-weight:400; font-size:1em;background-color: #000;color: #fff;padding: 5px; border-radius: 5px;}
-
-
-.nav-linksmobile {display: none}
-        /* Main content sections */
-main {
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-section {
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            padding: 4rem 0;
-        }
-
-        /* Hero Section */
-.hero {
-            display: flex;
-            justify-content: center;
-            min-width: 100%;
-            background: cover;
-            background-position: 30%;
-            background-image: url("/img/student.jpg");
-            background-size: 140%;
-            background-color: #ccc;
-        }
-
-.hero-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            gap: 2rem;
-            max-width: var(--max-width);
-            width: 80%;
-        }
-
-.hero-content {
-            flex: 1;
-            max-width: 600px;
-            width: 80%;
-        }
-        
-.hero-content h1{
-            font-size: 2.5em;
-            line-height: 1.1;
-            color: #fff;
-        }
-.hero-content h2{
-            font-size: 1.5em;
-            line-height: 1.1;
-            color: white;
-        }
-.hero-content p{
-            font-size: 1.2em;
-            font-weight: 400;
-            line-height: 1.2;
-            padding: 10px;
-            color: #fff;
-            display: inline-block;
-        }
-
-.hero-image {
-            flex: 1;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-.hero-image img{
-            width: 80%;
-            height: auto;
-        }
-
-        /* Features Grid */
-        .features-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 2rem;
-            width: 100%;
-        }
-
-        .feature-card {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-            padding: 2rem;
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        }
-        .feature-card a {color:#000 ;text-decoration: none;}
-        .feature-card a:visited, .feature-card a:hover, .feature-card a:active {color:#000 ;}
-        /* Content Sections */
-        .content-section {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            gap: 4rem;
-            width: 100%;
-        }
-
-
-        /* Telir*/
-        .telir {
-            display: flex;
-        }
-        
-        .text-column {
-            flex: 1;
-            padding: 20px;
-        }
-        
-        .text-column h1{font-size: 1.2em; }
-        
-        .text-column p{font-size: 1em; }
-        .text-column p:hover{background-color: #000;color: #fff;}
-
-        .image-column {
-            flex: 1;
-            text-align: center;
-            padding: 20px;
-        }
-
-        /* Ilrit */
-        .ilrit {
-            display: flex;
-        }
-        
-        .image-column,
-        .text-column {
-            flex: 1;
-            padding: 20px;
-        }
-/*  How it Works / Get Started */
-.howstarted {
-    display: flex;
-}
-
-.howitworks, .getstarted {
-    flex: 1;
-    padding: 20px;
-}
-.getstarted p{padding: 20px;}
-.howitworks p:hover{color: #fff;background-color: #000; cursor: pointer; }
-.howitworks p{  padding: 10px; /* Adjust the value as needed */}
-.howitworks a:hover{color: #fff;background-color: #0dbb33; cursor: pointer;padding: 5px; }
-.howitworks a {color: #fff;background-color: #0dbb33; cursor: pointer; text-decoration: none;padding: 5px;}
-
-/**** course ************/
-.coursecontainer {
-    display: flex;
-    justify-content: center; /* Center the content horizontally */
-    margin-top: 40px;
-    margin-bottom: 20px;
-    width: 70%;
-
-}
-
-.coursesection {
-    display: flex;
-    max-width: 1200px; /* Adjust max-width as needed */
-    margin: 0 auto;
-    border: 1px solid #ccc;*/
-    background-color: #ecedee;
-
-}
-.courseleft, .courseright {
-    flex: 1;
-    padding: 20px;
-}
-.courseleft{width: 35%;}
-.courseleft h2{ font-size: 1.1em;color: #fff;background-color: #ccc;padding: 5px;}
-.courseright{width: 60%;}
-.courseleft ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.courseleft li {
-    margin-bottom: 10px;
-    padding-left: 40px;
-    position: relative;
-    font-size: .9em;
-    list-style-type: none;
-    
-}
-
-.courseleft li::before {
-    color: black;
-    font-size: 16px;
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-}
-.courseright li {
-    margin-bottom: 10px;
-    padding-left: 40px;
-    position: relative;
-    font-size: .9em;
-    list-style-type: none;   
-}
-.courseright li::before {
-    color: black;
-    font-size: 16px;
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-}
-.courseright h2 { font-size: 1em;}
-
-
-/* Testimonials */
-.testimonial3row {
-            /* Overall container styles */
-        }
-
-.row1, .row2, .row3 {
-            /* Styles for each row */
-            color: #333; font-weight: 400;
-        }
-.row2 img {width: 40;height: auto;  border-radius: 50%; float: left; margin-right: 2px;}
-.row3 {
-            display: flex;
-        }
-.row1 p{padding-bottom: 30px;}
-.row1 p,.row2 p{ font-size: .8em;text-align:left;}
-.row2 p{font-weight: 600;}
-
-.row3 p{text-align: left; font-size: .8em;}
-.row3 img{
-            width: 20px;
-            height: 20px;
-            margin-left: 4px;
-            padding-left: 4px;
-        }
-        
-.row3 .text-column, .row3 .image-column {
-            flex: 1;
-        }
-        
-.row3 .image-column {
-            text-align: right; /* Align images to the right */
-        }
-.testimonialtext-column {
-            flex: 1;
-            padding: 20px;
-        }
-
-.testimonialimage-column {
-            flex: 1;
-            text-align: center;
-            padding: 20px;
-        }
-.testimonialimage-column img{
-            width: 40px;
-            height: 40px;
-        }
-
-.testimonialsfeature-card {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-            padding: 2rem;
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0 2px 6px rgba(81, 81, 82, 0.281);
-        }
-/* FAQ section */
-/*****FAQ*****/
-.faq{
-    width: 50%;
-    background-color: #fff;
-    padding: 50px;
-    padding-bottom: 80px;
-  }
-.faqcontainer {
-    max-width: 80%;
-    margin: 0 auto;
-    /*font-family: Arial, sans-serif;*/
-    background-color: inherit;
-  }
-.faqcontainer h1 {
-    text-align: center;color: #555; font-size: 1.4em;
-  }
-.faq-item {
-    margin-bottom: 10px;
-   border: 1px solid #ddd;
-    border-radius: 5px;*/
-  }
-.faq-question {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px;
-    background-color: #fff;
-    cursor: pointer;
-    font-weight:400;
-    color: #555;
-  }
-.faq-question:hover {
-   /* background-color: #b3c6d1;*/
-   background-color: #ccc;
-   border: 2px solid #ccc;
-   color: #fff;
-  }
-.faq-question::after {
-    content: '+';
-    font-size: 14px;
-    font-weight: 200;
-    transition: transform 0.3s ease;
-    color: #000;
-  }
-.faq-question.active::after {
-    content: '-';
-    font-size: 14px;
-    font-weight: 200;
-  }
-.faq-answer {
-    display: none;
-    border-top: 1px solid #ddd;
-    background-color: #fff;
-    color: #000;
-    padding: 10px;
-  }
-.faq-answer h1 {
-  color: #000;
-  font-weight: 400;
-  background-color: #fff;
-  }
-.faq-answer p {
-    color: #000;
-    font-weight: 300;
-    padding: 10px;
-    
-  }
-  
-.faq-answer.show {
-    display: block;
-  }
-
-/** Calendly **/
-.calendly-widget {
-    width: 100%;
-    height: 960px;
-    background-color: #fff;
-  }
-
-/* Footer */
-     /* Footer */
-footer, footer li,footer li a , footer a{
-    background-color: #000;
-    padding: 40px 0;
-    text-decoration: none;
-    color: #fff;
-    width: 100%;
-    margin-bottom: 0;
-}
-
-.footer-content {
-    display: flex;
-    justify-content: space-between;
-    height: auto;
-    font-size: .9em;
-}
-
-.footer-section {
-    flex: 1;
-    margin: 0 15px;
-    height: auto;
-    margin-bottom: 20px;
-}
-.footer-section2 {
-  flex: 1;
-  margin: 0 15px;
-  width: 50%;
-}
-
-.footer-section h3 {
-    margin-bottom: 15px;
-}
-.footer-section ul li, a:active, a:hover, a:visited {
-  text-decoration: inherit;
-}
-/**forms**/
-label {
-    display: block;
-    margin-bottom: 5px;
-  }
-  
-input[type="text"],
-input[type="email"],
-input[type="tel"],
-textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;5px;
-  }
-  
-textarea {
-    height: 100px;
-    width: 100%;
-  }
-  
-input[type="submit"] {
-    background-color: #333;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1em;
-  }
-
-
-.joincontent {
-    flex: 1;
-    color: #555;
-    background-color: #ccc;
-  }
-.joincontent-form{
-    background-color: #000;
-  }
-.joincontent-section {
-    padding: 0px 0;
-    background-color: #ccc;
-    
-  }
-.joincontainer {
-    max-width: 70%;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #ccc;
-  }
-  /* Second content section */
-.joincontent-section {
-    padding: 80px 0;
-    background-color: #ccc;
-  }
-
-
-        .social-container {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            padding: 20px;
-            flex-wrap: wrap;
-        }
-
-        .social-icon {
-            position: relative;
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            text-decoration: none;
-            transition: all 0.3s ease;
-            /* Ensure perfect circle */
-            flex-shrink: 0;
-            aspect-ratio: 1 / 1;
-        }
-
-        .social-icon svg {
-            position: absolute;
-            color: white;
-            transition: all 0.3s ease;
-            /* Make SVG proportional to container */
-            width: 50%;
-            height: 50%;
-            /* Center the SVG */
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
-
-        .social-icon:hover {
-        }
-
-        .social-icon:hover svg {
-        }
-
-        /* Mobile responsiveness */
-        @media (max-width: 480px) {
-            .social-container {
-                gap: 15px;
-                padding: 15px;
-            }
-
-            .social-icon {
-                width: 40px;
-                height: 40px;
-            }
-        }
-   
-/* Responsive Design ***********************************/
-/* Responsive Design ***********************************/
-/* Responsive Design ***********************************/
-
-@media screen and (max-width: 1024px) {
-.logo, .logo a , .logo a:active{
-        font-size: 14px;
-        font-weight: 600;
-        color:#333;
-        padding: 4px;
-        background-color:white;
-        text-decoration: none;
-        display: inline-block;
-    }
-    
-
-.hero-container {
-                flex-direction: column;
-                text-align: center;
-                padding: 0 var(--spacing-unit);
-            }
-.hero {
-                display: flex;
-                justify-content: center;
-                width: 100%;
-                background-color: #ccc;                
-                background: fill;
-                background-repeat: no-repeat;
-                background-position: 30%;
-                background-image: none;
-            }
-.hero h1 {color: #fff ;}
-.hero h2 {color: #fff;}
-.hero p{ color: #000;}
-.features-grid {
-                grid-template-columns: repeat(2, 1fr);
-                padding: 0 var(--spacing-unit);} 
-
-.footer-content {
-                grid-template-columns: repeat(3, 1fr);}
-.faq{
-                width: 100%;
-                background-color: #fff;
-                padding: 50px;
-                padding-bottom: 80px;}
-.faqcontainer {
-                max-width: 90%;
-                margin: 0 auto;
-                /*font-family: Arial, sans-serif;*/
-                background-color: inherit;
-              }
-        }
-
-@media screen and (max-width: 768px) {
-.nav {
-                padding: 1rem var(--spacing-unit);
-            }
-
-.nav-links {display: none;}
-.nav-linksmobile,.nav-linksmobile a, .nav-linksmobile a:active,.nav-linksmobile a:visited  {text-decoration: none; color:black; font-size:0.9em; display: inline-block;padding: 4px;}
-
-.menu-toggle {
-                display: block;
-            }
-
-.content-section {
-                flex-direction: column;
-                padding: 0 var(--spacing-unit);
-            }
-
-.testimonials-grid {
-                grid-template-columns: repeat(2, 1fr);
-                padding: 0 var(--spacing-unit);
-            }
-        }
-
-@media screen and (max-width: 480px) {
-.features-grid,
-.testimonials-grid {
-                grid-template-columns: 1fr;
-            }
-.features{display: none;}
-
-
-.footer-content {
-                grid-template-columns: 1fr;
-                text-align: center;
-                padding: 0 var(--spacing-unit);
-            }
-        }
-@media (max-width: 768px) {
-.telir {
-              flex-direction: column; /* Stack columns vertically on mobile */
-            }
-          
-.text-column,
-.image-column {
-              flex: 0 0 auto; /* Remove flex-grow and flex-shrink on mobile */
-              width: 100%; /* Make each column full width */
-            }
-          
-.image-column img {
-              width: 100%; /* Make image responsive on mobile */
-              height: auto;
-            }
-@media (max-width: 768px) {
-                .ilrit {
-                  flex-direction: column;
-                }
-                 
-.ilrit {
-            display: none;
-        }
-.image-column,
-.text-column {
-                  flex: 0 0 auto;
-                  width: 100%;
-                  padding: 10px;
-                }
-              
-.image-column img {
-                  width: 100%;
-                  height: auto;
-                }
-              }
-          }
-@media (max-width: 768px) {
-.testimonial3row .row3 {
-              flex-direction: column; /* Stack columns vertically on mobile */
-            }
-          
-.testimonial3row .text-column, .testimonial3row .image-column {
-              flex: 0 0 auto; /* Remove flex-grow and flex-shrink on mobile */
-              width: 100%; /* Make each column full width */
-            }
-          
-.testimonial3row .image-column {
-              text-align: left; /* Align images to the left on mobile */
-            }
-.testimonialimage-column img{
-                width: 20px;
-                height: 20px;
-                float: left;
-            }
-.row3 img{
-                width: 15px;
-                height: 15px;
-                float: right;
-                display: block;
-                margin-left: 4px;
-                padding-left: 4px;
-                }
-
-.row1 p,.row2 p{ font-size: .8em;text-align: justify;}
-.row2 p{font-weight: 600;}
-
-            }
-          
-        /* Mobile Menu Toggle */
-.menu-toggle {
-            display: none;
-            background: none;
-            border: none;
-            font-size: 1.5rem;
-            cursor: pointer;
-        }
-
-        /* Navigation when active on mobile */
-.nav-links.active {
-            display: flex;
-            flex-direction: column;
-            position: absolute;
-            top: 100%;
-            left: 0;
-            right: 0;
-            background: white;
-            padding: 1rem;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            font-size: 10px;
-        }
-
-        /* Buttons */
-.btn, .btn a {
-            display: inline-block;
-            padding: 10px;
-            background-color:#0dbb33;
-            color: white;
-            text-decoration: none;
-            border-radius: 4px;
-        }
-
-.btn a:hover {
-            background-color: #535252;
-            color: white;
-        }
-button {
-            background-color: #535252;
-            color: white;
-            padding: 10px;
-            border: none;
-            border-radius: 4px;
-        }
-button a {
-            text-decoration: none;
-            color: #fff; padding: 10px;
-}
-/*button a:hover{ background-color: #0dbb33; color: #fff;}*/
-        /* Mobile-friendly CSS */
-@media (max-width: 768px) {
-.courseleft ul {
-        font-size: 14px; /* Adjust font size for smaller screens */
-    }
-
-
-.hero-content .btn {background-color: #555;color: #fff;}  
-}
-.hero-content .btn:hover, .hero-content .btn :active {background-color: #000;}  
-
-/* Mobile-friendly CSS */
-@media (max-width: 768px) {
-    .howstarted {
-        flex-direction: column;
-    }
-    .getstarted{display: none;}
-}
-@media (orientation: portrait) {
-    .getstarted {
-      display: none;
-    }
-  }
-@media (max-width: 768px) {
-    .coursesection {
-        flex-direction: column;border: 1px solid #ccc;*/
-        ;}
-    .coursecontainer{width: 80%;}
-    .courseleft{width: 100%;}
-    .courseright{width: 100%;}
-}
-
-
-    </style>
 </head>
-<body>
-    <header class="header">
-        <nav class="nav">
-            <div class="logo"><a href="#">Futures Classes</a></div>
-                <div class="nav-links">
-                <a href="#join"><h5>Join Our Free Class</h5></a>
-                <a href="#faq">FAQ</a>
-                <a href="#contact">Contact</a>
-                <a href="#login">Login</a>
-            </div>
-            <div class="nav-linksmobile">
-                <a href="#first"></a>
-                <a href="#second"></a>
-                <a href="#third"></a>
-                <a href="#login">Login</a>
-            </div>
-        </nav>
-        
-    </header>
-    <main>
-        <section class="hero">
-            <div class="hero-container">
-                <div class="hero-content">
-                    <h1>Learn to Trade Futures</h1>
-                    <h2>Start Your Own Business</h2>
-                    <p>We specialize in training beginners and help them pass evaluations so they can trade without risking their own capital.</p>
-                    <a href="#getstarted" class="btn">Get Started</a>
-                </div>
-                <div class="hero-image">
-                    <img src="/img/quantower.png" alt="Hero illustration" />
-                </div>
-            </div>
-        </section>
-<!------------------------------------------------------->
-        <section class="features">
-            <div class="container">
-                <div class="features-grid">
-                    <div class="feature-card">
-                        <a href="#Bootcamp">
-                            <img src="/img/icons/bootcamp.png"/>
-                        </a>
-                        <a href="#Bootcamp"><h3>Bootcamp</h3></a>                        <p>A comprehensive training program designed to equip individuals with the knowledge and skills necessary to trade futures contracts successfully.</p>
-                    </div>
-                    <div class="feature-card">
-                        <a href="#Chat Room">
-                            <img src="/img/icons/chat.png"/>
-                        </a>
-                        <a href="#Chat Room"><h3>Chat Room</h3></a>                        <p> Learn more about our Chat Room, where traders gather to discuss market trends, share trading ideas, and analyze charts.</p>
-                    </div>
-                    <div class="feature-card">
-                        <a href="#Market Call">
-                            <img src="/img/icons/call.png"/>
-                        </a>
-                        <a href="#Market Call"><h3>Market Call</h3></a>                        <p>Market Call offers personalized trading consultations with experienced analysts via Zoom or phone.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-<!------------------------------------------------------->
 
-<div class="container">
-    <div class="howstarted">
-        <div class="howitworks">
-            <h2 id="getstarted">Get Started</h2>
-            <p>1. Sign up for our  <a href="#join">Free Class </a>: Join us in our free futures trading class.  Talk to our proctors, ask questions and learn more.</p>
-            <p>2. Enroll in Our Online  <a href="#Bootcamp">Bootcamp </a>: Dive deep into 24 hours of comprehensive trading education, accessible at your own pace.</p>
-            <p>3. Join our <a href="#Chat Room">Chatroom </a>:  Connect with fellow tradiers in our active chat room.  Share insights, ask questions, and learn from others.</p>
-            <p>4.Call us for a <a href="#Free Consultation"> Free Consultation</a> : Schedule a free consultation with one of our experts to discuss your specific goals and needs.  Private Sessions:  Book hourly private sessions for tailored coaching and mentorship. </p>
-            <p>5. Start Trading on Demo. Find your product to trade, tinker and test the markets with the information we taught you. </p>
-            <p>6. Begin Prop Firm Evaluations and Pass.  We provide the training and discount codes for you to try your skills on an evaluation.   Risk none of your own capital after earning a funded account from one of our Prop Firm Partners.  They provide from $25,000 to $300,000 in virtual funds with strict rules that pay you on profits.</p>
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+
+      <div class=" d-flex align-items-center me-auto">
+        <a href="index.html" class="logo">
+          <img src="img/logo.png" alt="">
+        </a>
+        <a href="#about" class="join">Futures Classes</a>
+      </div>
+
+
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html#hero" class="active">Home</a></li>
+          <li><a href="index.html#faq">FAQ</a></li>
+          <li><a href="index.html#features">Features</a></li>
+
+          <li><a href="index.html#pricing">Pricing</a></li>
+
+          <li><a href="index.html#footer">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <a class="btn-getstarted" href="index.html#about">Login</a>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section">
+      <div class="hero-bg">
+        <img src="img/inr.png" alt="">
+      </div>
+      <div class="container text-center">
+        <div class="d-flex hero-inner justify-content-center align-items-center">
+          <div class="text-left"  data-aos="fade-up" data-aos-delay="200">
+            <h1 class="text-start text-white" data-aos="fade-up" >Learn to Trade Futures</h1>
+            <p class="text-start" >We help beginners pass prop firm evaluations so they can trade remote, without risking their own capital.<br>
+            </p>
+            <div class="d-flex">
+              <a href="#about" class="btn-get-started">Get Started</a>
+            </div>
+          </div>
+       
+
+          <img src="img/quantower.png" class="img-fluid hero-img" alt="" data-aos="zoom-out" data-aos-delay="300">
         </div>
-        
+      </div>
+
+
+
+    </section><!-- /Hero Section -->
+
+    <!-- Featured Services Section -->
+    <section id="featured-services" class="featured-services section light-background">
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-xl-4 col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item d-flex">
+              <div class="icon flex-shrink-0"><img src="img/bootcamp.png" alt=""></div>
+              <div>
+                <h4 class="title"><a href="#" class="stretched-link">Bootcamp</a></h4>
+                <p class="description">A comprehensive training program designed to equip individuals with the knowledge
+                  and skills necessary to trade futures contracts successfully.</p>
+              </div>
+            </div>
+          </div>
+          <!-- End Service Item -->
+
+          <div class="col-xl-4 col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item d-flex">
+              <div class="icon flex-shrink-0"><img src="img/chat.png" alt=""></div>
+              <div>
+                <h4 class="title"><a href="#" class="stretched-link">Chat Room</a></h4>
+                <p class="description">Learn more about our Chat Room, where traders gather to discuss market trends,
+                  share trading ideas, and analyze charts.</p>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-xl-4 col-lg-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item d-flex">
+              <div class="icon flex-shrink-0"><img src="img/call.png" alt=""></div>
+              <div>
+                <h4 class="title"><a href="#" class="stretched-link">Market Call</a></h4>
+                <p class="description">Market Call offers personalized trading consultations with experienced analysts
+                  via Zoom or phone.</p>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Featured Services Section -->
+    <div class="video-placeholder">
+      <video controls width="100%" height="315" >
+        <!-- Replace "placeholder.jpg" with the path to your placeholder image -->
+        <source src="assets/videos/futures.mp4" type="video/mp4">
+        <!-- You can add more sources for different formats -->
+        Your browser does not support the video tag.
+      </video>
     </div>
-    </div>
-<!--------------------------------------------------------------------------------------------------------------------------->
-<!-- TradingView Widget BEGIN -->
+    <!-- About Section -->
+    <section id="about" class="about section" data-aos="fade-up" data-aos-delay="100">
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-8 content">
+
+            <div class="container section-title aos-init aos-animate pb-0" >
+              <h2>Get Started</h2>
+
+            </div>
+            <!-- <h3>Get Started</h3> -->
+
+            <div class="container">
+              <div class="howstarted">
+                <div class="howitworks">
+
+                  <p>1.  <a href="#join">Free Class </a>: Join us in our free futures trading class.
+                    Talk to our proctors, ask questions and learn more.</p>
+                  <p>2.<a href="#Bootcamp">Bootcamp </a>: Dive deep into 24 hours of
+                    comprehensive trading education, accessible at your own pace.</p>
+                  <p>3.<a href="#Chat Room">Chatroom </a>: Connect with fellow tradiers in our active chat
+                    room. Share insights, ask questions, and learn from others.</p>
+                  <p>4.<a href="#Free Consultation"> Free Consultation</a> : Schedule a free
+                    consultation with one of our experts to discuss your specific goals and needs. Private Sessions:
+                    Book hourly private sessions for tailored coaching and mentorship. </p>
+                  <p>5. Start Trading on Demo. Find your product to trade, tinker and test the markets with the
+                    information we taught you. </p>
+                  <p>6. Begin Prop Firm Evaluations and Pass. We provide the training and discount codes for you to
+                    try your skills on an evaluation. Risk none of your own capital after earning a funded account
+                    from one of our Prop Firm Partners. They provide from $25,000 to $300,000 in virtual funds with
+                    strict rules that pay you on profits.</p>
+                </div>
+
+              </div>
+            </div>
+
+
+          </div>
+
+          <div class="col-lg-4 about-images">
+            <div class="row gy-4 mt-5">
+              <div class="col-lg-12 mt-5">
+            <!-- <img src="img/trade.png" class="img-fluid" alt="">   -->    
+              </div>
+                <!-- TradingView Widget BEGIN -->
 <div class="tradingview-widget-container">
-    <div class="tradingview-widget-container__widget"></div>
-    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-market-overview.js" async>
+  <div class="tradingview-widget-container__widget"></div>
+  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank"></a></div>
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-market-quotes.js" async>
+  {
+  "width": "100%",
+  "height": "450",
+  "symbolsGroups": [
     {
-    "colorTheme": "light",
-    "dateRange": "1D",
-    "showChart": true,
-    "locale": "en",
-    "width": "70%",
-    "height": "800",
-    "largeChartUrl": "",
-    "isTransparent": false,
-    "showSymbolLogo": true,
-    "showFloatingTooltip": false,
-    "plotLineColorGrowing": "rgba(0, 255, 0, 1)",
-    "plotLineColorFalling": "rgba(0, 255, 0, 1)",
-    "gridLineColor": "rgba(42, 46, 57, 0)",
-    "scaleFontColor": "rgba(19, 23, 34, 1)",
-    "belowLineFillColorGrowing": "rgba(106, 168, 79, 0.12)",
-    "belowLineFillColorFalling": "rgba(106, 168, 79, 0.12)",
-    "belowLineFillColorGrowingBottom": "rgba(106, 168, 79, 0)",
-    "belowLineFillColorFallingBottom": "rgba(56, 118, 29, 0)",
-    "symbolActiveColor": "rgba(0, 255, 0, 0.12)",
-    "tabs": [
-      {
-        "title": "Futures",
-        "symbols": [
-          {
-            "s": "CME_MINI:ES1!",
-            "d": "S&P 500"
-          },
-          {
-            "s": "CME:6E1!",
-            "d": "Euro"
-          },
-          {
-            "s": "COMEX:GC1!",
-            "d": "Gold"
-          },
-          {
-            "s": "NYMEX:CL1!",
-            "d": "WTI Crude Oil"
-          },
-          {
-            "s": "NYMEX:NG1!",
-            "d": "Gas"
-          },
-          {
-            "s": "CBOT:ZC1!",
-            "d": "Corn"
-          }
-        ],
-        "originalTitle": "Futures"
-      }
-    ]
-  }
-    </script>
-  </div>
-  <!-- TradingView Widget END -->
-<!-- Additional sections following the same pattern... -->
-<div class="container">
-    <div class="telir">
-        <div class="text-column">
-            <h1>Features of our course inlcude an overview of futures, commodities, stocks and forex markets:</h1>
+      "name": "Futures",
+      "originalName": "Futures",
+      "symbols": [
+        {
+          "name": "CME_MINI:ES1!",
+          "displayName": "S&P 500"
+        },
+        {
+          "name": "CME:6E1!",
+          "displayName": "Euro"
+        },
+        {
+          "name": "COMEX:GC1!",
+          "displayName": "Gold"
+        },
+        {
+          "name": "NYMEX:CL1!",
+          "displayName": "WTI Crude Oil"
+        },
+        {
+          "name": "NYMEX:NG1!",
+          "displayName": "Gas"
+        },
+        {
+          "name": "CBOT:ZC1!",
+          "displayName": "Corn"
+        },
+        {
+          "name": "CME_MINI:NQ1!",
+          "displayName": "NQ 100 Futures"
+        },
+        {
+          "name": "CBOT_MINI:YM1!",
+          "displayName": "Dow  Futures"
+        },
+        {
+          "name": "CME:NKD1!",
+          "displayName": "Nikkei Futures"
+        }
+      ]
+    }
+  ],
+  "showSymbolLogo": true,
+  "isTransparent": false,
+  "colorTheme": "dark",
+  "locale": "en",
+  "backgroundColor": "rgba(0, 0, 0, 1)"
+}
+  </script>
+</div>
+<!-- TradingView Widget END -->
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- /About Section -->
+
+    <!-- Clients Section -->
+    <section id="clients" class="clients section" data-aos="fade-up" data-aos-delay="100">
+
+      <div class="container mt-5" >
+        <div class="ilrit mb-4">
+          <div class="image-column">
+            <img src="img/dom.gif" alt="Image description" width="300" height="auto">
+          </div>
+          <div class="text-column">
+            <h1>Benefits  </h1>
+            <hr>
+            <p>Learn how to never risk your own capital, pass evaluations and use prop firm money.</p>
+            <p>Leverage: Futures trading allows traders to control a larger position with a smaller initial
+              investment, potentially leading to larger profits and losses.</p>
+            <p>Liquidity: Futures markets are highly liquid, making it easier to enter and exit positions
+              quickly.</p>
+            <p>Futures provide a wide range of diverse assets, including commodities, currencies, indices and
+              interest rates.</p>
+            <p>Hedging Strategies: Learn how to use futures to hedge a portfolio or profit from downward trends.
+            </p>
+            <p>Time and Flexibility: Futures and Forex afford 24 Hour trading, and trade 6 days a week. This
+              provides ample opportunities for traders to capitalize on global events and market trends.</p>
+            <p>Work from anywhere, on your own time. Work remote and pick your sessions.</p> </h1>
+          </div>
+        </div>
+        <div class="telir mt-5">
+          <div class="text-column">
+            <h1>Features </h1>
+            <hr>
             <p>Online, self paced learning.</p>
-            <p>Simplified Software:  We break down how to use software in combinations that keep things simple while showing all pending orders and easy market entry.</p>
-            <p>Minimize Losses: Learn about Prop Firms, Prop Firm Accounts and how to use them to limit risk and enhance upside.</p>
-            <p>Trading Psychology:  Emotional control and discipline.</p>
-            <p>Unit sizing and Risk: Account Replication, 10x your profits using prop firm accounts and replicators.</p>
+            <p>Simplified Software: We break down how to use software in combinations that keep things simple
+              while showing all pending orders and easy market entry.</p>
+            <p>Minimize Losses: Learn about Prop Firms, Prop Firm Accounts and how to use them to limit risk and
+              enhance upside.</p>
+            <p>Trading Psychology: Emotional control and discipline.</p>
+            <p>Unit sizing and Risk: Account Replication, 10x your profits using prop firm accounts and
+              replicators.</p>
             <p>Order entry: Market, Stop, Stop Market, Limit.</p>
             <p>Risk Management: What is a drawdown? How to avoid or limit drawdowns.</p>
-            <p>Economic Reports and Analysis:  Orders around the news.</p>
+            <p>Economic Reports and Analysis: Orders around the news.</p>
+          </div>
+          <div class="image-column pt-5">
+            <img src="img/platform.jpg" alt="Image description" width="300" height="auto">
+          </div>
         </div>
-        <div class="image-column">
-            <img src="/img/platform.jpg" alt="Image description" width="300" height="auto">
-        </div>
-    </div>
-
-    <!------------------------- text --------------------------  -->
-    <div class="ilrit">
-        <div class="image-column">
-            <img src="img/dom.gif" alt="Image description" width="300" height="auto">
-        </div>
-        <div class="text-column">
-            <h1>Benefits of using our course include market knowledge and time flexibility: </h1>
-            <p>Learn how to never risk your own capital, pass evaluations and use prop firm money.</p>
-            <p>Leverage:  Futures trading allows traders to control a larger position with a smaller initial investment, potentially leading to larger profits and losses.</p>
-            <p>Liquidity: Futures markets are highly liquid, making it easier to enter and exit positions quickly.</p>
-            <p>Futures provide a wide range of diverse assets, including commodities, currencies, indices and interest rates.</p>
-            <p>Hedging Strategies:  Learn how to use futures to hedge a portfolio or profit from downward trends.</p>
-            <p>Time and Flexibility: Futures and Forex afford 24 Hour trading, and trade 6 days a week. This provides ample opportunities for traders to capitalize on global events and market trends.</p>
-            <p>Work from anywhere, on your own time.  Work remote and pick your sessions.</p>
-        </div>
-    </div>
-
-</div>
-       
-<!-------------------------------------------------------------------->
-
-
-<!-------------------------------------------------------------------->
-<div class="coursecontainer">
-    <div class="coursesection">
-        <div class="courseleft">
-            <h2 id="Bootcamp">Bootcamp</h2>
-    
-            <ul>
-                <li>Course Title: Intraday Futures For Beginners Bootcamp</li>
-                <li>Duration: 24 Hours</li>
-                <li>Instructor: Mark G.</li>
-                <li>Prerequisites: None.</li>
-                <li>Learning Outcomes: Learn proven strategies for consistent profits. Learn how to start your own business in Futures Trading.  Learn how to raise money, or trade prop firm money.  
-                    Gain a deep understanding of market analysis.
-                    Develop risk management skills to protect your capital.
-                    Attain a basic understanding of intraday futures trading, prop firm trading and entry level market analysis. </li>
-            </ul>       
-        </div>
-        <div class="courseright">
-            <h2>Curriculum</h2>
-            <p>Our bootcamp offers a comprehensive curriculum covering:</p>
-            <ul>
-                <li>Technical Analysis: Chart patterns, trend identification, support and resistance levels, and advanced charting techniques.</li>
-                <li>Fundamental Analysis:  Economic indicators, geopolitical events, news analysis, and market sentiment.</li>
-                <li>Risk Management: Position sizing, stop-loss orders, take-profit targets, and risk-reward ratios.</li>
-                <li>Trading Psychology: Emotional control, mindset development, and disciplined trading habits.</li>
-                <li>Trading Strategies:  Day trading, swing trading, and breakout strategies.</li>
-                <li>Trading Software: We will walk you through installation, usage and software options and alternatives.</li>
-
-            </ul>
-            <button><a href="#">Bootcamp: $2499</a></button>
-        </div>
-    </div>
-</div>
-<!----Chat room  -->
-<div class="coursecontainer">
-    <div class="coursesection">
-        <div class="courseleft">
-            <h2 id="Chat Room">Chat Room</h2>
-            <p>Engage in instant discussions about market trends, strategies, and specific trades.</p>
-            <ul>
-                <li>Chat Room Software: Whatsapp, Discord</li>
-                <li>Duration: 1 Year Access</li>
-                <li>Prerequisites: None</li>
-                <li>Learning Outcomes: Gain new information and insights on various topics from other participants.  Analyze and evaluate information shared in the chat room.</li>
-            </ul>       
-        </div>
-        <div class="courseright">
-            <h2> Features</h2>
-            <p>Join the Conversation.  Talk to other traders and ask questions throughout the trading day.</p>
-
-            <ul>
-                <li>Real-time Chat: Instant messaging with other users.</li>
-                <li>Public and Private Chats: Engage in open discussions or private conversations. </li>
-                <li>File Sharing: Share documents, images, and other files.</li>
-                <li>Knowledge Sharing: Learn from experts and share your own insights.</li>
-                <li>Ask questions and engage with fellow students.</li>
-            </ul>
-            <button><a href="#">Chat Room : $99 monthly</a></button>
-        </div>
-    </div>
-</div>
-<!----Market Call-->
-<div class="coursecontainer">
-    <div class="coursesection">
-        <div class="courseleft">
-            <h2 id="Market Call">Market Call</h2>
-            <p>Book a one-on-one consultation with our seasoned traders. Get personalized insights and actionable strategies tailored to your needs.</p>
-            <ul>
-                <li>Private Consultation Call</li>
-                <li>Duration: 1 hr</li>
-                <li>Prerequisites:None</li>
-                <li>Learning Outcomes: Learn to assess and manage risk effectively.  Analyze your strategy statistically and learn to make adjustments.</li>
-            </ul>       
-        </div>
-        <div class="courseright">
-            <h2>Features</h2>Here are some key features of booking a market call consultation: 
-            <ul>
-                <li>Personalized Consultation: One-on-one session with an experienced analyst.</li>
-                <li>Customizable Agenda: Discuss specific topics or questions you have.</li>
-                <li>Screen Sharing: Share charts, documents, and other relevant materials during the call.</li>
-                <li>Flexible Scheduling: Choose a time slot that suits your schedule.</li>
-            </ul>
-            <button><a href="#">Market Call : $99  (1 hr)</a></button>
-        </div>
-    </div>
-</div>
-
-<!------------------------- testimonials --------------------------  -->
-        <section class="features">
-            <div class="container">
-                <div class="features-grid">
-<!---- Begin Feauture Card -->
-                    <div class="testimonialsfeature-card">
-        <!---injection into features for 3col reviews section-->
-<div class="testimonial3row">
-    <div class="row1"><p>"This course taught me proper futures trading systems and risk management that actually work. Within three months, I was finally trading profitably and consistently."</p>
-    
-    </div>
-
-    <div class="row2"><img src="/img/testimonialK.jpg" width="40" height="40" alt="alternative text"><p>Harry Wong</p>        
-    </div>
-
-    <div class="row3">
-            <p>Systems Analyst</p>     
-
-    </div>
-    
-</div>
-        <!---END injection into features for 3col reviews section-->
-
-                    </div>
-<!------------------------- End of Feauture Card -->
-<!---- Begin Feauture Card -->
-<div class="testimonialsfeature-card">
-    <!---injection into features for 3col reviews section-->
-<div class="testimonial3row">
-<div class="row1"><p>"The live trading sessions and mentor feedback transformed my approach to futures trading. Having guidance to develop my own strategy, rather than copying trades, made all the difference."</p>
-
-</div>
-
-<div class="row2"><img src="/img/testimonialC.jpg" width="40" height="40" alt="alternative text"><p>Yuseff Uroba</p>        
-</div>
-
-<div class="row3">
-        <p>Accountant</p>     
-</div>
-
-</div>
-    <!---END injection into features for 3col reviews section-->
-
-                </div>
-<!------------------------- End of Feauture Card -->
-<!---- Begin Feauture Card -->
-<div class="testimonialsfeature-card">
-    <!---injection into features for 3col reviews section-->
-<div class="testimonial3row">
-<div class="row1"><p>"All base belong to us.  This is the 4th Quadrant. Wecan also quick brown fox jumps over the lazydog."</p>
-
-</div>
-
-<div class="row2"><img src="/img/testimonialJ.jpg" width="40" height="40" alt="alternative text"><p>Jen Kahn</p>        
-</div>
-
-<div class="row3">
-        <p>Registered Nurse</p>     
-</div>
-
-</div>
-    <!---END injection into features for 3col reviews section-->
-
-                </div>
-<!------------------------- End of Feauture Card -->
-                    <!---end container-----></div>
-            <!--- end grid ---></div>
-        </section>
-       <!---end of section-->
-       <!---- End of Testimonials -->
 
         <!------------------------- text --------------------------  -->
-<!---FAQ-->
-<div class="faq">
 
-    <div class="faqcontainer">
-      <h1 id="faq">Frequently Asked Questions</h1><br>
-      <div class="faq-item">
-        <div class="faq-question">Why should I pay for a course from you when there are so many free resources online?</div>
-        <div class="faq-answer">Unlike fragmented online content, our bootcamp is led by seasoned Wall Street professionals with verifiable track records in institutional trading. <br><br>Here's what sets us apart from free resources:<br><br>Real Expertise vs. Social Media "Gurus": <br><br>Many social media trading "experts" have never actually traded professionally or managed serious capital. They make money from clicks and sponsorships, not trading. Our instructors have collective decades of experience trading for major financial institutions and can prove it.
-            <br><br>Protection from Common Scams: <br><br>The futures trading space is unfortunately filled with "signal services," automated trading bots, and get-rich-quick schemes promoted by influencers. These often lead to devastating losses. Our program teaches you legitimate institutional trading methods that have stood the test of time in professional trading environments.
-            <br><br>Structured Learning vs. Random Tips: <br><br>Free content often promotes dangerous practices like over-leveraging or ignoring risk management. Our systematic curriculum is built on the same principles used to train professional traders at major firms, with emphasis on capital preservation and consistent profitability.
-            <br><br>Additional critical reasons to avoid learning from free resources:
-
-            <br><br>"The Hidden Agenda Problem": Many free trading channels and social media accounts are actually marketing funnels for questionable products. They share just enough basic information to seem credible, then upsell followers on risky signal services, "foolproof" indicators, or sketchy coaching programs. Our only agenda is building competent, self-sufficient traders using proven institutional methods.
-            <br><br>"The Blind Leading the Blind": A huge portion of trading content comes from neophyte traders who started posting during the recent bull market. They've never traded through different market cycles or faced real adversity. When market conditions change, their strategies fall apart. Our instructors have successfully traded through multiple market crashes, corrections, and different economic environments.
-            <br><br> "Dangerous Half-Truths": Free resources often present oversimplified or incomplete information that can be actively harmful. For example, they might teach entry signals without proper risk management, or promote strategies that work in paper trading but fail with real money. We teach complete trading systems that address every aspect of successful trading - from psychology to position sizing to market analysis.
-        
-        
-        </div>
-    </div>
-    <div class="faq-item">
-        <div class="faq-question">Why do you sell courses if you have the magic formula?</div>
-        <div class="faq-answer">
-            Banks and trading firms constantly train new traders because there's plenty of market opportunity. Success isn't about secrets - it's about skill and execution.<br><br>
-Teaching runs in our family - our immigrant parents were educators. After years on Wall Street, we're continuing their legacy because we love both trading and teaching.<br><br>
-Yes, we profit from trading AND education - that's exactly the mindset we teach. We understand the investment you're making, which is why we provide institutional-grade service: comprehensive support, real-time guidance, and proven systems that work. This isn't a 'record and forget' course - it's professional development with ongoing mentorship.  We also understand the value we provide and integrity with which we service our students. Our years of experience can help shorten your learning curve while teaching actual working strategies.<br><br>
-While your $100,000 college degree gathers dust, our graduates are making real money using our proven institutional methods. The market has room for skilled traders, and we're proud to make Wall Street-level training accessible to anyone ready to learn.<br><br>
-        </div>
-    </div>
-      <div class="faq-item">
-          <div class="faq-question"> What exactly are futures contracts and how do they differ from stocks?</div>
-          <div class="faq-answer">A futures contract is an agreement to buy or sell a specific asset at a predetermined price on a future date. Unlike stocks where you own a piece of a company, futures contracts are obligations to trade commodities, financial instruments, or other assets at a future date. They're primarily used for hedging risk or speculating on price movements.
-        </div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-question">How much money do I need to start trading futures?</div>
-        <div class="faq-answer"><p>Self-Funded Account:</p>
-
-
-            Minimum: $500-$10,000 <br>
-            Recommended: $5,000+ for proper risk management<br>
-            Plus $70-300/month for data and tools<br>
-            
-            <br>
-            <p>Prop Firm Route:</p>
-            
-            Initial cost: $80-1,000 for evaluation<br>
-            Once passed, trade $25,000-$200,000 of firm's capital<br>
-            Keep 70-90% of profits<br>
-            Only risk evaluation fee instead of large personal capital<br>
-            <br><br>
-            Most traders either start small with personal capital to learn basics, or take prop firm evaluations to access larger accounts with limited risk. The prop firm route is popular because you can start with less capital, though it comes with stricter rules and trading requirements.</div>
-    </div>
-    <div class="faq-item">
-        <div class="faq-question"> Should I Trade My Own Capital or Use an Online Prop Firm?</div>
-        <div class="faq-answer">
-            What's an Online Prop Firm?<br><br>
-They provide traders access to larger capital accounts after passing trading challenges. Pay a fee, pass their test, trade their money for a profit split (typically 70-90%).<br><br>
-Prop Firm Pros:<br><br>
-
-Lower Starting Capital ($200-1000 vs. $25k+)<br>
-Access to Bigger Trading Accounts<br>
-Limited Downside Risk<br>
-Faster Path to Full-time Trading<br><br>
-
-Prop Firm Cons:<br><br>
-
-Share Profits with Firm<br>
-Trading Restrictions/Rules<br>
-Monthly/Challenge Fees<br>
-More Psychological Pressure<br><br>
-
-Trading Your Own Money:<br><br>
-
-Keep 100% of Profits<br>
-Trade Without Restrictions<br>
-No Extra Fees<br>
-Faster profit withdrawal from your retail broker. No payout denials.<br><br>
-
-Bottom Line:<br><br>
-Smart traders often do both: Start with prop firms to learn discipline and trade bigger size, then gradually add personal capital trading as you build wealth.<br><br>
-      </div>
-    </div>
-    <div class="faq-item">
-        <div class="faq-question">What is the cheapest way for me to get started with this bootcamp and course?</div>
-        <div class="faq-answer">Sign up for our Free Class, call us for a free consultation.  On the consultation, read our free pdf and then decide what time you can devote to the course and if it is worth it for you to engage with us at this time. </div>
-    </div>
-    <div class="faq-item">
-      <div class="faq-question"> How much time do I need to dedicate to futures trading?</div>
-      <div class="faq-answer">To start, you should expect to spend:<br><br>
-        - 1 hour daily for market analysis<br>
-        - Time to watch market opens in your chosen contracts<br>
-        - Additional time for research and strategy development<br>
-        - 30 Minutes for reviewing trades and updating your trading plan<br><br>
-        The course will help you develop a routine that fits your schedule.<br>
-        </div>
-  </div>
-      <div class="faq-item">
-          <div class="faq-question">What platforms and tools will I need?</div>
-          <div class="faq-answer">Essential tools include:<br>
-            - Laptop or PC<br>
-            - Internet Connection<br>
-            - Futures trading platforms: Quantower<br><br>
-           The course will cover recommended platforms and necessary tools for beginners.</div>
-      </div>
- 
-      <div class="faq-item">
-          <div class="faq-question">What topics are covered in your courses?</div>
-          <div class="faq-answer">Our courses cover a wide range of topics including market analysis, trading strategies, risk management, technical analysis, fundamental analysis, and the use of trading platforms. We also discuss regulatory aspects and ethical considerations in futures trading.</div>
-      </div>
-      <div class="faq-item">
-          <div class="faq-question">How long does it take to complete a course?</div>
-          <div class="faq-answer">The duration of our courses varies depending on the student and their time flexibility. Although only 24 hours of material, typically, our introductory courses take 1-3 weeks to complete. Our courses are self-paced, allowing you to learn at your own speed.</div>
-      </div>
-       <div class="faq-item">
-          <div class="faq-question">Are there any prerequisites for taking your courses?</div>
-          <div class="faq-answer">Our beginner courses have no prerequisites.</div>
-      </div>
-      <div class="faq-item">
-          <div class="faq-question">What kind of support do you offer during the course?</div>
-          <div class="faq-answer">We offer various support options including email support, discussion forums, and scheduled Q&A sessions with instructors. Some courses also include one-on-one mentoring sessions for personalized guidance.</div>
       </div>
 
-      <div class="faq-item">
-          <div class="faq-question">Is certification provided upon course completion?</div>
-          <div class="faq-answer">Yes, upon successful completion of a course, you'll receive a certificate of completion. However, please note that this is not a professional license and additional requirements may be needed to trade professionally.</div>
-      </div>
-      <div class="faq-item">
-          <div class="faq-question">What is your refund policy?</div>
-          <div class="faq-answer">All sales are final. No refunds will be issued under any circumstances. If you have any questions or concerns about your purchase, please contact us before making a purchase.</div>
-      </div>
-  </div>
+    </section><!-- /Clients Section -->
+
+
+    
+
   
-  <script>
-    document.querySelectorAll('.faq-question').forEach(question => {
-        question.addEventListener('click', () => {
-            const answer = question.nextElementSibling;
-            const isOpen = answer.classList.contains('show');
-            
-            // Close all other answers
-            document.querySelectorAll('.faq-answer').forEach(item => item.classList.remove('show'));
-            document.querySelectorAll('.faq-question').forEach(item => item.classList.remove('active'));
-            
-            // Toggle the clicked answer
-            if (!isOpen) {
-                answer.classList.add('show');
-                question.classList.add('active');
+
+
+     <!-- Pricing Section -->
+     <section id="pricing" class="pricing section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Pricing</h2>
+        <p>Get Your Best plan today!</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="100">
+            <div class="pricing-item featured">
+              <p class="popular">Popular</p>
+
+              <h3>Bootcamp</h3>
+              <p class="description">Get started trading futures with our beginner's course! Learn about online prop firm trading and entry level money making strategies.</p>
+              <h4><sup>$</sup>2499<span> / Bootcamp Course</span></h4>
+              <a href="#" class="cta-btn">Start Now</a>
+              <p class="text-center small"><a href="https://example.com" target="_blank">Click here for Course Description</a></p>
+              <ul>
+                <li><i class="bi bi-check"></i> <span>Technical and Fundamental Analysis</span></li>
+                <li><i class="bi bi-check"></i> <span>How to make money in an up or down market</span></li>
+                <li><i class="bi bi-check"></i> <span>Learn how to start your own business in Futures Trading</span></li>
+                <li><i class="bi bi-check"></i> <span>Chart patterns, support and resistance levels</span></li>
+                <li><i class="bi bi-check"></i> <span>Get Help Setting Up: Software, Hardware, Monitors</span></li>
+                <li><i class="bi bi-check"></i> <span>Risk Management</span></li>
+                <li><i class="bi bi-check"></i> <span>Certificate upon completion</span></li>
+              </ul>
+            </div>
+          </div><!-- End Pricing Item -->
+
+          <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="200">
+            <div class="pricing-item ">
+              <h3>Chat Room</h3>
+              <p class="description">Join the Conversation. Talk to other traders and ask questions throughout the trading day.</p>
+              <h4><sup>$</sup>99<span> / month</span></h4>
+              <a href="#" class="cta-btn">Join our Chat!</a>
+              <p class="text-center small"></p>
+              <ul>
+                <li><i class="bi bi-check"></i> <span>Analyze and evaluate information shared in the chat room</span></li>
+                <li><i class="bi bi-check"></i> <span>Learn from experts and share your own insights</span></li>
+                <li><i class="bi bi-check"></i> <span>Ask questions and engage with other students</span></li>
+                <li><i class="bi bi-check"></i> <span>Public and Private Chats: Engage in open discussions or private conversations.</span></li>
+                <li><i class="bi bi-check"></i> <span>Chat Room Software: Whatsapp, Discord</span></li>
+                <li><i class="bi bi-check"></i> <span>Zero commitment, cancel any time</span></li>
+                <li class="na"><i class="bi bi-x"></i> <span>Monthly Contract</span></li>
+              </ul>
+            </div>
+          </div><!-- End Pricing Item -->
+
+          <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="300">
+            <div class="pricing-item">
+              <h3>Market Call</h3>
+              <p class="description">Book a one-on-one consultation with our experienced traders.</p>
+              <h4><sup>$</sup>99<span> / hour</span></h4>
+              <a href="#" class="cta-btn">Schedule a call</a>
+              <p class="text-center small"></p>
+              <ul>
+                <li><i class="bi bi-check"></i> <span>Discuss specific topics or questions you have</span></li>
+                <li><i class="bi bi-check"></i> <span>Screen Sharing: Share charts, documents, and other relevant materials during the call.</span></li>
+                <li><i class="bi bi-check"></i> <span>Flexible Scheduling: Choose a time slot that suits your schedule</span></li>
+                <li><i class="bi bi-check"></i> <span>Analyze your strategy statistically and learn to make adjustments</span></li>
+                <li><i class="bi bi-check"></i> <span>Go over Bootcamp material</span></li>
+                <li><i class="bi bi-check"></i> <span>Get personalized insights and actionable strategies</span></li>
+              </ul>
+            </div>
+          </div><!-- End Pricing Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Pricing Section -->
+
+
+
+    <!-- TradingView Widget BEGIN -->
+    <div class="tradingview-widget-container">
+      <div class="tradingview-widget-container__widget"></div>
+      <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank"></a></div>
+      <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-events.js" async>
+      {
+      "width": "100%",
+      "height": "800",
+      "colorTheme": "dark",
+      "isTransparent": false,
+      "locale": "en",
+      "importanceFilter": "-1,0,1",
+      "countryFilter": "us,gb,ke,mx"
+    }
+      </script>
+    </div>
+    <!-- TradingView Widget END -->
+   
+
+    <!-- Faq Section -->
+    <section id="faq" class="faq section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Frequently Asked Questions</h2>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row justify-content-center">
+
+          <div class="col-lg-10" data-aos="fade-up" data-aos-delay="100">
+
+            <div class="faq-container">
+
+              <div class="faq-item">
+                <h3>Why should I pay for a course from you when there are so many free
+                  resources online?</h3>
+                <div class="faq-content">
+                  <p>Unlike fragmented online content, our bootcamp is led by seasoned Wall
+                    Street professionals with verifiable track records in institutional trading. <br><br>Here's what
+                    sets us apart from free resources:<br><br>Real Expertise vs. Social Media "Gurus": <br><br>Many
+                    social media trading "experts" have never actually traded professionally or managed serious
+                    capital. They make money from clicks and sponsorships, not trading. Our instructors have
+                    collective decades of experience trading for major financial institutions and can prove it.
+                    <br><br>Protection from Common Scams: <br><br>The futures trading space is unfortunately filled
+                    with "signal services," automated trading bots, and get-rich-quick schemes promoted by
+                    influencers. These often lead to devastating losses. Our program teaches you legitimate
+                    institutional trading methods that have stood the test of time in professional trading
+                    environments.
+                    <br><br>Structured Learning vs. Random Tips: <br><br>Free content often promotes dangerous
+                    practices like over-leveraging or ignoring risk management. Our systematic curriculum is built
+                    on the same principles used to train professional traders at major firms, with emphasis on
+                    capital preservation and consistent profitability.
+                    <br><br>Additional critical reasons to avoid learning from free resources:
+
+                    <br><br>"The Hidden Agenda Problem": Many free trading channels and social media accounts are
+                    actually marketing funnels for questionable products. They share just enough basic information
+                    to seem credible, then upsell followers on risky signal services, "foolproof" indicators, or
+                    sketchy coaching programs. Our only agenda is building competent, self-sufficient traders using
+                    proven institutional methods.
+                    <br><br>"The Blind Leading the Blind": A huge portion of trading content comes from neophyte
+                    traders who started posting during the recent bull market. They've never traded through
+                    different market cycles or faced real adversity. When market conditions change, their strategies
+                    fall apart. Our instructors have successfully traded through multiple market crashes,
+                    corrections, and different economic environments.
+                    <br><br> "Dangerous Half-Truths": Free resources often present oversimplified or incomplete
+                    information that can be actively harmful. For example, they might teach entry signals without
+                    proper risk management, or promote strategies that work in paper trading but fail with real
+                    money. We teach complete trading systems that address every aspect of successful trading - from
+                    psychology to position sizing to market analysis.
+                  </p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3>Why do you sell courses if you have the magic formula?</h3>
+                <div class="faq-content">
+                  <p> Banks and trading firms constantly train new traders because there's plenty of market
+                    opportunity. Success isn't about secrets - it's about skill and execution.<br><br>
+                    Teaching runs in our family - our immigrant parents were educators. After years on Wall Street,
+                    we're continuing their legacy because we love both trading and teaching.<br><br>
+                    Yes, we profit from trading AND education - that's exactly the mindset we teach. We understand
+                    the investment you're making, which is why we provide institutional-grade service: comprehensive
+                    support, real-time guidance, and proven systems that work. This isn't a 'record and forget'
+                    course - it's professional development with ongoing mentorship. We also understand the value we
+                    provide and integrity with which we service our students. Our years of experience can help
+                    shorten your learning curve while teaching actual working strategies.<br><br>
+                    While your $100,000 college degree gathers dust, our graduates are making real money using our
+                    proven institutional methods. The market has room for skilled traders, and we're proud to make
+                    Wall Street-level training accessible to anyone ready to learn.<br><br></p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3>What exactly are futures contracts and how do they differ from stocks?</h3>
+                <div class="faq-content">
+                  <p>A futures contract is an agreement to buy or sell a specific asset at a
+                    predetermined price on a future date. Unlike stocks where you own a piece of a company, futures
+                    contracts are obligations to trade commodities, financial instruments, or other assets at a
+                    future date. They're primarily used for hedging risk or speculating on price movements.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3>How much money do I need to start trading futures?</h3>
+                <div class="faq-content">
+                  <p>Self-Funded Account:
+
+
+                    Minimum: $500-$10,000 <br>
+                    Recommended: $5,000+ for proper risk management<br>
+                    Plus $70-300/month for data and tools<br>
+
+                    <br>
+                    Prop Firm Route:
+
+                    Initial cost: $80-1,000 for evaluation<br>
+                    Once passed, trade $25,000-$200,000 of firm's capital<br>
+                    Keep 70-90% of profits<br>
+                    Only risk evaluation fee instead of large personal capital<br>
+                    <br><br>
+                    Most traders either start small with personal capital to learn basics, or take prop firm
+                    evaluations to access larger accounts with limited risk. The prop firm route is popular because
+                    you can start with less capital, though it comes with stricter rules and trading requirements.
+                  </p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3>Should I Trade My Own Capital or Use an Online Prop Firm?</h3>
+                <div class="faq-content">
+                  <p> What's an Online Prop Firm?<br><br>
+                    They provide traders access to larger capital accounts after passing trading challenges. Pay a
+                    fee, pass their test, trade their money for a profit split (typically 70-90%).<br><br>
+                    Prop Firm Pros:<br><br>
+
+                    Lower Starting Capital ($200-1000 vs. $25k+)<br>
+                    Access to Bigger Trading Accounts<br>
+                    Limited Downside Risk<br>
+                    Faster Path to Full-time Trading<br><br>
+
+                    Prop Firm Cons:<br><br>
+
+                    Share Profits with Firm<br>
+                    Trading Restrictions/Rules<br>
+                    Monthly/Challenge Fees<br>
+                    More Psychological Pressure<br><br>
+
+                    Trading Your Own Money:<br><br>
+
+                    Keep 100% of Profits<br>
+                    Trade Without Restrictions<br>
+                    No Extra Fees<br>
+                    Faster profit withdrawal from your retail broker. No payout denials.<br><br>
+
+                    Bottom Line:<br><br>
+                    Smart traders often do both: Start with prop firms to learn discipline and trade bigger size,
+                    then gradually add personal capital trading as you build wealth.<br><br></p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3>What is the cheapest way for me to get started with this bootcamp and
+                  course?</h3>
+                <div class="faq-content">
+                  <p>Sign up for our Free Class, call us for a free consultation. On the
+                    consultation, read our free pdf and then decide what time you can devote to the course and if it
+                    is worth it for you to engage with us at this time.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+            </div>
+
+          </div><!-- End Faq Column-->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Faq Section -->
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Testimonials</h2>
+        <p>Testimonials from our students.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              },
+              "breakpoints": {
+                "320": {
+                  "slidesPerView": 1,
+                  "spaceBetween": 40
+                },
+                "1200": {
+                  "slidesPerView": 3,
+                  "spaceBetween": 1
+                }
+              }
             }
-        });
-    });
-  </script>
-  </div>
-  
-   <!--- Calendly-->
-    <div class="calendly-widget">
-        <div class="container">
-            <h2 id="Free Consultation">Free Consultation</h2>
+          </script>
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium
+                  quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+                </p>
+                <div class="profile mt-auto">
+                  <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
+                  <h3>Saul Goodman</h3>
+                  <h4>Ceo &amp; Founder</h4>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis
+                  quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
+                </p>
+                <div class="profile mt-auto">
+                  <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
+                  <h3>Sara Wilsson</h3>
+                  <h4>Designer</h4>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim
+                  tempor labore quem eram duis noster aute amet eram fore quis sint minim.
+                </p>
+                <div class="profile mt-auto">
+                  <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
+                  <h3>Jena Karlis</h3>
+                  <h4>Store Owner</h4>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            
+
+          </div>
+          <div class="swiper-pagination"></div>
         </div>
 
-        <div id="calendly-embed"></div>
-      
-        <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
-        
-        <script>
+      </div>
+
+    </section><!-- /Testimonials Section -->
+
+<!----Tradingview-->
+<!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+  <div class="tradingview-widget-container__widget"></div>
+  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank"></a></div>
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-overview.js" async>
+  {
+  "symbols": [
+    [
+      "CME_MINI:NQ1!|1D"
+    ]
+  ],
+  "chartOnly": false,
+  "width": "100%",
+  "height": "800",
+  "locale": "en",
+  "colorTheme": "dark",
+  "autosize": true,
+  "showVolume": true,
+  "showMA": false,
+  "hideDateRanges": false,
+  "hideMarketStatus": false,
+  "hideSymbolLogo": false,
+  "scalePosition": "right",
+  "scaleMode": "Normal",
+  "fontFamily": "-apple-system, BlinkMacSystemFont, Trebuchet MS, Roboto, Ubuntu, sans-serif",
+  "fontSize": "10",
+  "noTimeScale": false,
+  "valuesTracking": "1",
+  "changeMode": "price-and-percent",
+  "chartType": "area",
+  "headerFontSize": "medium",
+  "volumeUpColor": "rgba(0, 188, 212, 0.5)",
+  "volumeDownColor": "rgba(0, 188, 212, 0.5)",
+  "backgroundColor": "rgba(0, 0, 0, 1)",
+  "lineWidth": 2,
+  "lineType": 0,
+  "dateRanges": [
+    "1d|1",
+    "1m|30",
+    "3m|60",
+    "12m|1D",
+    "60m|1W",
+    "all|1M"
+  ]
+}
+  </script>
+</div>
+<!-- TradingView Widget END -->
+
+
+
+
+
+<!----Tradingview-->
+
+
+    <!--- Calendly-->
+    <div class="calendly-widget mt-5" data-aos="fade-up" data-aos-delay="200">
+      <div class="container text-center">
+        <h2 id="Free Consultation">Free Consultation</h2>
+        <hr>
+      </div>
+
+      <div id="calendly-embed"></div>
+
+      <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
+
+      <script>
         Calendly.initInlineWidget({
-        url: 'https://calendly.com/futuresclasses-info/30min',
-        parentElement: document.getElementById('calendly-embed')
+          url: 'https://calendly.com/futuresclasses-info/30min',
+          parentElement: document.getElementById('calendly-embed')
         });
         var calendlyEmbed = document.getElementById('calendly-embed');
         calendlyEmbed.setAttribute("style", "background-color: ##d2d7db;min-width:100%;height:960px;");
-        </script>
+      </script>
+    </div>
+
+
+
+    <section id="free-class-video" class="video-section" data-aos="fade-up" data-aos-delay="100">
+      <h2>Join Our Free Class</h2>
+      <p>Learn the basics of [Subject] with our free introductory class. Watch the video below to get started!</p>
+
+      <div class="video-placeholder">
+        <video controls width="560" height="315" >
+          <!-- Replace "placeholder.jpg" with the path to your placeholder image -->
+          <source src="assets/videos/futures.mp4" type="video/mp4">
+          <!-- You can add more sources for different formats -->
+          Your browser does not support the video tag.
+        </video>
       </div>
+    </section>
 
-  <!--- Join Content ---->
 
-      <section class="joincontent-section">
-        <div class="joincontainer">
 
+  </main>
+
+  <footer class="footer">
+
+      </div>
       
-            <h2 id="join">Join our Free Class!</h2> <br> <h3>Accelerate your learning with our free preview of our Bootcamp course.  Sign up below so we can contact you about our Free Class.</h3>Accelerate your learning with this preview of our Bootcamp Course.
-    <br><br>
+      <div class="footer-bottom">
+   
+        <div class="refunddisclaimer">
+          <section>
+            <h2>Disclaimer</h2>
+            <p>All content, trading ideas, and setups presented in Futures Classes are for educational purposes only. Futures trading involves significant risks, and a high percentage of traders lose money. Any decision to follow these setups is entirely at your own risk, and you are responsible for your actions. None of the information should be considered as financial advice or a recommendation to trade specific futures contracts. Please be aware that past performance is not indicative of future results. Futures Classes, its employees, and associates are not liable for your trading outcomes. Always conduct your research and consider your risk tolerance.</p>
+          </section>
           
-    <script type="text/javascript" src="https://form.jotform.com/jsform/242195774607061"></script>
-</section>
-
+          <section>
+            <h2>Refund Policy</h2>
+            <p>All sales are final. No refunds will be issued under any circumstances, including but not limited to: Change of mind: If you decide you no longer want the product or service. Technical difficulties: If you experience technical issues with the product or service. Dissatisfaction: If you are not satisfied with the product or service. If you have any questions or concerns about your purchase, please contact us before making a purchase.</p>
+          </section>
+        </div>
+       
+      </div>
     </div>
-<!-------google form for join------>
-<footer>
-
-<div class="container">    <div class="social-container">
-        <a href="#" class="social-icon" aria-label="Facebook">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M13.397 20.997v-8.196h2.765l.411-3.209h-3.176V7.548c0-.926.258-1.56 1.587-1.56h1.684V3.127c-.82-.088-1.643-.13-2.467-.127-2.444 0-4.122 1.492-4.122 4.231v2.355H7.332v3.209h2.753v8.202h3.312z"/>
-            </svg>
-        </a>
-        <a href="#" class="social-icon" aria-label="Twitter">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/>
-            </svg>
-        </a>
-        <a href="#" class="social-icon" aria-label="Instagram">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
-            </svg>
-        </a>
-        <a href="#" class="social-icon" aria-label="LinkedIn">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"/>
-            </svg>
-        </a>
-        <a href="#" class="social-icon" aria-label="YouTube">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
-            </svg>
-        </a>
+    <div class="social-container">
+      <a href="https://facebook.com" target="_blank" class="social-link" aria-label="Facebook">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/>
+        </svg>
+      </a>
+      <a href="https://instagram.com" target="_blank" class="social-link" aria-label="Instagram">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path d="M17.5 6.5h.001M7 2h10a5 5 0 015 5v10a5 5 0 01-5 5H7a5 5 0 01-5-5V7a5 5 0 015-5zm12 5.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0M12 15a3 3 0 110-6 3 3 0 010 6zm0-8a5 5 0 100 10 5 5 0 000-10z"/>
+        </svg>
+      </a>
+      <a href="https://twitter.com" target="_blank" class="social-link" aria-label="Twitter">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/>
+        </svg>
+      </a>
+      <a href="https://linkedin.com" target="_blank" class="social-link" aria-label="LinkedIn">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/>
+          <rect x="2" y="9" width="4" height="12"/>
+          <circle cx="4" cy="4" r="2"/>
+        </svg>
+      </a>
+      <a href="https://youtube.com" target="_blank" class="social-link" aria-label="YouTube">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/>
+        </svg>
+      </a>
     </div>
-<h3>Disclaimer</h3>
-<p> All content, trading ideas, and setups presented in Futures Classes are for educational purposes only. Futures trading involves significant risks, and a high percentage of traders lose money. Any decision to follow these setups is entirely at your own risk, and you are responsible for your actions. None of the information should be considered as financial advice or a recommendation to trade specific futures contracts. Please be aware that past performance is not indicative of future results. Futures Classes, its employees, and associates are not liable for your trading outcomes. Always conduct your research and consider your risk tolerance.</p>
-<br> <br>
-<h3>Refund Policy</h3>
-<p>
+    <div class="copyright">
+      © 2024 Futures Classes. All rights reserved.
+    </div>
+  </footer>
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
 
-All sales are final. No refunds will be issued under any circumstances, including but not limited to:
 
-Change of mind: If you decide you no longer want the product or service.
-Technical difficulties: If you experience technical issues with the product or service.
-Dissatisfaction: If you are not satisfied with the product or service.
-If you have any questions or concerns about your purchase, please contact us before making a purchase.</p>
-</div>
 
-       </footer>
-    </main>
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
-    <script>
-        document.querySelector('.menu-toggle').addEventListener('click', function() {
-            document.querySelector('.nav-links').classList.toggle('active');
-        });
-    </script>
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
 </body>
+
 </html>
